@@ -1,27 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.page-header {
-  background-color: rgba(0, 128, 128, 0.3);
-}
-
-.container {
+.ihoriulinskyi {
   display: flex;
-  justify-content: space-between;
-  width: 1200px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 128, 128, 0.3);
   padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo {
-  display: inline-block;
-  font-size: 26px;
-  line-height: 1.62;
-  color: teal;
-  background-color: orange;
-}
-
-.button {
-  background-color: #fff;
-  color: aqua;
-  border: 1px solid teal;
 }/*# sourceMappingURL=index.css.map */
