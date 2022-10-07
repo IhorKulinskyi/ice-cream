@@ -1,0 +1,67 @@
+// ======== COLORS ===========
+
+$basic-white-clr: #fcfcfc;
+
+// BACKGROUNG COLORS
+
+$bg-basic-clr: #84a178;
+$bg-accent-clr: #f8d24e;
+
+// products section colors
+
+$bg-primary-clr: #aec6a5;
+$bg-secondary-clr: #efd478;
+$bg-tertiary-clr: #d6936d;
+
+// about section colors
+
+$shdw-clr: rgba(248, 210, 78, 0.7);
+
+// modal windows colors
+
+$mdl-primary-bg-clr: #fcfcfc;
+$mdl-form-input-bg-clr: rgba(248, 210, 78, 0.1);
+$mdl-buy-now-first-item-border-clr: #96af8c;
+$mdl-buy-now-scnd-item-border-clr: #efd478;
+$mdl-buy-now-thrd-item-border-clr: #d6936d;
+$mdl-product-card-bg-clr: #9cbe8f;
+
+// BUTTON COLORS
+
+$btn-default-clr: #f8d24e;
+$btn-hover-clr: #0a8817;
+$btn-focus-clr: #0a8817;
+$btn-disabled-clr: #ababab;
+
+// TEXT COLORS
+
+$txt-primary-clr: #fcfcfc;
+$txt-secondary-clr: #131313;
+$txt-accent-clr: #d6936d;
+$txt-footer-copyrights-clr: #7a7a7a;
+
+// ======== TEXT PROPERTIES ===========
+
+// COMMON LETTER SPACING
+
+$ltr-spc: 0.04em;
+
+// FONT SIZES
+
+// button text font size
+
+$font-size-btn: 14px;
+
+// common text(description) font size ( for desktop, tablet, mobile)
+
+$font-size-descr-mob: 12px;
+$font-size-descr-tab: 14px;
+$font-size-descr-desk: 16px;
+
+// VIEWPORT WIDTH
+
+$mobile: 480px;
+$min-tablet: 767px;
+$tablet: 768px;
+$min-desktop: 1199px;
+$desktop: 1200px;

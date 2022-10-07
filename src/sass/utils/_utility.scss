@@ -1,0 +1,46 @@
+.homepage {
+  margin: 0;
+
+  color: $txt-primary-clr;
+  background-color: $bg-basic-clr;
+  //   font-family: ;
+  letter-spacing: $ltr-spc;
+}
+
+// body.modal-open , body.is-open{
+//   overflow: hidden;
+// }
+
+.container {
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.is-hidden {
+  display: none;
+}

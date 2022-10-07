@@ -1,0 +1,11 @@
+@mixin centeredFlex($type: flex, $justf: center, $align: center) {
+  display: $type;
+  justify-content: $justf;
+  align-items: $align;
+}
+
+@mixin textStyle($size: $font-size-descr-mob, $height: 1.76, $ltr-spc: 0.04em) {
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $ltr-spc;
+}
