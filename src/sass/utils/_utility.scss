@@ -12,7 +12,6 @@
 // }
 
 .container {
-
   margin-left: auto;
   margin-right: auto;
 
@@ -43,4 +42,11 @@ img {
 
 .is-hidden {
   display: none;
+}
+body {
+  cursor: url('/cursor.png'), default;
+}
+
+button {
+  cursor: url('/cursor-hover.png'), pointer;
 }
