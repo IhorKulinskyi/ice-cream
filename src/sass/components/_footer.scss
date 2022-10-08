@@ -1,0 +1,60 @@
+.footer__title {
+    @extend %title;
+    text-transform: uppercase;
+    padding-top: 38px;
+    margin-bottom:16px;
+}
+.footer__title--wrap {
+    @extend %title;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+.footer__social-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    margin-top: 42px;
+    margin-bottom: 38px;
+    @extend %list;
+}
+.footer__social-link{
+    @extend %link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $bg-accent-clr;
+}
+
+.footer__tel-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.tel-info__label{
+    @extend %description;
+    color: $txt-secondary-clr;
+}
+
+.tel-info__link{
+     @extend %link;
+}
+
+.footer__copyrights {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $mdl-primary-bg-clr;
+    padding-top: 16px;
+    margin-bottom: 62px;
+}
+
+.copyrights__label{
+    @extend %description;
+    color: $txt-footer-copyrights-clr;
+
+}
