@@ -3,18 +3,19 @@
   margin: 0;
   color: #fcfcfc;
   background-color: #84a178;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.04em;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
