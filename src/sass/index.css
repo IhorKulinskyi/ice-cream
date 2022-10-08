@@ -40,4 +40,8 @@ img {
 
 .is-hidden {
   display: none;
+}
+
+.snapper {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
