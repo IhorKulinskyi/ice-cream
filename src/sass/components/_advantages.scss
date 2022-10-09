@@ -1,0 +1,133 @@
+.advantages{
+    @media screen and (max-width:$min-tablet){
+        padding-top: 42px;
+        padding-bottom: 36px;   
+    }
+    @media screen and (min-width:$tablet){
+        padding-top: 48px;
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width:$desktop){
+        padding-top: 60px;
+        padding-bottom: 86px;
+    }
+}
+.advantages__advantages-list {
+    @extend %list;
+    color: $txt-primary-clr;
+    display: flex;
+    justify-content: center;
+    fill: currentColor;
+    
+
+    @media screen and (max-width:$min-tablet) {
+        flex-direction: column;
+        gap: 28px;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        gap: 80px;
+        flex-basis: calc((100% - 160px) / 3);
+        margin-left: 44px;
+        margin-right: 44px;
+
+    }
+    @media screen and (min-width:$desktop){
+        gap: 32px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages-list__icon--wrapper{
+    width: 50px;
+    height: 50px;
+    background-color: $bg-accent-clr;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:$min-tablet) {
+        margin-bottom: 16px;
+
+    }
+
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 32px;
+
+    }
+    @media screen and (min-width:$desktop){
+        margin-bottom: 40px;
+    }
+}
+.advantages-list__icon {
+    
+    fill: #000000;
+    
+
+
+}
+
+.advantages-list__title {
+    @extend %description;
+
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: $ltr-spc;
+
+    @media screen and (max-width:$min-tablet) {
+        font-family: 'Roboto';
+        font-size: 36px;
+        margin-bottom: 18px;
+        line-height: 1.16;
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width:$tablet) {
+        font-family: 'Montserrat';
+        font-size: 48px;
+        line-height: 1.22;
+        margin-bottom: 16px;
+
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-family: 'Montserrat';
+        font-size: 58px;
+
+
+    }
+}
+
+.advantages-list__text {
+    @extend %description;
+    text-align: center;
+    font-family: 'Montserrat';
+
+    @media screen and (max-width:$min-tablet) {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.66;
+    }
+
+    @media screen and (min-width:$tablet) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+    }
+}
