@@ -68,6 +68,15 @@
         height: 199px;
         margin-bottom: 24px;
     }
+
+    .modal-video-link {
+        background: #000;
+        width: 224px;
+        height: 199px;
+        max-width: 224px;
+        max-height: 199px;
+        margin-bottom: 20px;
+    }
 }
 
 ///////
@@ -120,9 +129,17 @@
         width: 448px;
         height: 260px;
         margin-bottom: 32px;
-
     }
 
+    .modal-video-link {
+        background: #000;
+        width: 448px;
+        height: 205px;
+        max-width: 448px;
+        max-height: 205px;
+        margin-bottom: 32px;
+
+    }
 }
 
 ///////
@@ -147,6 +164,17 @@
     flex-direction: column;
 }
 
+.modal-video {
+    .modal__list-ingredients--item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 11px;
+        // align-items: center;
+        // text-align: center;
+
+    }
+}
+
 // описуємо кнопку  закриття модального вікна (хрестик)
 .modal-close-btn {
     display: flex;
@@ -168,14 +196,24 @@
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
-
-    display: flex;
+    // display: flex;
     align-items: center;
     text-align: center;
-
     color: #131313;
 
 }
+
+.modal-title-h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
 
 // Описуємо параграф для модальніх форм
 .modal-paragraph {
@@ -184,6 +222,50 @@
     font-weight: 400;
     line-height: 1.4;
     color: #131313;
+}
+
+.modal__list-call {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal__list-call--item {
+    width: 65px;
+    height: 90px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+}
+
+.modal__list-call--item-blok-h {
+    display: block;
+    background: #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+}
+
+.modal__list-call--item-blok-l {
+    display: block;
+}
+
+.modal__list-ingredients {
+    // display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // max-width: ;
+    margin-bottom: 48px;
+}
+
+.modal__list-ingredients--item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    // align-items: center;
+    // text-align: center;   
+}
+
+.blok {
+    display: block;
 }
 
 // .modal-close-icon {
@@ -202,6 +284,7 @@
 .modal-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .modal-form__field {
@@ -224,6 +307,7 @@
 
 .modal-form__input {
     width: 100%;
+    max-width: 368px;
     height: 32px;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
@@ -239,6 +323,7 @@
 
 .modal-form__message {
     width: 100%;
+    max-width: 368px;
     resize: none;
     margin-bottom: 24px;
     color: #131313;
