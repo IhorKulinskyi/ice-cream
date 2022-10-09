@@ -22,6 +22,139 @@
   color: $txt-secondary-clr;
   background-color: $btn-default-clr;
 
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
+  font-family: inherit;
+}
+
+%button--hover {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-secondary-clr;
+  background-color: $btn-hover-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
+  font-family: inherit;
+}
+
+%button--focus {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-primary-clr;
+  background-color: $btn-focus-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
+  font-family: inherit;
+}
+
+%button--disabled {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-primary-clr;
+  background-color: $btn-disabled-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
+  font-family: inherit;
+}
+
+%button-noFill {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-secondary-clr;
+  background-color: transparent;
+  border: 2px solid $btn-default-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
+  font-family: inherit;
+}
+
+%button-noFill--hover {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-secondary-clr;
+  background-color: transparent;
+  border: 2px solid $btn-hover-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
+  font-family: inherit;
+}
+
+%button-noFill--focus {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-primary-clr;
+  background-color: transparent;
+  border: 2px solid $btn-focus-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
+  font-family: inherit;
+}
+
+%button-noFill--disabled {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-secondary-clr;
+  background-color: transparent;
+  border: 2px solid $btn-disabled-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  font-weight: 600;
+
   font-family: inherit;
 }
 
