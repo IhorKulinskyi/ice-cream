@@ -1,3 +1,6 @@
+body {
+  cursor: url(../img/additionals/cursor-default.png), default;
+}
 .homepage {
   margin: 0;
 
@@ -16,7 +19,11 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+<<<<<<< HEAD
   min-width: 320px;
+=======
+  // min-width: 320px;
+>>>>>>> main
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -43,4 +50,17 @@ img {
 
 .is-hidden {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

@@ -12,7 +12,6 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  min-width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -42,6 +41,20 @@ img {
 
 .is-hidden {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }
 
 .snapper {
