@@ -57,7 +57,22 @@ img {
   padding-bottom: 40px; */
 }
 
-.modal-form-title {
+.modal-title {
+  position: absolute;
+  width: 221px;
+  height: 72px;
+  left: 29px;
+  top: 28px;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 24px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -224,4 +239,329 @@ img {
 }
 
 /*===============END Модальна форма ================*/
-/* ======= ----- END Модальне вікно--------- =========== *//*# sourceMappingURL=index.css.map */
+/* ======= ----- END Модальне вікно--------- =========== */
+/* ======= --------Відкривання закривання модального вікна --------- =========== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-dur-and-func);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* END ======= --------Відкривання закривання модального вікна --------- =========== */
+/*=============== Модальне вікно ================*/
+@media screen and (max-width: 768px) {
+  .modal {
+    width: calc(100% - 30px);
+    max-width: 280px;
+  }
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+  }
+  .modal-title {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .modal-paragraph {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .modal-form__field {
+    margin-bottom: 12px;
+  }
+  .modal-form__input {
+    padding-left: 12px;
+    font-size: 12px;
+  }
+  .modal-form__message {
+    height: 84px;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+  }
+  .modal-map-link {
+    width: 224px;
+    height: 199px;
+    margin-bottom: 24px;
+  }
+  .modal-video-link {
+    background: #000;
+    width: 224px;
+    height: 199px;
+    max-width: 224px;
+    max-height: 199px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 568px;
+  }
+  .modal-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  .modal-paragraph {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .modal-paragraph {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .modal-form__field {
+    margin-bottom: 16px;
+  }
+  .modal-form__input {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  .modal-form__message {
+    height: 64px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+  }
+  .modal-map-link {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+  .modal-video-link {
+    background: #000;
+    width: 448px;
+    height: 205px;
+    max-width: 448px;
+    max-height: 205px;
+    margin-bottom: 32px;
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+  transform: translate(-50%, -50%);
+  width: 568px;
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+}
+
+.modal-map {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.modal-video .modal__list-ingredients--item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 11px;
+}
+
+.modal-close-btn {
+  display: flex;
+  /*за допомогою flex центруэмо svg   */
+  align-items: center;
+  /*за допомогою flex центруэмо svg   */
+  justify-content: center;
+  /*за допомогою flex центруэмо svg   */
+  position: absolute;
+  /*за допомогою absolute розміщаємо кнопку в кут   */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
+
+.modal-title-h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 24px;
+}
+
+.modal-paragraph {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #131313;
+}
+
+.modal__list-call {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__list-call--item {
+  width: 65px;
+  height: 90px;
+  border: 2px solid #9CBE8F;
+  border-radius: 40px;
+}
+
+.modal__list-call--item-blok-h {
+  display: block;
+  background: #9CBE8F;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.modal__list-call--item-blok-l {
+  display: block;
+}
+
+.modal__list-ingredients {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.modal__list-ingredients--item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.blok {
+  display: block;
+}
+
+/* END ===============Модальна форма================*/
+/*=============== Модальна форма ================*/
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-form__field {
+  display: block;
+}
+
+.modal-form__input-wrapper {
+  color: #131313;
+}
+
+::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #131313;
+}
+
+:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #131313;
+}
+
+::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #131313;
+}
+
+.modal-form__input {
+  width: 100%;
+  max-width: 368px;
+  height: 32px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  color: #131313;
+}
+
+.modal-form__message {
+  width: 100%;
+  max-width: 368px;
+  resize: none;
+  margin-bottom: 24px;
+  color: #131313;
+  background: rgba(248, 210, 78, 0.1);
+  border-radius: 10px;
+  transition: border-color var(--transition-dur-and-func);
+}
+.modal-form__message::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+}
+.modal-form__message:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+}
+.modal-form__message::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+}
+.modal-form__message:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-form__submit {
+  width: 114px;
+  height: 42px;
+  background: #F8D24E;
+  border-radius: 10px;
+  align-self: center;
+  padding: 10px 32px 10px 32px;
+  border: 0;
+}
+
+.modal-form__submit:hover,
+.modal-form__submit:focus {
+  background: #0A8817;
+}/*# sourceMappingURL=index.css.map */
