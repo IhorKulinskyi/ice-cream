@@ -21,26 +21,32 @@
 /*=============== Модальне вікно ================*/
 // 0px - 767px
 @media screen and (max-width: 768px) {
+
     .modal {
         width: calc(100% - 30px);
         max-width: 280px;
     }
+
     .modal-close-btn {
         top: 8px;
         right: 8px;
     }
+
     .modal-title {
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 20px;
     }
+
     .modal-paragraph {
         font-size: 14px;
         margin-bottom: 24px;
     }
+
     .modal-form__field {
         margin-bottom: 12px;
     }
+
     .modal-form__input {
         padding-left: 12px;
         font-size: 12px;
@@ -49,6 +55,7 @@
     }
 
     .modal-form__message {
+
         height: 84px;
         padding-top: 8px;
         padding-left: 12px;
@@ -56,6 +63,11 @@
         font-size: 12px;
     }
 
+    .modal-map-link {
+        width: 224px;
+        height: 199px;
+        margin-bottom: 24px;
+    }
 }
 
 ///////
@@ -103,6 +115,14 @@
         padding-right: 16px;
         font-size: 14px;
     }
+
+    .modal-map-link {
+        width: 448px;
+        height: 260px;
+        margin-bottom: 32px;
+
+    }
+
 }
 
 ///////
@@ -114,10 +134,17 @@
     left: 50%;
     padding: 28px;
     transform: translate(-50%, -50%);
-    width: 280px;
+    width: 568px;
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+}
+
+.modal-map {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 // описуємо кнопку  закриття модального вікна (хрестик)
@@ -141,9 +168,11 @@
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
+
     display: flex;
     align-items: center;
     text-align: center;
+
     color: #131313;
 
 }
@@ -177,6 +206,7 @@
 
 .modal-form__field {
     display: block;
+
 }
 
 .modal-form__input-wrapper {
@@ -198,6 +228,7 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+
     color: #131313;
     ;
     // &:focus {
@@ -234,6 +265,7 @@
 }
 
 .modal-form__submit {
+
     width: 114px;
     height: 42px;
     background: #F8D24E;
@@ -264,5 +296,3 @@
     background: #0A8817;
     // background-color: var(--button-color);
 }
-
-/* END ===============Модальна форма================*/
