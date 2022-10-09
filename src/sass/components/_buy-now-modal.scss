@@ -1,6 +1,60 @@
+//Модалка, кнопка закриття модалки//
+
+//СПІЛЬНІ СТИЛІ//
 .order-modal {
+  background-color: $mdl-primary-bg-clr;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-close-btn {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 280px;
+}
+
+//For MOBILE//
+
+@media screen and (max-width: 767px) {
+  .order-modal {
+    width: 280px;
+    padding: 28px;
+  }
+
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+  }
+
+  .close-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+// TABLET and DECKTOP (однакові стилі) //
+
+@media screen and (min-width: 768px) {
+  .order-modal {
+    width: 568px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+  }
+
+  .close-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
