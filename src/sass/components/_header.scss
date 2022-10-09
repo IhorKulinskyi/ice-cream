@@ -1,0 +1,145 @@
+.site-header {
+    // position: absolute;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.site-header__container {
+    @include centeredFlex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+    height: 37px;
+}
+
+.site-header__navigation {
+    display: none;
+}
+
+.site-nav {
+    @extend %list;
+    @include centeredFlex;
+    justify-content: start;
+    margin-top: 17px;
+    margin-left: 269px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 27px;
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.site-nav__link {
+    @extend %link;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: $txt-primary-clr;
+    @include textStyle($size: $font-size-descr-desk, $height: 1.25, $ltr-spc: 0.04em);
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+        color: $btn-default-clr;
+    }
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.open-menu-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.open-menu-btn__icon {
+    fill: #fff;
+    // transition: fill;
+
+    &:hover,
+    &:focus {
+        fill: $btn-hover-clr;
+    }
+}
+
+.site-header__btn {
+    @extend %button;
+    @include centeredFlex;
+    @include textStyle($size: $font-size-btn, $height: 1.21, $ltr-spc: 0.04em);
+    font-weight: 600;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.site-header__btn-icon {
+    margin-left: 7px;
+}
+
+@media screen and (max-width: 767px) {
+    .site-header__btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .site-header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .logo {
+        width: 48px;
+        height: 44px;
+    }
+
+    .open-menu-btn {
+        margin-left: auto;
+    }
+
+    .site-header__btn {
+        margin-left: 32px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .site-header {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .logo {
+        width: 65px;
+        height: 60px;
+    }
+
+    .site-header__navigation {
+        display: block;
+    }
+
+    .open-menu-btn {
+        display: none;
+    }
+
+    .site-header__btn {
+        margin-top: 20px;
+        margin-left: auto;
+    }
+}
+
+
