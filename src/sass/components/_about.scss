@@ -13,7 +13,10 @@
   @extend %title;
   margin-bottom: 0;
 }
-
+img {
+  object-fit: cover;
+  border-radius: 50%;
+}
 //геометрія для тексту + картинка
 .about__box-content {
   text-align: center;
@@ -21,6 +24,7 @@
 .about__picture {
   margin-bottom: 40px;
 }
+
 .about__box {
   display: flex;
   flex-direction: column;
@@ -43,12 +47,20 @@
   .about__titles {
     margin-bottom: 72px;
   }
+  img {
+    width: 330px;
+    height: 330px;
+  }
+  .about__picture {
+    margin-bottom: 0px;
+  }
   .about__box-content {
     text-align: start;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 32px;
-    align-items: baseline;
   }
   .about__text:last-child {
     display: block;
@@ -65,6 +77,10 @@
 @media screen and (min-width: 1200px) {
   .about__titles {
     margin-bottom: 82px;
+  }
+  img {
+    width: 490px;
+    height: 490px;
   }
   .about__box-content {
     gap: 100px;

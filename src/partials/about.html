@@ -7,7 +7,33 @@
     <div class="about__box-content">
       <div class="about__picture">
         <picture>
-          <img src="#" alt="a cow eats grass" />
+          <source
+            srcset="
+              ./img/about/about-cow-desk.jpg    1x,
+              ./img/about/about-cow-desk@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./img/about/about-cow-tabl.jpg    1x,
+              ./img/about/about-cow-tabl@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/about/about-cow-mob.jpg    1x,
+              ./img/about/about-cow-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="about__cow-picture"
+            src="./img/about/about-cow-mob.jpg"
+            alt="a cow eats grass"
+          />
         </picture>
       </div>
       <div class="about__box">
