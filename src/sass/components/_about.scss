@@ -1,0 +1,88 @@
+//стилі від 0-767px
+
+//геометрія для заголовків
+.about__titles {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.about__subtitle {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.about__title {
+  @extend %title;
+  margin-bottom: 0;
+}
+.about__cow-picture {
+  object-fit: cover;
+  border-radius: 50%;
+}
+//геометрія для тексту + картинка
+.about__box-content {
+  text-align: center;
+}
+.about__picture {
+  margin-bottom: 40px;
+}
+
+.about__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.about__text {
+  @extend %description;
+
+  &:last-child {
+    display: none;
+  }
+}
+// від 480px - 767px
+@media screen and (min-width: $tablet) {
+  .about__titles {
+    margin-bottom: 72px;
+  }
+  .about__cow-picture {
+    width: 330px;
+    height: 330px;
+  }
+  .about__picture {
+    margin-bottom: 0px;
+  }
+  .about__box-content {
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .about__text:last-child {
+    display: block;
+  }
+  .about__text-box {
+    gap: 8px;
+  }
+  .about__box {
+    gap: 48px;
+  }
+}
+
+// від 1200px+
+@media screen and (min-width: $desktop) {
+  .about__titles {
+    margin-bottom: 82px;
+  }
+  .about__cow-picture {
+    width: 490px;
+    height: 490px;
+  }
+  .about__box-content {
+    gap: 100px;
+  }
+}
