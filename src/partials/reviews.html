@@ -1,65 +1,75 @@
-<div class="container">
-  <section class="carousel" aria-label="Reviews">
-    <h2 class="is-hidden">Reviews</h2>
-    <div class="carousel__slider">
-      <div class="carousel__slides">
-        <div id="carousel__slide-1">
-          <div class="carousel__image-wrapper">
-            <srcset></srcset>
-            <img src="#" />
-          </div>
-
-          <p class="carousel__review">
-            I love visiting your cafe. You prepare the most delicious ice cream
-            in Los Angeles! In addition, you have beautiful serving, cozy
-            atmosphere and polite staff.
-          </p>
-          <span class="carousel__customer-name">Emily, Los Angeles</span>
-        </div>
-        <div id="carousel__slide-2">
-          <div class="carousel__image-wrapper">
-            <srcset></srcset>
-            <img src="#" />
-          </div>
-
-          <p class="carousel__review">
-            I love eating popsicles on a hot day. Yours is always delicious. I
-            recommend your cafe to everyone I know.
-          </p>
-          <span class="carousel__customer-name">Sam, Los Angeles</span>
-        </div>
-        <div id="carousel__slide-3">
-          <div class="carousel__image-wrapper">
-            <srcset></srcset>
-            <img src="#" />
-          </div>
-
-          <p class="carousel__review">
-            Ice cream is my passion! I love your chocolate hazelnut ice cream!
-            And I really like the excellent service - always served politely and
-            quickly!
-          </p>
-          <span class="carousel__customer-name">Diana, Chicago</span>
-        </div>
-        <div id="carousel__slide-4">
-          <div class="carousel__image-wrapper">
-            <srcset></srcset>
-            <img src="#" />
-          </div>
-
-          <p class="carousel__review">
-            Every day we come to you with friends after classes in college. We
-            love your ice cream and casual atmosphere!
-          </p>
-          <span class="carousel__customer-name">Bryan, New-York</span>
-        </div>
+<div class="container testimonial-container">
+  <section class="testimonial mySwiper">
+    <div class="testimonial__content swiper-wrapper">
+      <div class="testimonial__slide swiper-slide">
+        <img
+          srcset="
+            ./img/review/reviewer1.jpg    1x,
+            ./img/review/reviewer1@2x.jpg 2x
+          "
+          src="./img/review/reviewer1.jpg"
+          alt="client1"
+          class="testimonial__image"
+        />
+        <p class="testimonial__text">
+          I love visiting your cafe. You prepare the most delicious ice cream in
+          Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+          and polite staff.
+        </p>
+        <span class="testimonial__details">Emily, Los Angeles</span>
       </div>
-      <ul class="carousel__snapper">
-        <li class="carousel__review-snapper"><a href="#slide-1"></a></li>
-        <li class="carousel__review-snapper"><a href="#slide-2"></a></li>
-        <li class="carousel__review-snapper"><a href="#slide-3"></a></li>
-        <li class="carousel__review-snapper"><a href="#slide-4"></a></li>
-      </ul>
+      <div class="testimonial__slide swiper-slide">
+        <img
+          srcset="
+            ./img/review/reviewer2.jpg    1x,
+            ./img/review/reviewer2@2x.jpg 2x
+          "
+          src="./img/review/reviewer2.jpg"
+          alt="client2"
+          class="testimonial__image"
+        />
+        <p class="testimonial__text">
+          I love eating popsicles on a hot day. Yours is always delicious. I
+          recommend your cafe to everyone I know.
+        </p>
+        <span class="testimonial__details">Sam, Los Angeles</span>
+      </div>
+      <div class="testimonial__slide swiper-slide">
+        <img
+          srcset="
+            ./img/review/reviewer3.jpg    1x,
+            ./img/review/reviewer3@2x.jpg 2x
+          "
+          src="./img/review/reviewer3.jpg"
+          alt="client3"
+          class="testimonial__image"
+        />
+        <p class="testimonial__text">
+          Ice cream is my passion! I love your chocolate hazelnut ice cream! And
+          I really like the excellent service - always served politely and
+          quickly!
+        </p>
+        <span class="testimonial__details">Diana, Chicago</span>
+      </div>
+      <div class="testimonial__slide swiper-slide">
+        <img
+          srcset="
+            ./img/review/reviewer4.jpg    1x,
+            ./img/review/reviewer4@2x.jpg 2x
+          "
+          src="./img/review/reviewer4.jpg"
+          alt="client4"
+          class="testimonial__image"
+        />
+        <p class="testimonial__text">
+          Every day we come to you with friends after classes in college. We
+          love your ice cream and casual atmosphere!
+        </p>
+        <span class="testimonial__details">Bryan, New-York</span>
+      </div>
     </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
   </section>
 </div>
