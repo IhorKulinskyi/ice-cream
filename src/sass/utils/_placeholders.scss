@@ -158,6 +158,78 @@
   font-family: inherit;
 }
 
+%button-noFill-noBorder {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $btn-default-clr;
+  background-color: transparent;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  
+  font-weight: 600;
+  font-family: inherit;
+}
+
+%button-noFill-noBorder--hover {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $btn-hover-clr;
+  background-color: transparent;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  
+  font-weight: 600;
+  font-family: inherit;
+}
+
+%button-noFill-noBorder--focus {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $basic-white-clr;
+  background-color: transparent;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  
+  font-weight: 600;
+  font-family: inherit;
+}
+
+%button-noFill-noBorder--focus {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $btn-disabled-clr;
+  background-color: transparent;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  
+  font-weight: 600;
+  font-family: inherit;
+}
+
 %title {
   font-weight: 400;
   margin-top: 0;
