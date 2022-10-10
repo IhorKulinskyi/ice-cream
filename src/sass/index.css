@@ -63,9 +63,6 @@ img {
   margin: -1px;
 }
 
-<<<<<<< HEAD
-.advantages__advantages-list, .products__list {
-=======
 .tel-info__link, .footer__social-link {
   display: inline-block;
   color: inherit;
@@ -73,22 +70,17 @@ img {
 }
 
 .footer__social-list, .advantages__advantages-list, .products__list {
->>>>>>> e238164cedd3b7dcbe0c15ba2f0956601107b117
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-<<<<<<< HEAD
-.advantages-list__text, .advantages-list__title {
-=======
 .footer__title--wrap, .footer__title, .about__title {
   font-weight: 400;
   margin-top: 0;
 }
 
 .copyrights__label, .tel-info__label, .advantages-list__text, .advantages-list__title, .about__text {
->>>>>>> e238164cedd3b7dcbe0c15ba2f0956601107b117
   margin-top: 0;
   margin-bottom: 0;
   color: #fcfcfc;
@@ -259,8 +251,6 @@ img {
     margin-bottom: 60px;
   }
 }
-<<<<<<< HEAD
-=======
 .about__titles {
   text-align: center;
   margin-bottom: 32px;
@@ -346,7 +336,6 @@ img {
     gap: 100px;
   }
 }
->>>>>>> e238164cedd3b7dcbe0c15ba2f0956601107b117
 @media screen and (max-width: 767px) {
   .advantages {
     padding-top: 42px;
@@ -487,7 +476,6 @@ img {
   }
 }
 
-<<<<<<< HEAD
 /* стили для корневого элемента слайдера */
 .itcss {
   position: relative;
@@ -626,14 +614,10 @@ img {
   min-width: 100%;
 }
 
-=======
->>>>>>> e238164cedd3b7dcbe0c15ba2f0956601107b117
 .snapper {
   display: flex;
 }
 
-<<<<<<< HEAD
-=======
 .footer {
   padding-top: 38px;
 }
@@ -783,7 +767,6 @@ img {
     margin-bottom: 11px;
   }
 }
->>>>>>> e238164cedd3b7dcbe0c15ba2f0956601107b117
 .order-modal {
   background-color: #fcfcfc;
   border-radius: 10px;
