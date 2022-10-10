@@ -246,8 +246,11 @@
 .location__link {
   letter-spacing: $ltr-spc;
   color: $txt-accent-clr;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
-  
+  cursor: url(../img/additionals/cursor-hover.png), pointer;  
+}
+
+.location__link:hover{
+  opacity: 0.7;
 }
 
 .location__elements {
@@ -265,6 +268,11 @@
   line-height: 1.5;
   color: $txt-secondary-clr;
   cursor: url(../img/additionals/cursor-hover.png), pointer;
+   
+}
+
+.contact__item-link:hover{
+     transform: scaleX(1.15);
 }
 
 .button-loc__button {
