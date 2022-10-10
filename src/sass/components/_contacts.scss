@@ -251,6 +251,7 @@
 
 .location__link:hover{
   opacity: 0.7;
+  transition: opacity $transition-time $cubic-bezier;
 }
 
 .location__elements {
@@ -272,7 +273,8 @@
 }
 
 .contact__item-link:hover{
-     transform: scaleX(1.15);
+  transform: scaleX(1.15);
+  transition: transform $transition-time $cubic-bezier;
 }
 
 .button-loc__button {
@@ -292,16 +294,13 @@
 }
 
 .button-loc__btn {
-  @extend %button;
-  background-color: $bg-basic-clr;
-  border: 2px solid #F8D24E;
+  @extend %button-noFill;
   transition: border $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
-  
 }
 
 .button-loc__btn:hover {
   @extend %button-noFill--hover;
- cursor: url(../img/additionals/cursor-hover.png), pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .button-loc__btn:focus {
