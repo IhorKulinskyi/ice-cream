@@ -126,6 +126,7 @@
         width: 34px;
         height: 34px;
         cursor: url(../img/additionals/cursor-hover.png), pointer;
+        transition: $transition-time $cubic-bezier;
         &:hover .social-list__icon,
         &:focus .social-list__icon {
             fill: #fff ;}
