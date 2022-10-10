@@ -1,5 +1,5 @@
 .list {
-@extend %list;
+  @extend %list;
 }
 
 .link {
@@ -56,7 +56,7 @@
   }
 
   .work-hours__item:nth-child(2n) {
-    color: #907E82;
+    color: #907e82;
   }
 
   .work-hours__item-text {
@@ -111,8 +111,8 @@
     flex-basis: calc((100% - 32px) / 3);
   }
   .location {
-     padding: 40px 24px;
-}
+    padding: 40px 24px;
+  }
 
   .location__title {
     font-size: $font-size-descr-desk;
@@ -186,7 +186,7 @@
   }
   .location {
     padding: 40px;
-}
+  }
 
   .button-loc {
     margin-top: 64px;
@@ -208,7 +208,6 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
-
 
 .location__title {
   padding: 0 16px;
@@ -232,11 +231,11 @@
 }
 
 .work-hours {
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .work-hours__item:nth-child(2n) {
-  color: #907E82;
+  color: #907e82;
 }
 
 .work-hours__item {
@@ -246,10 +245,10 @@
 .location__link {
   letter-spacing: $ltr-spc;
   color: $txt-accent-clr;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;  
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
-.location__link:hover{
+.location__link:hover {
   opacity: 0.7;
   transition: opacity $transition-time $cubic-bezier;
 }
@@ -262,24 +261,24 @@
 .contact__list {
   margin-top: 0;
   margin-bottom: 0;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .contact__item-link {
   line-height: 1.5;
   color: $txt-secondary-clr;
   cursor: url(../img/additionals/cursor-hover.png), pointer;
-   
 }
 
-.contact__item-link:hover{
+.contact__item-link:hover {
   transform: scaleX(1.15);
   transition: transform $transition-time $cubic-bezier;
 }
 
 .button-loc__button {
   @extend %button;
-  transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+  transition: background-color $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
 }
 
 .button-loc__button:hover {
@@ -295,7 +294,8 @@
 
 .button-loc__btn {
   @extend %button-noFill;
-  transition: border $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+  transition: border $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
 }
 
 .button-loc__btn:hover {
@@ -312,5 +312,5 @@
 .button-loc__icon {
   width: 12px;
   height: 12px;
-  transform: translateY(30%)
+  transform: translateY(30%);
 }
