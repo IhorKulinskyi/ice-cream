@@ -44,9 +44,14 @@
     height: 32px;
     border-radius: 50%;
     background-color: $bg-accent-clr;
+    cursor: url(../img/additionals/cursor-hover.png), pointer;
+        &:hover .social-list__icon,
+        &:focus .social-list__icon {
+            fill: #fff ;}
 }
 .social-list__icon {
     fill: $bg-basic-clr;
+    transition: fill $transition-time $cubic-bezier;
 }
 
 .footer__tel-info {
@@ -125,11 +130,7 @@
     .footer__social-link {
         width: 34px;
         height: 34px;
-        cursor: url(../img/additionals/cursor-hover.png), pointer;
-        transition: $transition-time $cubic-bezier;
-        &:hover .social-list__icon,
-        &:focus .social-list__icon {
-            fill: #fff ;}
+        
     }
     .social-list__icon {
         object-fit: cover;
