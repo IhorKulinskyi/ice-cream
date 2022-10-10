@@ -1,0 +1,141 @@
+@media screen and (max-width: 767px) {
+     .hero__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid red;
+    background-image: url(/src/img/hero/hero-dots-mob-min.png);
+    background-position: bottom;
+    background-size: 100% 50px;
+    background-repeat: no-repeat;
+    .hero__product,
+    .hero__distribution {
+        display: none;
+    }
+
+    
+ }
+
+    
+}
+
+// ====== TABLET =======
+
+
+@media screen and (min-width: 767px) {
+
+}
+
+
+// =====   Container
+
+ .hero__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid red;
+    background-image: url(/src/img/hero/dots-desk-min.png);
+    background-position: bottom;
+    background-size: 1200px 384px;
+    background-repeat: no-repeat;
+ }
+
+// ===== Blaoc tittle and products
+.hero__main-info {
+    width: 439px;
+}
+
+.hero__title {
+    max-width: 367px;
+    margin-bottom: 25px;
+    font-size: 38px;
+    line-height: 1.26;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+}
+
+// =====   Buttons
+
+.hero__list {
+    display: flex;
+    list-style: none;
+}
+.hero__button {
+    width: 134px;
+    height: 42px;
+}
+
+.hero__icon--arrow {
+    fill: $txt-primary-clr;
+}
+  
+// =====   Products (plates and description)
+
+.hero__product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+    margin-top: 42px;
+}
+
+.hero__product-plate {
+    display: inline-block;
+    max-width:  225px;
+    max-height: 225px;
+    margin-right: 14px ;
+}
+.hero__product-info {
+    display: inline-block;
+}
+.hero__product-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    background-color: inherit;
+    transition: background-color .25s linear;
+}
+
+// =====   Ice- cream horn
+.hero__horn {
+    position: absolute;
+    display: block;
+     z-index: 10;  
+     right: 102px;
+     bottom: 0;
+}
+
+
+// =====   Distribution
+
+.hero__description {
+    width: 200px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.distribution__number {
+    margin-top: 16px;
+    font-family: $primary-font;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.22;
+    margin-bottom: 4px;
+    color: $txt-secondary-clr;
+}
+.distribution__point-type {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $basic-white-clr;
+    margin: 0;
+}
+
+.distribution__list {
+    list-style: none;
+    text-align: right;
+}
