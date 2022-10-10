@@ -1,21 +1,115 @@
-  <div class="slider container">
-    <div class="slider__nav">
-      <label for="x1" class="slider__nav-item"></label>
-      <label for="x2" class="slider__nav-item"></label>
-      <label for="x3" class="slider__nav-item"></label>
-    </div>
-    <div class="slider__item">
-      <input type="radio" name="x" id="x1" />
-      <input type="radio" name="x" id="x2" />
-      <input type="radio" name="x" id="x3" />
+ 
+  <!-- Подключаем JS слайдера -->
+  <!-- <script defer src="js/simple-adaptive-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    }); -->
+  <!-- </script> --> -->
 
-      <img src="#" alt="#" class="slider__img" />
+
+
+  <!-- Разметка слайдера -->
+  <div class="itcss">
+    <div class="container itcss__container">
+      <div class="itcss__items">
+        <div class="itcss__item">
+          <div><picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./img/gallery/gallery-item1-desk.jpg 1x, ./img/gallery/gallery-item1-desk@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-item1-tabl.jpg 1x, ./img/gallery/gallery-item1-tabl@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/gallery/gallery-item1-mob.jpg 1x, ./img/gallery/gallery-item1-mob@2x.jpg 2x"
+                />
+            <img 
+            alt="#" 
+                        src="./img/gallery/gallery-item1-mob.jpg" 
+
+            class="slider__img" />
+          </div>
+        </div>
+        <div class="itcss__item">
+                    <div><picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./img/gallery/gallery-item1-desk.jpg 1x, ./img/gallery/gallery-item1-desk@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-item1-tabl.jpg 1x, ./img/gallery/gallery-item1-tabl@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/gallery/gallery-item1-mob.jpg 1x, ./img/gallery/gallery-item1-mob@2x.jpg 2x"
+                />
+            <img 
+            alt="#" 
+                        src="./img/gallery/gallery-item1-mob.jpg" 
+
+            class="slider__img" />
+          </div>
+
+        </div>
+        <div class="itcss__item">
+                    <div><picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./img/gallery/gallery-item1-desk.jpg 1x, ./img/gallery/gallery-item1-desk@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-item1-tabl.jpg 1x, ./img/gallery/gallery-item1-tabl@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/gallery/gallery-item1-mob.jpg 1x, ./img/gallery/gallery-item1-mob@2x.jpg 2x"
+                />
+            <img 
+            alt="#" 
+                        src="./img/gallery/gallery-item1-mob.jpg" 
+
+            class="slider__img" />
+          </div>
+
+        </div>
+        <div class="itcss__item">
+                    <div>
+                      <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./img/gallery/gallery-item1-desk.jpg 1x, ./img/gallery/gallery-item1-desk@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-item1-tabl.jpg 1x, ./img/gallery/gallery-item1-tabl@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/gallery/gallery-item1-mob.jpg 1x, ./img/gallery/gallery-item1-mob@2x.jpg 2x"
+                />
+            <img 
+            alt="#" 
+                        src="./img/gallery/gallery-item1-mob.jpg" 
+
+            class="slider__img" />
+          </div>
+
+        </div>
+      </div>
     </div>
-    <div class="slider__item">
-      <img src="#" alt="#" class="slider__img" />
-    </div>
-    <div class="slider__item">
-      <img src="#" alt="#" class="slider__img" />
-    </div>
+    <button class="itcss__btn itcss__btn-prev" role="button" data-slide="prev"></button>
+    <button class="itcss__btn itcss__btn-next" role="button" data-slide="next"></button>
   </div>
+
 
