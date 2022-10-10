@@ -12,6 +12,11 @@ $basic-white-clr: #fcfcfc;
 $bg-basic-clr: #84a178;
 $bg-accent-clr: #f8d24e;
 
+// MENU BACKGROUNG COLORS
+
+$bg-mobile-menu-clr: #85A279;
+$bg-tablet-menu-clr: #97AF8D;
+
 // products section colors
 
 $bg-primary-clr: #aec6a5;
@@ -60,6 +65,13 @@ $font-size-btn: 14px;
 $font-size-descr-mob: 12px;
 $font-size-descr-tab: 14px;
 $font-size-descr-desk: 16px;
+
+// ==============PARAMETRS=======================
+
+// TRANSITION PARAMETRS
+
+$transition-time: 250ms;
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 
 // VIEWPORT WIDTH
 
