@@ -331,7 +331,7 @@
     border: none;
     cursor: url(../img/additionals/cursor-hover.png), pointer;
 
-    &:hover .products__item-icon--def, .products__item-icon--foc {
+    &:hover .products__item-icon--def, &:hover .products__item-icon--foc {
         display: none;
      }
 
@@ -343,7 +343,7 @@
         outline: none;
     }
 
-    &:focus .products__item-icon--def, .products__item-icon--hov {
+    &:focus .products__item-icon--def, &:focus .products__item-icon--hov {
         display: none;
     }
 
