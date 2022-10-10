@@ -1,0 +1,157 @@
+.footer {
+    padding-top: 38px;
+}
+.footer__title {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    @extend %title;
+    text-transform: uppercase;
+    margin-bottom:16px;
+}
+.footer__title--wrap {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: $ltr-spc;
+    text-transform: uppercase;
+    color: $basic-white-clr;
+    display: block;
+    @extend %title;
+    margin-bottom: 42px;
+}
+.footer__title-contacts-wrapper {
+    margin-bottom: 40px;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    margin-bottom: 38px;
+    @extend %list;
+}
+.footer__social-link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $bg-accent-clr;
+}
+
+.footer__tel-info {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $font-size-descr-mob;
+    line-height: 186%;
+    text-align: right;      
+    color: $txt-secondary-clr;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tel-info__label{
+    @extend %description;
+    color: $txt-secondary-clr;
+}
+
+.tel-info__link{
+    color: $txt-primary-clr;
+    @extend %link;
+}
+
+.footer__copyrights {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid rgba(225, 225, 225, 1);
+    padding-top: 16px;
+    margin-bottom: 62px;
+}
+
+.copyrights__label{
+    @extend %description;
+    color: $txt-footer-copyrights-clr;
+
+}
+// -------------------------------MEDIA TABLET
+@media screen and (min-width: $tablet) {
+    .footer {
+        padding-top: 40px;
+    }
+    .footer__title-contacts-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    
+    .footer__title{
+        width: 352px;
+        font-size: 26px;
+        letter-spacing: $ltr-spc;
+        line-height: 1.23;
+        margin-bottom: 9px;
+    }
+    .footer__title--wrap {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+        line-height: 1.22;
+        margin-bottom: 0;
+    }
+    .footer__social-list{
+        gap: 30px;
+        margin-bottom: 32px;
+    }
+    .footer__social-link {
+        width: 34px;
+        height: 34px;
+    }
+    .footer__copyrights {
+        flex-direction: row;
+        padding-top: 14px;
+        margin-bottom: 13px;
+    }
+
+}
+// ---------------------------- MEDIA DESCTOP
+@media screen and (min-width: $desktop) {
+    .footer {
+        padding-top: 120px;
+    }
+    .footer__title-contacts-wrapper {
+        margin-bottom: 54px;
+    }
+    .footer__title {
+        width: auto;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 14px;
+    }
+    .footer__title--wrap {
+        font-size: 58px;
+        line-height: 1.31;
+    }
+    
+    .footer__copyrights {
+        font-size: 12px;
+        padding-top: 12px;
+        margin-bottom: 11px;
+    }
+}
