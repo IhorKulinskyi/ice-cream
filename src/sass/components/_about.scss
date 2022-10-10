@@ -13,7 +13,7 @@
   @extend %title;
   margin-bottom: 0;
 }
-img {
+.about__cow-picture {
   object-fit: cover;
   border-radius: 50%;
 }
@@ -47,7 +47,7 @@ img {
   .about__titles {
     margin-bottom: 72px;
   }
-  img {
+  .about__cow-picture {
     width: 330px;
     height: 330px;
   }
@@ -78,7 +78,7 @@ img {
   .about__titles {
     margin-bottom: 82px;
   }
-  img {
+  .about__cow-picture {
     width: 490px;
     height: 490px;
   }
