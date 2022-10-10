@@ -44,6 +44,14 @@
     height: 32px;
     border-radius: 50%;
     background-color: $bg-accent-clr;
+    cursor: url(../img/additionals/cursor-hover.png), pointer;
+        &:hover .social-list__icon,
+        &:focus .social-list__icon {
+            fill: #fff ;}
+}
+.social-list__icon {
+    fill: $bg-basic-clr;
+    transition: fill $transition-time $cubic-bezier;
 }
 
 .footer__tel-info {
@@ -68,6 +76,7 @@
 .tel-info__link{
     color: $txt-primary-clr;
     @extend %link;
+    cursor: url(../img/additionals/cursor-hover.png), pointer; 
 }
 
 .footer__copyrights {
@@ -82,7 +91,7 @@
     flex-direction: column;
     border-top: 1px solid rgba(225, 225, 225, 1);
     padding-top: 16px;
-    margin-bottom: 62px;
+    padding-bottom: 62px;
 }
 
 .copyrights__label{
@@ -98,7 +107,7 @@
     .footer__title-contacts-wrapper{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         margin-bottom: 32px;
     }
     
@@ -110,6 +119,7 @@
         margin-bottom: 9px;
     }
     .footer__title--wrap {
+        width: 340px;
         font-size: 48px;
         letter-spacing: 0.06em;
         line-height: 1.22;
@@ -122,13 +132,19 @@
     .footer__social-link {
         width: 34px;
         height: 34px;
+        
+    }
+    .social-list__icon {
+        object-fit: cover;
+    }
+    .footer__tel-info {
+        margin-bottom: 24px;
     }
     .footer__copyrights {
         flex-direction: row;
         padding-top: 14px;
-        margin-bottom: 13px;
+        padding-bottom: 13px;
     }
-
 }
 // ---------------------------- MEDIA DESCTOP
 @media screen and (min-width: $desktop) {
@@ -147,11 +163,18 @@
     .footer__title--wrap {
         font-size: 58px;
         line-height: 1.31;
+        width: auto;
+    }
+    .footer__social-list {
+        margin-bottom: 40px;
+    }
+    .footer__tel-info {
+        margin-bottom: 6px;
     }
     
     .footer__copyrights {
         font-size: 12px;
         padding-top: 12px;
-        margin-bottom: 11px;
+        padding-bottom: 11px;
     }
 }
