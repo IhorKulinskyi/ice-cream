@@ -1,9 +1,10 @@
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
+// .testimonial-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   outline: 1px solid red;
+//   background-color: white;
+// }
 .testimonial {
   position: relative;
   padding-top: 80px;
@@ -24,6 +25,7 @@
   row-gap: 30px;
 }
 .testimonial__text {
+  width: 100%;
   margin: 0;
   padding: 34px 39px;
   text-align: center;
