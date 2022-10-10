@@ -45,6 +45,9 @@
     border-radius: 50%;
     background-color: $bg-accent-clr;
 }
+.social-list__icon {
+    fill: $bg-basic-clr;
+}
 
 .footer__tel-info {
     font-family: $primary-font;
@@ -122,11 +125,21 @@
     .footer__social-link {
         width: 34px;
         height: 34px;
+        cursor: url(../img/additionals/cursor-hover.png), pointer;
+        &:hover .social-list__icon,
+        &:focus .social-list__icon {
+            fill: #fff ;}
+    }
+    .social-list__icon {
+        object-fit: cover;
     }
     .footer__copyrights {
         flex-direction: row;
         padding-top: 14px;
         margin-bottom: 13px;
+    }
+    .tel-info__link {
+        cursor: url(../img/additionals/cursor-hover.png), pointer; 
     }
 
 }
