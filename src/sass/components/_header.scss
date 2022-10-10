@@ -64,11 +64,11 @@
     background-color: transparent;
     line-height: 0;
     cursor: pointer;
+    background-color: crimson;
 }
 
 .open-menu-btn__icon {
     fill: #fff;
-    // transition: fill;
     
     &:hover,
     &:focus {
@@ -89,6 +89,7 @@
 
 .site-header__btn-icon {
     margin-left: 7px;
+    background-color: crimson;
 }
 
 @media screen and (min-width: $tablet) {
@@ -188,7 +189,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    background-color: #fff;
+    background-color: crimson;
     line-height: 0;
     cursor: pointer;
 }
@@ -231,7 +232,6 @@
         padding-left: 32px;
         padding-top: 20px;
         padding-right: 32px;
-        padding-bottom: auto;
     }
 
     .menu__btn-close {
