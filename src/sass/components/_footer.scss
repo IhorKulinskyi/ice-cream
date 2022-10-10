@@ -76,6 +76,7 @@
 .tel-info__link{
     color: $txt-primary-clr;
     @extend %link;
+    cursor: url(../img/additionals/cursor-hover.png), pointer; 
 }
 
 .footer__copyrights {
@@ -106,7 +107,7 @@
     .footer__title-contacts-wrapper{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         margin-bottom: 32px;
     }
     
@@ -118,6 +119,7 @@
         margin-bottom: 9px;
     }
     .footer__title--wrap {
+        width: 340px;
         font-size: 48px;
         letter-spacing: 0.06em;
         line-height: 1.22;
@@ -135,15 +137,14 @@
     .social-list__icon {
         object-fit: cover;
     }
+    .footer__tel-info {
+        margin-bottom: 24px;
+    }
     .footer__copyrights {
         flex-direction: row;
         padding-top: 14px;
         margin-bottom: 13px;
     }
-    .tel-info__link {
-        cursor: url(../img/additionals/cursor-hover.png), pointer; 
-    }
-
 }
 // ---------------------------- MEDIA DESCTOP
 @media screen and (min-width: $desktop) {
@@ -162,6 +163,13 @@
     .footer__title--wrap {
         font-size: 58px;
         line-height: 1.31;
+        width: auto;
+    }
+    .footer__social-list {
+        margin-bottom: 40px;
+    }
+    .footer__tel-info {
+        margin-bottom: 6px;
     }
     
     .footer__copyrights {
