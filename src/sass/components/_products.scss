@@ -311,6 +311,12 @@
 
 // ---------------СТРЕЛОЧКИ------------------
 
+.products__item-icon--hov, .products__item-icon--foc {
+    width: 50px;
+    height: 19px;
+
+    display: none;
+}
 
 .products__item-btn {
     position: absolute;
@@ -323,36 +329,27 @@
 
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: url(../img/additionals/cursor-hover.png), pointer;
+
+    &:hover .products__item-icon--def, .products__item-icon--foc {
+        display: none;
+     }
 
     &:hover .products__item-icon--hov {
-
         display: block;
-    }
-
-    &:hover .products__item-icon--def {
-       display: none;
     }
 
     &:focus {
         outline: none;
     }
 
+    &:focus .products__item-icon--def, .products__item-icon--hov {
+        display: none;
+    }
+
     &:focus .products__item-icon--foc {
        display: block;
     }
-
-    &:focus .products__item-icon--def {
-        display: none;
-    }
-}
-
-
-.products__item-icon--hov, .products__item-icon--foc {
-    width: 50px;
-    height: 19px;
-
-    display: none;
 }
 
 
