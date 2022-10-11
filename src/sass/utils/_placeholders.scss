@@ -2,6 +2,8 @@
   display: inline-block;
   color: inherit;
   text-decoration: none;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  transition: color $transition-time $cubic-bezier;
 }
 
 %list {
@@ -16,7 +18,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-secondary-clr;
@@ -26,6 +28,8 @@
   font-weight: 600;
 
   font-family: inherit;
+
+  transition: fill $transition-time $cubic-bezier, background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
 }
 
 %button--hover {
@@ -34,7 +38,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-secondary-clr;
@@ -52,7 +56,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-primary-clr;
@@ -62,6 +66,8 @@
   font-weight: 600;
 
   font-family: inherit;
+
+  fill: $txt-primary-clr;
 }
 
 %button--disabled {
@@ -70,7 +76,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-primary-clr;
@@ -88,7 +94,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-secondary-clr;
@@ -99,6 +105,8 @@
   
   font-weight: 600;
   font-family: inherit;
+
+  transition: fill $transition-time $cubic-bezier, border $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
 }
 
 %button-noFill--hover {
@@ -107,7 +115,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-secondary-clr;
@@ -126,7 +134,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-primary-clr;
@@ -137,6 +145,8 @@
   font-weight: 600;
 
   font-family: inherit;
+
+  fill: $txt-primary-clr;
 }
 
 %button-noFill--disabled {
@@ -145,7 +155,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-secondary-clr;
@@ -164,7 +174,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $btn-default-clr;
@@ -174,6 +184,8 @@
   
   font-weight: 600;
   font-family: inherit;
+
+  transition: fill $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
 }
 
 %button-noFill-noBorder--hover {
@@ -182,7 +194,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $btn-hover-clr;
@@ -200,7 +212,7 @@
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $basic-white-clr;
@@ -210,15 +222,17 @@
   
   font-weight: 600;
   font-family: inherit;
+
+  fill: $txt-primary-clr;
 }
 
-%button-noFill-noBorder--focus {
+%button-noFill-noBorder--disabled {
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $btn-disabled-clr;

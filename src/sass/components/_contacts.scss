@@ -245,7 +245,6 @@
 .location__link {
   letter-spacing: $ltr-spc;
   color: $txt-accent-clr;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .location__link:hover {
@@ -267,7 +266,6 @@
 .contact__item-link {
   line-height: 1.5;
   color: $txt-secondary-clr;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .contact__item-link:hover {
@@ -277,36 +275,22 @@
 
 .button-loc__button {
   @extend %button;
-  transition: background-color $transition-time $cubic-bezier,
-    color $transition-time $cubic-bezier;
-}
-
-.button-loc__button:hover {
-  @extend %button--hover;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
-}
-
-.button-loc__button:focus {
-  @extend %button--focus;
-  fill: $txt-primary-clr;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  &:hover {
+    @extend %button--hover;
+  }
+  &:focus {
+    @extend %button--focus;
+  }
 }
 
 .button-loc__btn {
   @extend %button-noFill;
-  transition: border $transition-time $cubic-bezier,
-    color $transition-time $cubic-bezier;
-}
-
-.button-loc__btn:hover {
-  @extend %button-noFill--hover;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
-}
-
-.button-loc__btn:focus {
-  @extend %button-noFill--focus;
-  fill: $txt-primary-clr;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  &:hover {
+    @extend %button-noFill--hover;
+  }
+  &:focus {
+    @extend %button-noFill--focus;
+  }
 }
 
 .button-loc__icon {
