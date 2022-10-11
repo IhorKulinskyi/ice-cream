@@ -787,9 +787,13 @@ img {
     margin-bottom: 60px;
   }
 }
+.about {
+  padding-top: 60px;
+}
+
 .about__titles {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 54px;
 }
 
 .about__subtitle {
@@ -815,6 +819,7 @@ img {
 }
 
 .about__cow-picture {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px, 1px -22px 7px 9px rgba(248, 210, 78, 0.7);
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -850,19 +855,6 @@ img {
 }
 .about__text:last-child {
   display: none;
-}
-
-.about__button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.about__button:hover {
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
-}
-
-.about__button:focus {
-  fill: #fcfcfc;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .about__button-icon {
