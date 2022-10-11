@@ -1,35 +1,56 @@
 <section class="hero">
   <div class="container hero__container">
     <div class="hero__main-info">
-    <h1 class="hero__title">ice cream made with passion</h1>
-    <ul class="hero__list">
-      <li class="hero__item">
-        <button type="button" href="#" class="hero__button">Products</button>
-      </li>
-      <li class="hero__item">
-        <button type="button" href="#" class="hero__button">
-          How it’s made?
-        </button>
-      </li>
-    </ul>
-    <div class="hero__product">
-      <img
-        src="#"
-        alt="Тарелка(plate) с мороженками"
-      />
-      <div class="hero__product-info">
-        <p class="hero__description">
-          Creamy with cream, light with milk or dietary with a fruit base:
-          everyone will find an ice cream to their taste. Choose and enjoy a
-          healthy dessert.
-        </p>
-        <a href="#" class="hero__product-link">
-          <svg class="hero__icon--arrow" width="40">
-            <use href="./img/icons.svg#icon-Arrow1"></use>
-          </svg>
-        </a>
-      </div>
+    <h1 class="hero__title">ice cream made with <span class="hero__title-elemet">passion</span></h1>
+      <ul class="hero__list">
+        <li class="hero__item">
+          <button type="button" class="hero__products">Products</button>
+        </li>
+        <li class="hero__item">
+          <button type="button" class="hero__button">
+            How it’s made?
+          </button>
+        </li>
+      </ul>
+
+        <div class="hero__product">
+         <picture>
+            <source srcset="/src/img/hero/plate-desk-min.png    1x, /src/img/hero/plate-desk@2x-min.png  2x" media="(min-width: 1200px)">
+            <source srcset="/src/img/hero/plate-tab-min.png    1x, /src/img/hero/plate-tab@2x-min.png 2x" media="(min-width: 768px)">
+            <img class="hero__product-plate"
+              src="/src/img/hero/plate-tab-min.png"
+              alt="Тарелка() с мороженками"
+            />
+            </picture>
+          <div class="hero__product-info">
+            <p class="hero__description">
+              With cream, with milk or dietary with a fruit base:
+              everyone will find an ice cream to their taste.
+            </p>
+            <a href="#" class="hero__product-link">
+              <svg class="hero__icon--arrow" width="40">
+                <use href="./img/icons.svg#icon-Arrow1"></use>
+              </svg>
+              <svg class="hero__icon--hov">
+                <use href="./img/icons.svg#icon-Arrow2"></use>
+              </svg>
+              <svg class="hero__icon--foc">
+                  <use href="./img/icons.svg#icon-Arrow3"></use>
+              </svg>
+             </a>
+          </div>
+        </div>
     </div>
+    <div class="hero__horn">
+      <picture>
+        <source srcset="/src/img/hero/desc-ice-cream1@1x.png    1x, /src/img/hero/desc-ice-cream1@2x.png  2x" media="(min-width: 1200px)">
+        <source srcset="/src/img/hero/tabl-ice-cream1@1x.png    1x, /src/img/hero/tabl-ice-cream1@2x.png 2x" media="(min-width: 768px)">
+        <source srcset="/src/img/hero/mob-ice-cream1@1x.png    1x, /src/img/hero/mob-ice-cream1@2x.png 2x" media="(max-width: 767px)">
+        <img class="hero__horn-ice"
+            src="/src/img/hero/desc-ice-cream1@1x.png"
+            alt="Рожок"
+          />
+      </picture>
     </div>
     <div class="hero__distribution">
       <ul class="distribution__list">
@@ -45,3 +66,7 @@
     </div>
   </div>
 </section>
+
+
+
+
