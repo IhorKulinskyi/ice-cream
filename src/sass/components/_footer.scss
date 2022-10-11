@@ -1,5 +1,4 @@
 .footer {
-    outline: 2px solid deeppink;
     padding-top: 38px;
 }
 .footer__title {
@@ -90,7 +89,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-top: 1px solid rgba(225, 225, 225, 1);
     padding-top: 16px;
     padding-bottom: 62px;
 }
@@ -99,6 +97,10 @@
     @extend %description;
     color: $txt-footer-copyrights-clr;
 
+}
+.footer__border-element {
+    border-top: 1px solid rgba(225, 225, 225, 1);
+    transform: translateY( -121.03px);
 }
 // -------------------------------MEDIA TABLET
 @media screen and (min-width: $tablet) {
@@ -145,7 +147,11 @@
         flex-direction: row;
         padding-top: 14px;
         padding-bottom: 13px;
+        line-height: 186%;
     }
+    .footer__border-element {
+        border-top: 1px solid rgba(225, 225, 225, 1);
+        transform: translateY(-54px);}
 }
 // ---------------------------- MEDIA DESCTOP
 @media screen and (min-width: $desktop) {
@@ -177,5 +183,8 @@
         font-size: 12px;
         padding-top: 12px;
         padding-bottom: 11px;
+        border-top: 1px solid rgba(225, 225, 225, 1);
     }
+    .footer__border-element {
+        display: none;}
 }
