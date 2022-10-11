@@ -77,14 +77,14 @@
 }
 .about__button {
   @extend %button;
-}
-.about__button:hover {
-  @extend %button--hover;
+  &:hover{
+    @extend %button--hover;
+  }
+  &:focus{
+    @extend %button--focus;
+  }
 }
 
-.about__button:focus {
-  @extend %button--focus;
-}
 .about__button-icon {
   width: 12px;
   height: 12px;
