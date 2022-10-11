@@ -1550,7 +1550,6 @@ img {
 }
 
 .footer {
-  outline: 2px solid deeppink;
   padding-top: 38px;
 }
 
@@ -1596,7 +1595,6 @@ img {
   height: 32px;
   border-radius: 50%;
   background-color: #f8d24e;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 .footer__social-link:hover .social-list__icon, .footer__social-link:focus .social-list__icon {
   fill: #fff;
@@ -1627,7 +1625,6 @@ img {
 
 .tel-info__link {
   color: #fcfcfc;
-  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .footer__copyrights {
@@ -1640,13 +1637,17 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-top: 1px solid rgb(225, 225, 225);
   padding-top: 16px;
   padding-bottom: 62px;
 }
 
 .copyrights__label {
   color: #7a7a7a;
+}
+
+.footer__border-element {
+  border-top: 1px solid rgb(225, 225, 225);
+  transform: translateY(-121.03px);
 }
 
 @media screen and (min-width: 768px) {
@@ -1692,6 +1693,11 @@ img {
     flex-direction: row;
     padding-top: 14px;
     padding-bottom: 13px;
+    line-height: 186%;
+  }
+  .footer__border-element {
+    border-top: 1px solid rgb(225, 225, 225);
+    transform: translateY(-54px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1722,6 +1728,10 @@ img {
     font-size: 12px;
     padding-top: 12px;
     padding-bottom: 11px;
+    border-top: 1px solid rgb(225, 225, 225);
+  }
+  .footer__border-element {
+    display: none;
   }
 }
 .order-modal {
