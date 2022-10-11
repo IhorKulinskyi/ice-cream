@@ -77,7 +77,7 @@ img {
   padding: 0;
 }
 
-.button-loc__button, .site-header__btn {
+.button-loc__button, .about__button, .site-header__btn {
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
@@ -95,7 +95,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-loc__button:hover {
+.button-loc__button:hover, .about__button:hover {
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
@@ -112,7 +112,7 @@ img {
   font-family: inherit;
 }
 
-.button-loc__button:focus {
+.button-loc__button:focus, .about__button:focus {
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
@@ -795,10 +795,23 @@ img {
 .about__subtitle {
   margin-top: 0;
   margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #fcfcfc;
 }
 
 .about__title {
   margin-bottom: 0;
+  font-family: "Seymour One", sans-serif;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
 }
 
 .about__cow-picture {
@@ -823,17 +836,50 @@ img {
 
 .about__text-box {
   display: flex;
+  padding: 0 50px;
   flex-direction: column;
   gap: 4px;
 }
 
+.about__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+}
 .about__text:last-child {
   display: none;
+}
+
+.about__button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__button:hover {
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+}
+
+.about__button:focus {
+  fill: #fcfcfc;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+}
+
+.about__button-icon {
+  width: 12px;
+  height: 12px;
+  transform: translateY(30%);
 }
 
 @media screen and (min-width: 768px) {
   .about__titles {
     margin-bottom: 72px;
+  }
+  .about__subtitle {
+    font-size: 22px;
+  }
+  .about__title {
+    font-size: 34px;
   }
   .about__cow-picture {
     width: 330px;
@@ -850,10 +896,14 @@ img {
     flex-direction: row;
     gap: 32px;
   }
+  .about__text {
+    font-size: 14px;
+  }
   .about__text:last-child {
     display: block;
   }
   .about__text-box {
+    padding: 0;
     gap: 8px;
   }
   .about__box {
@@ -864,12 +914,21 @@ img {
   .about__titles {
     margin-bottom: 82px;
   }
+  .about__subtitle {
+    font-size: 30px;
+  }
+  .about__title {
+    font-size: 36px;
+  }
   .about__cow-picture {
     width: 490px;
     height: 490px;
   }
   .about__box-content {
     gap: 100px;
+  }
+  .about__text {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1015,13 +1074,13 @@ img {
 /* стили для корневого элемента слайдера */
 .itcss {
   position: relative;
-  max-width: 600px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
 }
 
 /* стили для container */
-.itcss__container {
+.itcss__wrapper {
   position: relative;
   overflow: hidden;
   background-color: #fcfcfc;
@@ -1045,6 +1104,7 @@ img {
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  overflow: hidden;
   will-change: transform;
 }
 
@@ -1068,6 +1128,7 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 999;
 }
 
 .itcss__btn_hide {
