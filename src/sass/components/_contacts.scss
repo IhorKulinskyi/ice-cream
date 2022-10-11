@@ -21,9 +21,18 @@
 }
 
 @media screen and (max-width: 767px) {
+  .contacts-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+    }
+    .calculation {
+      flex-basis: calc((100% - 40px) / 3);
+    }
   .location {
+    background-color: $txt-primary-clr;
     padding: 40px 32px;
-    margin-bottom: 20px;
   }
 
   .location__elements {
@@ -33,10 +42,10 @@
 
   .location__title,
   .location__town,
-  .contact__item-link,
   .location__link,
   .work-hours__item {
     font-size: $font-size-descr-mob;
+    line-height: 1.83;
   }
 
   .location__town {
@@ -49,39 +58,28 @@
     margin-bottom: 24px;
   }
 
-  .work-hours__list {
-    margin-top: 24px;
+  .work-hours {
+    padding-top: 24px;
     margin-bottom: 24px;
   }
 
-  .location__link {
-    letter-spacing: $ltr-spc;
-    color: $txt-accent-clr;
-  }
-
-  .work-hours__item:nth-child(2n) {
-    color: #907e82;
-  }
-
-  .work-hours__item-text {
-    margin-top: 0;
-    margin-bottom: 0px;
-  }
+.work-hours__item:nth-child(2n) {
+  color: $btn-disabled-clr;
+}
+ .contact__item-link{
+  line-height: 1.5;
+ }
 
   .work-hours__item:nth-child(2) {
-    margin-bottom: 8px;
+    padding-bottom: 8px;
   }
 
   .work-days {
     margin-top: 8px;
   }
 
-  .contact__item:not(:last-child) {
-    margin-top: 24px;
-  }
-
-  .contacts-block {
-    margin-bottom: 32px;
+  .contact__list{
+    padding-top: 24px;
   }
 
   .button-loc {
@@ -107,7 +105,7 @@
 @media screen and (min-width: 768px) {
   .contacts-block {
     display: flex;
-    flex-grow: 1;
+    flex-direction: row;
     gap: 16px;
   }
 
@@ -116,10 +114,12 @@
   }
   .location {
     padding: 40px 24px;
-  }
+    background-color: $txt-primary-clr;
+}
 
   .location__title {
     font-size: $font-size-descr-desk;
+    line-height: 1.88;
   }
 
   .location__item--text {
@@ -131,25 +131,27 @@
     margin-bottom: 12px;
   }
 
-  .location__link {
-    letter-spacing: $ltr-spc;
-    color: $txt-accent-clr;
-  }
-
   .contact__item-link,
   .location__link,
   .location__town,
   .work-hours__item {
     font-size: $font-size-descr-tab;
+    line-height: 1.86;
   }
 
-  .work-hours__list {
-    margin-top: 32px;
+  .work-hours {
+    padding-top: 32px;
     margin-bottom: 32px;
   }
+  .work-hours__item:nth-child(2n) {
+    color: #907E82;
+  }
+    .work-hours__item:nth-child(2) {
+      padding-bottom: 12px;
+    }
 
-  .contact__item:not(:last-child) {
-    margin-top: 32px;
+  .contact__list {
+    padding-top: 32px;
   }
 
   .button-loc {
@@ -180,9 +182,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .contacts-block {
+      gap: 32px;
+}
+  .calculation {
+      flex-basis: calc((100% - 64px) / 3);
+}
+
   .location__title,
   .location__town,
-  .contact__item-link,
   .location__link,
   .work-hours__item {
     font-size: $font-size-descr-desk;
@@ -190,7 +198,21 @@
   }
   .location {
     padding: 40px;
-  }
+
+    background-color: #ffffff;
+}
+.location__town {
+  margin-bottom: 8px;
+    }
+.work-hours__item:nth-child(2n) {
+  color: $btn-disabled-clr;
+}
+.work-hours__item:nth-child(2) {
+  padding-bottom: 8px;
+}
+.contact__item-link{
+  line-height: 1.81;
+}
 
   .button-loc {
     margin-top: 64px;
@@ -208,12 +230,12 @@
 }
 
 .location {
-  background-color: $txt-primary-clr;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
 
 .location__title {
+  display: inline-block;
   padding: 0 16px;
   color: $txt-secondary-clr;
   background-color: $btn-default-clr;
@@ -230,7 +252,6 @@
 }
 
 .location__town {
-  line-height: 1.83;
   color: $txt-secondary-clr;
 }
 
@@ -238,17 +259,17 @@
   border-top: 1px solid #e1e1e1;
 }
 
-.work-hours__item:nth-child(2n) {
-  color: #907e82;
-}
-
 .work-hours__item {
   color: $txt-secondary-clr;
 }
+.work-hours__item-text {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
 
 .location__link {
-  letter-spacing: $ltr-spc;
   color: $txt-accent-clr;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .location__link:hover {
@@ -268,7 +289,6 @@
 }
 
 .contact__item-link {
-  line-height: 1.5;
   color: $txt-secondary-clr;
 }
 
