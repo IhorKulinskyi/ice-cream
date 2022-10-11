@@ -1,7 +1,7 @@
 /* стили для корневого элемента слайдера */
 .itcss {
   position: relative;
-  max-width: 600px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -11,6 +11,7 @@
   position: relative;
   overflow: hidden;
   background-color: $basic-white-clr;
+ 
 }
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
@@ -18,6 +19,7 @@
   display: flex;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+ 
   transition: transform 0.5s ease;
   will-change: transform;
 }
@@ -29,6 +31,7 @@
   max-width: 100%;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  overflow: hidden;
   will-change: transform;
 }
 
@@ -47,6 +50,7 @@
   cursor:  url(../img/additionals/cursor-hover.png), pointer;
   opacity: 0.5;
   user-select: none;
+  z-index: 999;
 }
 
 .itcss__btn_hide {
