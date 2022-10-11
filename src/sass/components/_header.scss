@@ -240,6 +240,7 @@
   @extend %list;
   @include centeredFlex;
   flex-direction: column;
+  align-items: center;
   margin-top: 51px;
 }
 
@@ -262,13 +263,23 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu__btn {
-    display: flex;
+.menu__btn {
+    @extend %button;
+    @include centeredFlex;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-  }
+    transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+    cursor: url(../img/additionals/cursor-hover.png), pointer;
+
+    &:hover {
+        background-color: $btn-hover-clr;
+    }
+
+    &:focus {
+        background-color: $btn-focus-clr;
+        color: $txt-primary-clr;
+    }
 }
 
 @media screen and (min-width: $tablet) {
