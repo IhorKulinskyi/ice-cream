@@ -1,0 +1,390 @@
+@media screen and (max-width: 767px) {
+  .hero__container {
+    margin:auto;
+    position: relative;
+    display: flex;
+    height: 452px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    // outline: 1px solid red;
+    background-image: url(/src/img/hero/hero-dots-mob-min.png);
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+        .hero__product,
+        .hero__distribution {
+            display: none;
+        }
+        .hero__horn-ice {
+          height: 310px;
+          width: auto;
+        } 
+
+  }
+
+     .hero__horn {
+        position: absolute;
+        display: block;
+        z-index: 25;
+        top:50%;
+        left:50%;
+        transform:translate(-58%, -14%);
+       
+    }
+
+
+
+
+  .hero__title-elemet{
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+}
+  .hero__title {
+    max-width: 270px;
+    font-style: normal;
+    font-weight: 400;
+    // height: 97px;
+    margin-bottom: 32px;
+    font-size: 26px;
+    line-height: 1.27;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    }
+        .hero__main-info {
+            display: block;
+            margin-top:0;
+    }
+       .hero__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    .hero__button {
+    width: 83px;
+    height: 24px;
+    }
+   
+
+
+    .hero__button,
+    .hero__button-one {
+     width: 83px;
+    height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    }
+    .hero__button{
+    text-decoration-line: underline;
+    color: $bg-accent-clr;
+    }
+    .hero__button-one {
+      text-decoration-line: none;
+      color:$txt-secondary-clr;
+    }
+}
+
+ //====== TABLET =======
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .hero__container {
+    margin:auto;
+    position: relative;
+    display: flex;
+    min-height: 313px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    // outline: 1px solid red;
+    background-image: url(/src/img/hero/dots-tab-min.png);
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    }
+
+
+  .hero__title-elemet{
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+    .hero__title {
+    font-style: normal;
+    font-weight: 400;
+    max-width: 181px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.28;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    }
+
+    // =====   Ice-cream horn
+    .hero__horn {
+    position: absolute;
+    display: block;
+        z-index: 22;  
+        right: 40px;
+        bottom: -56px;
+    }
+    
+   .hero__horn-ice {
+    height: 435px;
+    width: 366px;
+   } 
+
+
+    .hero__button,
+    .hero__button-one {
+     width: 83px;
+    height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    }
+    .hero__button{
+    text-decoration-line: underline;
+    color: $bg-accent-clr;
+    }
+    .hero__button-one {
+      text-decoration-line: none;
+      color:$txt-secondary-clr;
+    } 
+
+    .hero__list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+      .hero__button {
+      width: 83px;
+      height: 24px;
+      }
+  .hero__icon--arrow {
+    fill: $txt-primary-clr;
+    }
+  
+
+          .hero__product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    margin-top: 28px;
+    }
+    
+    .hero__product-plate {
+    display: inline-block;
+    max-width:  152px;
+    max-height: 152px;
+    margin-right: 14px ;
+    }
+    .hero__product-info {
+    display: inline-block;
+    }
+    .hero__product-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    background-color: inherit;
+    transition: background-color .25s linear;
+    }
+    // =====   Distribution
+    
+    .hero__description {
+    width: 151px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    }
+    .distribution__number {
+    margin-top: 0;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    margin-bottom: 0;
+    color: $txt-secondary-clr;
+    }
+    .distribution__point-type {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    color: $basic-white-clr;
+    margin-top: 4;
+    }
+    
+    .distribution__list {
+    list-style: none;
+    text-align: right;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+// =====   Container
+
+.hero__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    // outline: 1px solid red;
+    background-image: url(/src/img/hero/dots-desk-min.png);
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    }
+
+// =====   Ice-cream horn
+.hero__horn {
+    position: absolute;
+    display: block;
+        z-index: 10;  
+        right: 10px;
+        bottom: -100px;
+    }
+    
+            
+
+
+    
+    // ===== Blaoc tittle and products
+
+    .hero__main-info {
+    width: 439px;
+    }
+    
+    .hero__title {
+    max-width: 367px;
+    margin-bottom: 25px;
+    font-size: 38px;
+    line-height: 1.26;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    }
+    
+    // =====   Buttons
+    
+    .hero__list {
+    display: flex;
+    list-style: none;
+    }
+   
+    .hero__icon--arrow {
+    fill: $txt-primary-clr;
+    }
+
+.hero__button,
+    .hero__button-one {
+     width: 134px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    align-items: center;
+    text-align: center;
+    }
+    .hero__button{
+    text-decoration-line: underline;
+    color: $bg-accent-clr;
+    }
+    .hero__button-one {
+      text-decoration-line: none;
+      color:$txt-secondary-clr;
+    }
+
+       // =====   Products (plates and description)
+    
+    .hero__product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+    margin-top: 42px;
+    }
+    
+    .hero__product-plate {
+    display: inline-block;
+    max-width:  225px;
+    max-height: 225px;
+    margin-right: 14px ;
+    }
+    .hero__product-info {
+    display: inline-block;
+    }
+    .hero__product-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    background-color: inherit;
+    transition: background-color .25s linear;
+    }
+    
+
+    
+    // =====   Distribution
+    
+    .hero__description {
+    width: 200px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    }
+    .distribution__number {
+    margin-top: 16px;
+    font-family: $primary-font;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.22;
+    margin-bottom: 4px;
+    color: $txt-secondary-clr;
+    }
+    .distribution__point-type {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $basic-white-clr;
+    margin: 0;
+    }
+    
+    .distribution__list {
+    list-style: none;
+    text-align: right;
+    }
+
+  
+}
+
