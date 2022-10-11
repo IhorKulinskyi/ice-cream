@@ -1,11 +1,6 @@
-.testimonial{
-  outline: 2px solid tomato;
-}
-
-.testimonial-container {
+.testimonial {
   padding-top: 80px;
   padding-bottom: 50px;
-  overflow-x: hidden;
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 80px;
@@ -14,6 +9,10 @@
     padding-top: 128px;
     padding-bottom: 100px;
   }
+}
+
+.testimonial-container {
+  overflow-x: hidden;
 }
 .testimonial__image {
   height: 85px;
