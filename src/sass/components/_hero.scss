@@ -55,15 +55,10 @@
   &:focus .hero__icon--arrow, &:focus .hero__icon--hov {
       display: none;
   }
-
   &:focus .hero__icon--foc {
      display: block;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 767px) {
   .hero__container {
