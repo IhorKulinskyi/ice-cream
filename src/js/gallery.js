@@ -1,5 +1,3 @@
-
-
 class ItcSimpleSlider {
   // базовые классы и селекторы
   static PREFIX = 'itcss';
@@ -33,10 +31,13 @@ class ItcSimpleSlider {
   }
 
   constructor(target, config) {
-    this._el = typeof target === 'string' ? document.querySelector(target) : target;
+    this._el =
+      typeof target === 'string' ? document.querySelector(target) : target;
     this._elWrapper = this._el.querySelector(`.${this.constructor.EL_WRAPPER}`);
     this._elItems = this._el.querySelector(`.${this.constructor.EL_ITEMS}`);
-    this._elListItem = this._el.querySelectorAll(`.${this.constructor.EL_ITEM}`);
+    this._elListItem = this._el.querySelectorAll(
+      `.${this.constructor.EL_ITEM}`
+    );
 
     // экстремальные значения слайдов
     this._exOrderMin = 0;
@@ -73,7 +74,7 @@ class ItcSimpleSlider {
       interval: 5000,
       indicators: true,
       swipe: true,
-      ...config
+      ...config,
     };
     this._elItems.dataset.translate = '0';
     // добавляем к слайдам data-атрибуты
@@ -91,11 +92,15 @@ class ItcSimpleSlider {
       this._elListItem[count].dataset.order = '-1';
       this._elListItem[count].dataset.translate = `${-this._elListItem.length}`;
       const valueX = translate * this._clientRect.width;
-      this._elListItem[count].style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
+      this._elListItem[
+        count
+      ].style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
     }
     // добавляем индикаторы к слайдеру
     this._addIndicators();
-    this._elListIndicator = document.querySelectorAll(`.${this.constructor.EL_INDICATOR}`);
+    this._elListIndicator = document.querySelectorAll(
+      `.${this.constructor.EL_INDICATOR}`
+    );
     // обновляем экстремальные значения переменных
     this._updateExProperties();
     // помечаем активные элементы
@@ -111,15 +116,23 @@ class ItcSimpleSlider {
       if (item) {
         this._elListItem[index].classList.add(this.constructor.EL_ITEM_ACTIVE);
       } else {
-        this._elListItem[index].classList.remove(this.constructor.EL_ITEM_ACTIVE);
+        this._elListItem[index].classList.remove(
+          this.constructor.EL_ITEM_ACTIVE
+        );
       }
       if (this._elListIndicator.length && item) {
-        this._elListIndicator[index].classList.add(this.constructor.EL_INDICATOR_ACTIVE);
+        this._elListIndicator[index].classList.add(
+          this.constructor.EL_INDICATOR_ACTIVE
+        );
       } else if (this._elListIndicator.length && !item) {
-        this._elListIndicator[index].classList.remove(this.constructor.EL_INDICATOR_ACTIVE);
+        this._elListIndicator[index].classList.remove(
+          this.constructor.EL_INDICATOR_ACTIVE
+        );
       }
     });
-    this._el.dispatchEvent(new CustomEvent('change.itc.slider', { bubbles: true }));
+    this._el.dispatchEvent(
+      new CustomEvent('change.itc.slider', { bubbles: true })
+    );
   }
 
   // смена слайдов
@@ -132,7 +145,8 @@ class ItcSimpleSlider {
     }
     if (!this._config.loop) {
       const isNotMovePrev = this._states[0] && this._direction === 'prev';
-      const isNotMoveNext = this._states[this._states.length - 1] && this._direction === 'next';
+      const isNotMoveNext =
+        this._states[this._states.length - 1] && this._direction === 'next';
       if (isNotMovePrev || isNotMoveNext) {
         this._autoplay('stop');
         return;
@@ -147,7 +161,9 @@ class ItcSimpleSlider {
     this._elItems.dataset.translate = this._transform;
     const valueX = this._transform * this._clientRect.width;
     this._elItems.style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
-    this._elItems.dispatchEvent(new CustomEvent('moving.itc.slider', { bubbles: true }));
+    this._elItems.dispatchEvent(
+      new CustomEvent('moving.itc.slider', { bubbles: true })
+    );
     this._changeActiveItems();
     if (!this._isBalancing) {
       this._isBalancing = true;
@@ -198,8 +214,8 @@ class ItcSimpleSlider {
 
   // refresh extreme values
   _updateExProperties() {
-    const els = Object.values(this._elListItem).map((el) => el);
-    const orders = els.map((item) => Number(item.dataset.order));
+    const els = Object.values(this._elListItem).map(el => el);
+    const orders = els.map(item => Number(item.dataset.order));
     this._exOrderMin = Math.min(...orders);
     this._exOrderMax = Math.max(...orders);
     const min = orders.indexOf(this._exOrderMin);
@@ -217,18 +233,30 @@ class ItcSimpleSlider {
     if (this._direction === 'next') {
       const exItemRight = this._exItemMin.getBoundingClientRect().right;
       if (exItemRight < this._clientRect.left - this._clientRect.width / 2) {
-        this._exItemMin.dataset.order = `${this._exOrderMin + this._elListItem.length}`;
-        this._exItemMin.dataset.translate = `${this._exTranslateMin + this._elListItem.length}`;
-        const valueX = (this._exTranslateMin + this._elListItem.length) * this._clientRect.width;
+        this._exItemMin.dataset.order = `${
+          this._exOrderMin + this._elListItem.length
+        }`;
+        this._exItemMin.dataset.translate = `${
+          this._exTranslateMin + this._elListItem.length
+        }`;
+        const valueX =
+          (this._exTranslateMin + this._elListItem.length) *
+          this._clientRect.width;
         this._exItemMin.style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
         this._updateExProperties();
       }
     } else {
       const exItemLeft = this._exItemMax.getBoundingClientRect().left;
       if (exItemLeft > this._clientRect.right + this._clientRect.width / 2) {
-        this._exItemMax.dataset.order = `${this._exOrderMax - this._elListItem.length}`;
-        this._exItemMax.dataset.translate = `${this._exTranslateMax - this._elListItem.length}`;
-        const valueX = (this._exTranslateMax - this._elListItem.length) * this._clientRect.width;
+        this._exItemMax.dataset.order = `${
+          this._exOrderMax - this._elListItem.length
+        }`;
+        this._exItemMax.dataset.translate = `${
+          this._exTranslateMax - this._elListItem.length
+        }`;
+        const valueX =
+          (this._exTranslateMax - this._elListItem.length) *
+          this._clientRect.width;
         this._exItemMax.style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
         this._updateExProperties();
       }
@@ -240,7 +268,7 @@ class ItcSimpleSlider {
 
   // adding listeners
   _addEventListener() {
-    const onSwipeStart = (e) => {
+    const onSwipeStart = e => {
       this._autoplay('stop');
       if (e.target.closest(`.${this.constructor.EL_CONTROL}`)) {
         return;
@@ -251,7 +279,7 @@ class ItcSimpleSlider {
       this._hasSwipeState = true;
       this._hasSwiping = false;
     };
-    const onSwipeMove = (e) => {
+    const onSwipeMove = e => {
       if (!this._hasSwipeState) {
         return;
       }
@@ -259,7 +287,10 @@ class ItcSimpleSlider {
       let diffPosX = this._swipeStartPosX - event.clientX;
       const diffPosY = this._swipeStartPosY - event.clientY;
       if (!this._hasSwiping) {
-        if (Math.abs(diffPosY) > Math.abs(diffPosX) || Math.abs(diffPosX) === 0) {
+        if (
+          Math.abs(diffPosY) > Math.abs(diffPosX) ||
+          Math.abs(diffPosX) === 0
+        ) {
           this._hasSwipeState = false;
           return;
         }
@@ -268,7 +299,8 @@ class ItcSimpleSlider {
       e.preventDefault();
       if (!this._config.loop) {
         const isNotMoveFirst = this._states[0] && diffPosX <= 0;
-        const isNotMoveLast = this._states[this._states.length - 1] && diffPosX >= 0;
+        const isNotMoveLast =
+          this._states[this._states.length - 1] && diffPosX >= 0;
         if (isNotMoveFirst || isNotMoveLast) {
           diffPosX /= 4;
         }
@@ -277,7 +309,7 @@ class ItcSimpleSlider {
       const valueX = this._transform * this._clientRect.width - diffPosX;
       this._elItems.style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
     };
-    const onSwipeEnd = (e) => {
+    const onSwipeEnd = e => {
       if (!this._hasSwipeState) {
         return;
       }
@@ -289,7 +321,8 @@ class ItcSimpleSlider {
       }
       if (!this._config.loop) {
         const isNotMoveFirst = this._states[0] && diffPosX <= 0;
-        const isNotMoveLast = this._states[this._states.length - 1] && diffPosX >= 0;
+        const isNotMoveLast =
+          this._states[this._states.length - 1] && diffPosX >= 0;
         if (isNotMoveFirst || isNotMoveLast) {
           diffPosX = 0;
         }
@@ -310,7 +343,7 @@ class ItcSimpleSlider {
       this._autoplay();
     };
     // click
-    this._el.addEventListener('click', (e) => {
+    this._el.addEventListener('click', e => {
       const $target = e.target;
       this._autoplay('stop');
       if ($target.classList.contains(this.constructor.EL_CONTROL)) {
@@ -340,7 +373,9 @@ class ItcSimpleSlider {
     });
     // swipe
     if (this._config.swipe) {
-      const options = this.constructor.checkSupportPassiveEvents() ? { passive: false } : false;
+      const options = this.constructor.checkSupportPassiveEvents()
+        ? { passive: false }
+        : false;
       this._el.addEventListener('touchstart', onSwipeStart, options);
       this._el.addEventListener('touchmove', onSwipeMove, options);
       this._el.addEventListener('mousedown', onSwipeStart);
@@ -349,7 +384,7 @@ class ItcSimpleSlider {
       document.addEventListener('mouseup', onSwipeEnd);
       document.addEventListener('mouseout', onSwipeEnd);
     }
-    this._el.addEventListener('dragstart', (e) => {
+    this._el.addEventListener('dragstart', e => {
       e.preventDefault();
     });
     // при изменении активности вкладки
@@ -361,13 +396,17 @@ class ItcSimpleSlider {
       }
     });
     if (this._supportResizeObserver) {
-      const resizeObserver = new ResizeObserver((entries) => {
+      const resizeObserver = new ResizeObserver(entries => {
         const { contentRect } = entries[0];
-        if (Math.round(this._clientRect.width * 10) === Math.round(contentRect.width * 10)) {
+        if (
+          Math.round(this._clientRect.width * 10) ===
+          Math.round(contentRect.width * 10)
+        ) {
           return;
         }
         this._clientRect = contentRect;
-        const newValueX = contentRect.width * Number(this._elItems.dataset.translate);
+        const newValueX =
+          contentRect.width * Number(this._elItems.dataset.translate);
         this.reset(newValueX, true);
         this._autoplay();
       });
@@ -379,15 +418,19 @@ class ItcSimpleSlider {
     this._autoplay('stop');
     this._elItems.classList.add(this.constructor.TRANSITION_NONE);
     this._elItems.style.transform = `translate3D(${newValueX}px, 0px, 0.1px)`;
-    this._elListItem.forEach((el) => {
-      const valueX = recalc ? Number(el.dataset.translate) * this._clientRect.width : 0;
+    this._elListItem.forEach(el => {
+      const valueX = recalc
+        ? Number(el.dataset.translate) * this._clientRect.width
+        : 0;
       el.style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
     });
     if (!recalc) {
       this._transform = 0;
       this._states = [];
       this._elItems.dataset.translate = '0';
-      this._elListItem = this._el.querySelectorAll(`.${this.constructor.EL_ITEM}`);
+      this._elListItem = this._el.querySelectorAll(
+        `.${this.constructor.EL_ITEM}`
+      );
       // добавляем к слайдам data-атрибуты
       this._elListItem.forEach((item, index) => {
         item.dataset.order = `${index}`;
@@ -400,14 +443,19 @@ class ItcSimpleSlider {
         const count = this._elListItem.length - 1;
         const translate = -this._elListItem.length;
         this._elListItem[count].dataset.order = '-1';
-        this._elListItem[count].dataset.translate = `${-this._elListItem.length}`;
+        this._elListItem[count].dataset.translate = `${-this._elListItem
+          .length}`;
         const valueX = translate * this._clientRect.width;
-        this._elListItem[count].style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
+        this._elListItem[
+          count
+        ].style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
       }
       this._el.querySelector(`.${this.constructor.EL_INDICATORS}`).remove();
       // добавляем индикаторы к слайдеру
       this._addIndicators();
-      this._elListIndicator = document.querySelectorAll(`.${this.constructor.EL_INDICATOR}`);
+      this._elListIndicator = document.querySelectorAll(
+        `.${this.constructor.EL_INDICATOR}`
+      );
       // обновляем экстремальные значения переменных
       this._updateExProperties();
       // помечаем активные элементы
@@ -434,3 +482,12 @@ class ItcSimpleSlider {
     this._moveTo(index);
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  // активация слайдера
+  new ItcSimpleSlider('.itcss', {
+    loop: true,
+    autoplay: true,
+    swipe: true,
+  });
+});
