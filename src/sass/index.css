@@ -81,7 +81,11 @@ img {
   padding: 0;
 }
 
+<<<<<<< HEAD
+.button-loc__button, .about__button, .site-header__btn {
+=======
 .button-loc__button, .menu__btn, .site-header__btn {
+>>>>>>> e7ab6441de45701e99ae09fb98aeb6f4a42a216c
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
@@ -99,7 +103,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-loc__button:hover {
+.button-loc__button:hover, .about__button:hover {
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
@@ -116,7 +120,7 @@ img {
   font-family: inherit;
 }
 
-.button-loc__button:focus {
+.button-loc__button:focus, .about__button:focus {
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
@@ -826,24 +830,42 @@ img {
   }
 }
 .about {
+<<<<<<< HEAD
+  padding-top: 60px;
+=======
   outline: 2px solid violet;
+>>>>>>> e7ab6441de45701e99ae09fb98aeb6f4a42a216c
 }
 
 .about__titles {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 54px;
 }
 
 .about__subtitle {
   margin-top: 0;
   margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #fcfcfc;
 }
 
 .about__title {
   margin-bottom: 0;
+  font-family: "Seymour One", sans-serif;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
 }
 
 .about__cow-picture {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px, 1px -22px 7px 9px rgba(248, 210, 78, 0.7);
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -865,17 +887,37 @@ img {
 
 .about__text-box {
   display: flex;
+  padding: 0 50px;
   flex-direction: column;
   gap: 4px;
 }
 
+.about__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+}
 .about__text:last-child {
   display: none;
+}
+
+.about__button-icon {
+  width: 12px;
+  height: 12px;
+  transform: translateY(30%);
 }
 
 @media screen and (min-width: 768px) {
   .about__titles {
     margin-bottom: 72px;
+  }
+  .about__subtitle {
+    font-size: 22px;
+  }
+  .about__title {
+    font-size: 34px;
   }
   .about__cow-picture {
     width: 330px;
@@ -892,10 +934,14 @@ img {
     flex-direction: row;
     gap: 32px;
   }
+  .about__text {
+    font-size: 14px;
+  }
   .about__text:last-child {
     display: block;
   }
   .about__text-box {
+    padding: 0;
     gap: 8px;
   }
   .about__box {
@@ -906,12 +952,21 @@ img {
   .about__titles {
     margin-bottom: 82px;
   }
+  .about__subtitle {
+    font-size: 30px;
+  }
+  .about__title {
+    font-size: 36px;
+  }
   .about__cow-picture {
     width: 490px;
     height: 490px;
   }
   .about__box-content {
     gap: 100px;
+  }
+  .about__text {
+    font-size: 16px;
   }
 }
 .advantages {
