@@ -15,10 +15,7 @@
   margin-bottom: 0;
   padding-left: 0;
 }
-// .contact-back{
-//   background-image: url('../img/backgroound/b_icecream.jpg');
-//   background-size: cover;
-// }
+
 @media screen and (max-width: 767px) {
   .contacts-block {
     display: flex;
@@ -53,13 +50,13 @@
 
   .location__item--text {
     width: 220px;
-    padding-top: 20px;
-    padding-bottom: 24px;
+    margin-top: 20px;
+    margin-bottom: 24px;
   }
 
-  .work-hours__list {
+  .work-hours {
     padding-top: 24px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 
 .work-hours__item:nth-child(2n) {
@@ -68,11 +65,6 @@
  .contact__item-link{
   line-height: 1.5;
  }
- 
-  // .work-hours__item-text {
-  //   margin-top: 0;
-  //   margin-bottom: 0px;
-  // }
 
   .work-hours__item:nth-child(2) {
     padding-bottom: 8px;
@@ -82,7 +74,7 @@
     margin-top: 8px;
   }
 
-  .contact__item:not(:last-child) {
+  .contact__list{
     padding-top: 24px;
   }
 
@@ -127,8 +119,8 @@
   }
 
   .location__item--text {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .location__town {
@@ -143,9 +135,9 @@
     line-height: 1.86;
   }
 
-  .work-hours__list {
+  .work-hours {
     padding-top: 32px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
   .work-hours__item:nth-child(2n) {
     color: #907E82;
@@ -154,7 +146,7 @@
       padding-bottom: 12px;
     }
 
-  .contact__item:not(:last-child) {
+  .contact__list {
     padding-top: 32px;
   }
 
