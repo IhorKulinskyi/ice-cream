@@ -1,7 +1,6 @@
-.gallery{
+.gallery {
   outline: 2px solid darkblue;
 }
-
 /* стили для корневого элемента слайдера */
 .itcss {
   position: relative;
@@ -15,7 +14,6 @@
   position: relative;
   overflow: hidden;
   background-color: $basic-white-clr;
- 
 }
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
@@ -23,7 +21,7 @@
   display: flex;
   transform-style: preserve-3d;
   backface-visibility: hidden;
- 
+
   transition: transform 0.5s ease;
   will-change: transform;
 }
@@ -51,7 +49,7 @@
   border: none;
   outline: none;
   transform: translateY(-50%);
-  cursor:  url(../img/additionals/cursor-hover.png), pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   opacity: 0.5;
   user-select: none;
   z-index: 999;
@@ -118,7 +116,7 @@
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  cursor:  url(../img/additionals/cursor-hover.png), pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .itcss__indicator_active {
