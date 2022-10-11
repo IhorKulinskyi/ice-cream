@@ -29,7 +29,7 @@
   padding-top: 186px;
   padding-bottom: 394px;
   overflow-x: hidden;
-
+  
   @media screen and (min-width: $tablet) {
     padding-top: 223px;
     padding-bottom: 383px;
@@ -39,6 +39,7 @@
     padding-bottom: 207px;
   }
 }
+
 .testimonial__image {
   height: 85px;
   width: 85px;
