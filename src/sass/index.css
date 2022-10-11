@@ -202,6 +202,7 @@ img {
 }
 
 .site-header {
+  outline: 2px solid orangered;
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -499,9 +500,14 @@ img {
     display: none;
   }
 }
+.hero {
+  outline: 2px solid black;
+}
+
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
+  outline: 2px solid white;
 }
 
 .products__titles {
@@ -819,6 +825,10 @@ img {
     margin-bottom: 60px;
   }
 }
+.about {
+  outline: 2px solid violet;
+}
+
 .about__titles {
   text-align: center;
   margin-bottom: 32px;
@@ -903,6 +913,9 @@ img {
   .about__box-content {
     gap: 100px;
   }
+}
+.advantages {
+  outline: 2px solid tomato;
 }
 @media screen and (max-width: 767px) {
   .advantages {
@@ -1042,6 +1055,10 @@ img {
     line-height: 1.75;
     letter-spacing: 0.02em;
   }
+}
+
+.gallery {
+  outline: 2px solid darkblue;
 }
 
 /* стили для корневого элемента слайдера */
@@ -1184,6 +1201,10 @@ img {
   min-width: 100%;
 }
 
+.testimonial {
+  outline: 2px solid tomato;
+}
+
 .testimonial-container {
   padding-top: 80px;
   padding-bottom: 50px;
@@ -1281,6 +1302,10 @@ img {
   .swiper-pagination {
     margin-top: 30px;
   }
+}
+
+.contacts {
+  outline: 2px solid aquamarine;
 }
 
 .location__town {
@@ -1525,6 +1550,7 @@ img {
 }
 
 .footer {
+  outline: 2px solid deeppink;
   padding-top: 38px;
 }
 

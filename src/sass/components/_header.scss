@@ -1,5 +1,8 @@
 .site-header {
   // position: absolute;
+
+  outline: 2px solid orangered;
+
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -89,7 +92,8 @@
 .site-header__btn {
   @extend %button;
   @include centeredFlex;
-  transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+  transition: background-color $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
   cursor: url(../img/additionals/cursor-hover.png), pointer;
 
   &:hover {
@@ -99,7 +103,7 @@
   &:focus {
     background-color: $btn-focus-clr;
     color: $txt-primary-clr;
-    }
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -111,9 +115,9 @@
   transform: translateY(20%);
   transition: fill $transition-time $cubic-bezier;
 
-    .site-header__btn:focus & {
-        fill: $txt-primary-clr;
-    }
+  .site-header__btn:focus & {
+    fill: $txt-primary-clr;
+  }
 }
 
 @media screen and (min-width: $tablet) {
@@ -268,22 +272,23 @@
 }
 
 .menu__btn {
-    @extend %button;
-    @include centeredFlex;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
-    cursor: url(../img/additionals/cursor-hover.png), pointer;
+  @extend %button;
+  @include centeredFlex;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 
-    &:hover {
-        background-color: $btn-hover-clr;
-    }
+  &:hover {
+    background-color: $btn-hover-clr;
+  }
 
-    &:focus {
-        background-color: $btn-focus-clr;
-        color: $txt-primary-clr;
-    }
+  &:focus {
+    background-color: $btn-focus-clr;
+    color: $txt-primary-clr;
+  }
 }
 
 .menu__btn-icon {
