@@ -261,6 +261,10 @@
   &:focus {
     color: $txt-secondary-clr;
   }
+
+  @media screen and (max-width: 339px) {
+    font-size: 28px;
+  }
 }
 
 .menu__btn {
@@ -280,6 +284,16 @@
         background-color: $btn-focus-clr;
         color: $txt-primary-clr;
     }
+}
+
+.menu__btn-icon {
+  margin-left: 7px;
+  transform: translateY(20%);
+  transition: fill $transition-time $cubic-bezier;
+
+  .menu__btn:focus & {
+    fill: $txt-primary-clr;
+  }
 }
 
 @media screen and (min-width: $tablet) {
