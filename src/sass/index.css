@@ -4,6 +4,10 @@ body {
   cursor: url(../img/additionals/cursor-default.png), default;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .homepage {
   margin: 0;
   color: #fcfcfc;
@@ -128,6 +132,23 @@ img {
   font-weight: 600;
   font-family: inherit;
   fill: #fcfcfc;
+}
+
+.order-form__btn:disabled {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #ababab;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  font-family: inherit;
 }
 
 .button-loc__btn {
@@ -495,6 +516,10 @@ img {
     display: none;
   }
 }
+.hero {
+  overflow: hidden;
+}
+
 .hero__button {
   display: inline-block;
   margin: 0;
@@ -529,6 +554,10 @@ img {
 .hero__products:focus {
   border: 2px solid #0a8817;
   outline: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hero__products {
@@ -612,7 +641,7 @@ img {
     display: none;
   }
   .hero__container .hero__horn-ice {
-    height: 310px;
+    height: 370px;
     width: auto;
   }
   .hero__horn {
@@ -621,7 +650,7 @@ img {
     z-index: 25;
     top: 50%;
     left: 50%;
-    transform: translate(-56%, -11%);
+    transform: translate(-50%, -23%);
   }
   .hero__title-elemet {
     font-family: "Seymour One", sans-serif;
@@ -670,7 +699,6 @@ img {
     line-height: 1.25;
     align-items: center;
     text-align: center;
-    line-height: 0;
   }
   .hero__button {
     -webkit-text-decoration-line: underline;
@@ -718,12 +746,15 @@ img {
     position: absolute;
     display: block;
     z-index: 22;
-    right: 40px;
+    right: 25px;
     bottom: -56px;
   }
   .hero__horn-ice {
-    height: 435px;
-    width: 366px;
+    height: 450px;
+    width: auto;
+  }
+  .hero__item {
+    margin-right: 8px;
   }
   .hero__button {
     width: 83px;
@@ -743,7 +774,6 @@ img {
     line-height: 1.25;
     align-items: center;
     text-align: center;
-    line-height: 0;
   }
   .hero__button {
     -webkit-text-decoration-line: underline;
@@ -836,7 +866,7 @@ img {
   .hero__horn {
     position: absolute;
     display: block;
-    z-index: 10;
+    z-index: 999;
     right: 10px;
     bottom: -100px;
   }
@@ -850,6 +880,9 @@ img {
     line-height: 1.26;
     text-transform: uppercase;
     font-family: "Seymour One", sans-serif;
+  }
+  .hero__item {
+    margin-right: 12px;
   }
   .hero__list {
     display: flex;
@@ -1019,7 +1052,7 @@ img {
 }
 
 .products__item-title {
-  padding-top: 123px;
+  padding-top: 120px;
   margin-top: 0;
   margin-bottom: 40px;
   font-family: "Montserrat", sans-serif;
@@ -1042,7 +1075,7 @@ img {
 .wrapper__item--milkshakes {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   display: block;
   height: 211px;
   width: 200px;
@@ -1289,7 +1322,7 @@ img {
     padding: 0 63px;
   }
   .products__item-title {
-    padding-top: 165px;
+    padding-top: 167px;
     margin-bottom: 65px;
     font-size: 30px;
     line-height: 1.23;
@@ -2145,20 +2178,18 @@ img {
 
 .footer__title {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 
 .footer__title--wrap {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 34px;
-  line-height: 41px;
+  line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
@@ -2189,6 +2220,13 @@ img {
 .footer__social-link:hover .social-list__icon, .footer__social-link:focus .social-list__icon {
   fill: #fff;
 }
+.footer__social-link:hover {
+  transform: scale(0.941);
+}
+.footer__social-link:focus {
+  outline: none;
+  transform: scale(1.12);
+}
 
 .social-list__icon {
   fill: #84a178;
@@ -2197,10 +2235,9 @@ img {
 
 .footer__tel-info {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
   text-align: right;
   color: #131313;
   display: flex;
@@ -2219,10 +2256,9 @@ img {
 
 .footer__copyrights {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1.52;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -2277,13 +2313,15 @@ img {
        object-fit: cover;
   }
   .footer__tel-info {
+    font-size: 14px;
     margin-bottom: 24px;
   }
   .footer__copyrights {
     flex-direction: row;
+    letter-spacing: 0.02em;
     padding-top: 14px;
     padding-bottom: 13px;
-    line-height: 186%;
+    line-height: 1.86;
   }
   .footer__border-element {
     border-top: 1px solid rgb(225, 225, 225);
@@ -2312,6 +2350,7 @@ img {
     margin-bottom: 40px;
   }
   .footer__tel-info {
+    font-size: 16px;
     margin-bottom: 6px;
   }
   .footer__copyrights {
@@ -2535,450 +2574,6 @@ img {
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
-  .modal {
-    width: calc(100% - 30px);
-    max-width: 280px;
-  }
-  .modal-close-btn {
-    top: 8px;
-    right: 8px;
-  }
-  .modal-title-h3 {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  .modal-paragraph {
-    font-size: 14px;
-    margin-bottom: 24px;
-  }
-  .modal-form__field {
-    margin-bottom: 12px;
-  }
-  .modal-form__input {
-    padding-left: 12px;
-    width: 100%;
-    max-width: 224px;
-    height: 32px;
-  }
-  .modal-form__message {
-    width: 100%;
-    max-width: 240px;
-    height: 84px;
-    padding-top: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    font-size: 12px;
-  }
-  .modal-map-link {
-    width: 224px;
-    height: 199px;
-    margin-bottom: 24px;
-  }
-  .modal__list {
-    width: 280px;
-  }
-  .modal__list-call {
-    gap: 10px;
-    justify-content: space-between;
-  }
-  .modal__list-call--item-h {
-    width: 43px;
-    height: 43px;
-  }
-  .modal__list-call--item {
-    width: 53px;
-    height: 72px;
-  }
-  .modal-form__submit--map {
-    width: 134px;
-  }
-  .modal-video-link {
-    width: 224px;
-    height: 199px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 568px;
-    max-width: 568px;
-  }
-  .modal-close-btn {
-    top: 24px;
-    right: 24px;
-  }
-  .modal-title-h3 {
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 24px;
-  }
-  .modal-paragraph {
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-  .modal-paragraph {
-    font-size: 16px;
-    margin-bottom: 32px;
-  }
-  .modal-form__field {
-    margin-bottom: 16px;
-  }
-  .modal-form__input {
-    padding-left: 16px;
-    font-size: 14px;
-    width: 368px;
-    height: 42px;
-  }
-  .modal-form__message {
-    width: 100%;
-    max-width: 368px;
-    height: 64px;
-    padding-top: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 14px;
-  }
-  .modal-map-link {
-    width: 448px;
-    height: 260px;
-    margin-bottom: 32px;
-  }
-  .modal-video-link {
-    width: 448px;
-    height: 205px;
-  }
-  .modal__list {
-    width: 568px;
-  }
-  .modal__list-call--item-h {
-    width: 53px;
-    height: 53px;
-  }
-  .modal__list-call--item {
-    width: 65px;
-    height: 90px;
-  }
-  .modal__list-call {
-    gap: 20px;
-    padding-right: 40px;
-  }
-  .modal-form__submit--map {
-    width: 145px;
-  }
-}
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 28px;
-  transform: translate(-50%, -50%);
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
-  border-radius: 10px;
-}
-
-.modal-map {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-.modal-close-btn {
-  display: flex;
-  /*за допомогою flex центруэмо svg   */
-  align-items: center;
-  /*за допомогою flex центруэмо svg   */
-  justify-content: center;
-  /*за допомогою flex центруэмо svg   */
-  position: absolute;
-  /*за допомогою absolute розміщаємо кнопку в кут   */
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
-.modal-title-h3 {
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  align-items: center;
-  text-align: center;
-  color: #131313;
-}
-
-.modal-title-h4 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-  color: #131313;
-  margin-bottom: 24px;
-}
-
-.modal-paragraph {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.4;
-  color: #131313;
-}
-
-.modal-chololate {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.modal__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal__list-call {
-  color: #131313;
-  display: flex;
-  justify-content: space-between;
-}
-
-.modal__list-call--item {
-  display: block;
-  border: 2px solid #9CBE8F;
-  border-radius: 40px;
-}
-
-.modal__list-call--item-h {
-  border-radius: 50%;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.33;
-  /* identical to box height, or 233% */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #131313;
-  overflow: hidden;
-  background: #9CBE8F;
-  border: 2px solid #9CBE8F;
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-}
-
-.modal__list-call--item-l {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal__list-ingredients {
-  font-size: 12px;
-  color: #131313;
-  justify-content: space-between;
-  width: 100%;
-  padding-left: 0px;
-  margin-bottom: 48px;
-}
-
-.modal__list-ingredients--item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 11px;
-}
-
-.modal__list-ingredients--blok {
-  display: block;
-}
-
-/* END ===============Модальна форма================*/
-/*=============== Модальна форма ================*/
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-form__field {
-  display: block;
-}
-
-.modal-form__input-wrapper {
-  color: #131313;
-}
-
-::-moz-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-}
-
-:-ms-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-}
-
-::placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-}
-
-.modal-form__input {
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
-  border-radius: 10px;
-  color: #131313;
-}
-
-.modal-form__message {
-  resize: none;
-  margin-bottom: 24px;
-  color: #131313;
-  background: rgba(248, 210, 78, 0.1);
-  border-radius: 10px;
-  transition: border-color var(--transition-dur-and-func);
-}
-.modal-form__message::-moz-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #131313;
-}
-.modal-form__message:-ms-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #131313;
-}
-.modal-form__message::placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #131313;
-}
-.modal-form__message:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.modal-video-link {
-  margin-left: auto;
-  margin-right: auto;
-  background: #000000;
-  border-radius: 10px;
-  display: flex;
-  /*за допомогою flex центруэмо svg   */
-  align-items: center;
-  /*за допомогою flex центруэмо svg   */
-  justify-content: center;
-}
-
-.modal-form__submit {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #131313;
-  width: 114px;
-  height: 42px;
-  background: #F8D24E;
-  border-radius: 10px;
-  align-self: center;
-  padding: 10px 32px 10px 32px;
-  border: 0;
-}
-
-.modal-form__submit:hover,
-.modal-form__submit:focus {
-  background: #0A8817;
-}
-
-.modal-form__submit--map {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #131313;
-  width: 114px;
-  height: 42px;
-  background: #F8D24E;
-  border-radius: 10px;
-  align-self: center;
-  padding: 10px 32px 10px 32px;
-  border: 0;
-}
-
-.modal__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 141px;
-  margin-bottom: 25px;
-}
-
-.modal__img-ice {
-  width: 132px;
-  height: 130.6px;
-  left: 74px;
-  top: 113.4px;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25), 0px 7px 0px 0px rgba(10, 136, 23, 0.25);
-  border-radius: 50%;
-}
-
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-dur-and-func);
-}
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* END ======= --------Відкривання закривання модального вікна --------- =========== */
-/*=============== Модальне вікно ================*/
-@media screen and (max-width: 768px) {
   .modal-chololate {
     width: calc(100% - 30px);
     max-width: 280px;
@@ -3022,7 +2617,7 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-left: 3px;
+    margin-left: 3.5px;
     width: 43px;
     height: 43px;
   }
@@ -3453,6 +3048,13 @@ img {
   border: 0;
 }
 
+.modal-mape {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
 .backdrop {
   position: fixed;
@@ -3761,17 +3363,166 @@ img {
   background: #0A8817;
 }
 
+/* ======= --------Відкривання закривання модального вікна --------- =========== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-dur-and-func);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* END ======= --------Відкривання закривання модального вікна --------- =========== */
+/*=============== Модальне вікно ================*/
+@media screen and (max-width: 768px) {
+  .modal-video {
+    width: calc(100% - 30px);
+    max-width: 280px;
+  }
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+  }
+  .modal-video-title-h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .modal-video-paragraph {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .modal-video-link {
+    width: 224px;
+    height: 199px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-video {
+    width: 568px;
+    max-width: 568px;
+  }
+  .modal-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .modal-video-title-h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  .modal-video-paragraph {
+    font-size: 16px;
+    margin-bottom: 24px;
+    margin: 30px;
+  }
+  .modal-video-link {
+    width: 448px;
+    height: 205px;
+  }
+}
+.modal-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+  transform: translate(-50%, -50%);
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+}
+
+.modal-close-btn {
+  display: flex;
+  /*за допомогою flex центруэмо svg   */
+  align-items: center;
+  /*за допомогою flex центруэмо svg   */
+  justify-content: center;
+  /*за допомогою flex центруэмо svg   */
+  position: absolute;
+  /*за допомогою absolute розміщаємо кнопку в кут   */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-video-title-h3 {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
+
+.modal-video-link {
+  margin-left: auto;
+  margin-right: auto;
+  background: #000000;
+  border-radius: 10px;
+  display: flex;
+  /*за допомогою flex центруэмо svg   */
+  align-items: center;
+  /*за допомогою flex центруэмо svg   */
+  justify-content: center;
+}
+
+.modal-video-paragraph {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #131313;
+}
+
+.order-modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: auto;
+}
+
 .order-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fcfcfc;
   border-radius: 10px;
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
 }
 
 .modal-close-btn {
   position: absolute;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover, .modal-close-btn:focus {
+  fill: #efd478;
 }
 
 .order-form {
@@ -3801,6 +3552,8 @@ img {
     right: 8px;
     padding: 0;
     border: 0;
+    width: 16px;
+    height: 16px;
     background-color: inherit;
   }
   .close-icon {
@@ -3841,6 +3594,8 @@ img {
     right: 20px;
     padding: 0;
     border: 0;
+    width: 20px;
+    height: 20px;
     background-color: inherit;
   }
   .close-icon {
@@ -3870,6 +3625,7 @@ img {
   border-radius: 16px;
   padding-top: 96px;
   padding-bottom: 20px;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-list__item:hover, .check-list__item:focus {
@@ -3936,6 +3692,15 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+.check-list__input:checked + .check-list__sub-title {
+  color: #d6936d;
+}
+.check-list__input--ice-coffee:checked + .check-list__sub-title {
+  color: #96af8c;
+}
+.check-list__input--milkshake:checked + .check-list__sub-title {
+  color: #efd478;
+}
 
 @media screen and (max-width: 767px) {
   .order-form__check-list {
@@ -3992,11 +3757,17 @@ img {
     background-image: url(../img/buy-now-modal/buy-now-product3-desk@2x.jpg);
   }
 }
+.order-form__input-container {
+  font-size: 12px;
+}
+
 .order-form__input {
   width: 100%;
   border: 1px solid #84a178;
   border-radius: 10px;
   background-color: rgba(248, 210, 78, 0.1);
+  outline: none;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 .order-form__input::-moz-placeholder {
   font-weight: 400;
@@ -4010,6 +3781,12 @@ img {
   font-weight: 400;
   line-height: 1.4;
 }
+.order-form__input:hover, .order-form__input:focus {
+  border-color: #efd478;
+}
+.order-form__input:invalid {
+  border-color: #f44336;
+}
 
 .order-form__comment {
   width: 100%;
@@ -4018,6 +3795,7 @@ img {
   background-color: rgba(248, 210, 78, 0.1);
   outline: none;
   resize: none;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 .order-form__comment::-moz-placeholder {
   font-weight: 400;
@@ -4030,6 +3808,9 @@ img {
 .order-form__comment::placeholder {
   font-weight: 400;
   line-height: 1.4;
+}
+.order-form__comment:hover, .order-form__comment:focus {
+  border-color: #efd478;
 }
 
 @media screen and (max-width: 767px) {
