@@ -3,14 +3,15 @@
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(../img/background/mobile_product1.jpg);
-  background-size: contain;
-  background-repeat: repeat;
+  background: url(../img/background/mobile_product1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: $min-tablet),
     screen and (min-resolution: 192dpi) and (max-width: $min-tablet),
     screen and (min-resolution: 2dppx) and (max-width: $min-tablet) {
     background-image: url(../img/background/mobile_product1@2x.jpg);
+    background-attachment: fixed;
   }
   @media screen and(min-width:$tablet) {
     background-image: url(../img/background/tablet_products.jpg);
