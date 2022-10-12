@@ -1577,6 +1577,20 @@ img {
   }
 }
 
+.gallery {
+  margin-bottom: -105px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin-bottom: -163px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    margin-bottom: -324px;
+  }
+}
+
 /* стили для корневого элемента слайдера */
 .itcss {
   position: relative;
@@ -1718,13 +1732,13 @@ img {
 }
 
 .testimonial {
-  background-image: url(../img/background/mobile_reviwes.jpg);
+  background-image: url(../img/background/mobile_reviews.jpg);
   background-size: cover;
   background-repeat: repeat;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .testimonial {
-    background-image: url(../img/background/mobile_reviwes@2x.jpg);
+    background-image: url(../img/background/mobile_reviews@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1847,6 +1861,20 @@ img {
   }
 }
 
+.contacts {
+  margin-top: -346px;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-top: -303px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-top: -107px;
+  }
+}
+
 .location__town {
   margin-top: 0;
 }
@@ -1962,7 +1990,7 @@ img {
     margin-bottom: 32px;
   }
   .work-hours__item:nth-child(2n) {
-    color: #907E82;
+    color: #907e82;
   }
   .work-hours__item:nth-child(2) {
     padding-bottom: 12px;
