@@ -1,16 +1,20 @@
 
-// .hero {
-//   overflow: hidden;
-// }
+.hero {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
 .hero__button {
   display: inline-block;
   margin: 0;
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
-
   color: $btn-default-clr;
   background-color: transparent;
 
@@ -46,7 +50,7 @@ a {
   padding: 12px 34px;
   border-radius: 10px;
   border: 0px;
-  cursor: pointer;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
 
   color: $txt-secondary-clr;
@@ -137,7 +141,7 @@ a {
      .hero__horn {
         position: absolute;
         display: block;
-        z-index: 25;
+        z-index:13;
         top:50%;
         left:50%;
         transform: translate(-50%, -23%);
@@ -244,6 +248,7 @@ a {
     font-weight: 400;
     max-width: 181px;
     margin-bottom: 20px;
+    margin-top: 38px;
     font-size: 18px;
     line-height: 1.28;
     text-transform: uppercase;
@@ -255,13 +260,14 @@ a {
         
         position: absolute;
         display: block;
-        z-index: 22;  
-        right: 25px;
+        z-index: 15;  
+        right: 45px;
         bottom: -56px;
     }
     
    .hero__horn-ice {
-    height: 450px;
+    // opacity: 0.7;
+    height: 430px;
     width: auto;
    } 
 
@@ -370,6 +376,7 @@ a {
     }
     
     .distribution__list {
+      margin-top: 40px;
     list-style: none;
     text-align: right;
     }
@@ -395,18 +402,19 @@ a {
       }
 
   // =====   Ice-cream horn
+  .hero__horn-ice {
+    height:690px;
+    width: auto;
+   } 
+
   .hero__horn {
       position: absolute;
       display: block;
-          z-index: 999;  
+          z-index: 15;  
           right: 10px;
-          bottom: -100px;
+          bottom: -80px;
       }
-    
-            
-
-
-    
+       
     // ===== Blaoc tittle and products
 
     .hero__main-info {
@@ -415,7 +423,7 @@ a {
     
     .hero__title {
     max-width: 367px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     font-size: 38px;
     line-height: 1.26;
     text-transform: uppercase;
@@ -530,6 +538,7 @@ a {
     }
     
     .distribution__list {
+      margin-top: 40px;
     list-style: none;
     text-align: right;
     }
