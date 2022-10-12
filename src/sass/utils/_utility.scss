@@ -1,6 +1,15 @@
 body {
   cursor: url(../img/additionals/cursor-default.png), default;
 }
+
+body.no-scroll {
+	overflow: hidden;
+ }
+
+section{
+  outline: 2px solid red;
+}
+
 .homepage {
   margin: 0;
   color: $txt-primary-clr;
