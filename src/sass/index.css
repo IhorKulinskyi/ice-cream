@@ -4,10 +4,6 @@ body {
   cursor: url(../img/additionals/cursor-default.png), default;
 }
 
-section {
-  outline: 2px solid red;
-}
-
 .homepage {
   margin: 0;
   color: #fcfcfc;
@@ -202,7 +198,6 @@ img {
 }
 
 .site-header {
-  outline: 2px solid orangered;
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -948,10 +943,6 @@ img {
     text-align: right;
   }
 }
-.hero {
-  outline: 2px solid black;
-}
-
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1312,10 +1303,6 @@ img {
   }
 }
 .about {
-  outline: 2px solid violet;
-}
-
-.about {
   padding-top: 60px;
 }
 
@@ -1450,9 +1437,6 @@ img {
   .about__text {
     font-size: 16px;
   }
-}
-.advantages {
-  outline: 2px solid tomato;
 }
 @media screen and (max-width: 767px) {
   .advantages {
@@ -1592,10 +1576,6 @@ img {
     line-height: 1.75;
     letter-spacing: 0.02em;
   }
-}
-
-.gallery {
-  outline: 2px solid darkblue;
 }
 
 /* стили для корневого элемента слайдера */
@@ -1866,10 +1846,6 @@ img {
   .swiper-pagination {
     margin-top: 30px;
   }
-}
-
-.contacts {
-  outline: 2px solid aquamarine;
 }
 
 .location__town {
