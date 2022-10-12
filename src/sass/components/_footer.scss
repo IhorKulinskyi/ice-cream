@@ -3,20 +3,18 @@
 }
 .footer__title {
     font-family: $primary-font;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: $font_weight-footer-titles;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     @extend %title;
     text-transform: uppercase;
     margin-bottom:16px;
 }
 .footer__title--wrap {
     font-family: $primary-font;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: $font_weight-footer-titles;
     font-size: 34px;
-    line-height: 41px;
+    line-height: 1.20;
     letter-spacing: $ltr-spc;
     text-transform: uppercase;
     color: $basic-white-clr;
@@ -62,10 +60,9 @@
 
 .footer__tel-info {
     font-family: $primary-font;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: $font_weight-footer-titles;
     font-size: $font-size-descr-mob;
-    line-height: 186%;
+    line-height: 1.86;
     text-align: right;      
     color: $txt-secondary-clr;
     display: flex;
@@ -86,10 +83,9 @@
 
 .footer__copyrights {
     font-family: $primary-font;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: $font_weight-footer-titles;
     font-size: 14px;
-    line-height: 152%;
+    line-height: 1.52;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -150,9 +146,10 @@
     }
     .footer__copyrights {
         flex-direction: row;
+        letter-spacing: 0.02em;
         padding-top: 14px;
         padding-bottom: 13px;
-        line-height: 186%;
+        line-height: 1.86;
     }
     .footer__border-element {
         border-top: 1px solid rgba(225, 225, 225, 1);
