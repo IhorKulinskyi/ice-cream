@@ -2161,6 +2161,13 @@ img {
 .footer__social-link:hover .social-list__icon, .footer__social-link:focus .social-list__icon {
   fill: #fff;
 }
+.footer__social-link:hover {
+  transform: scale(0.941);
+}
+.footer__social-link:focus {
+  outline: none;
+  transform: scale(1.12);
+}
 
 .social-list__icon {
   fill: #84a178;

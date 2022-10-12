@@ -47,6 +47,13 @@
         &:hover .social-list__icon,
         &:focus .social-list__icon {
             fill: #fff ;}
+    &:hover {
+        transform: scale(0.941);
+    }
+    &:focus{
+        outline: none;
+        transform: scale(1.12);
+    }
 }
 .social-list__icon {
     fill: $bg-basic-clr;
