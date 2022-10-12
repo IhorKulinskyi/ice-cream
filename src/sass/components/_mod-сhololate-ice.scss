@@ -72,12 +72,24 @@
     }
 
     .modal-chololate__list-call--item-h {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
         // padding-left: 6px;
         margin-left: 3px;
         width: 43px;
         height: 43px;
     }
-
+.modal-chololate__list-call--item-l {
+    // width: 40px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
     .modal-chololate__list-call--item {
         width: 53px;
         height: 72px;
@@ -244,8 +256,6 @@
 }
 
 .modal-chololate__list-call--item-h {
-    // margin: 0;
-    // padding: 0;
     border-radius: 50%;
     font-family: 'Montserrat';
     font-style: normal;
@@ -273,6 +283,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.modal-chololate__list-call--item-lo{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+         white-space: nowrap;      
 }
 
 .modal-chololate__list-ingredients {
