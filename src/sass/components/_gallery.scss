@@ -1,6 +1,13 @@
-// .gallery {
-//   outline: 2px solid darkblue;
-// }
+.gallery {
+  margin-bottom: -105px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: -163px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: -324px;
+  }
+}
 /* стили для корневого элемента слайдера */
 .itcss {
   position: relative;
