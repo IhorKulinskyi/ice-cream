@@ -1,5 +1,5 @@
 <!-- 00000000000000 is-hidden   0000000111111110000000000000000000000 -->
-<div class="backdrop " data-modal>
+<div class="backdrop is-hidden " data-modal>
   <div class="modal">
     <button type="button" class="modal-close-btn" data-modal-close>
       <svg class="modal-close-icon" width="11px" height="11px">
@@ -27,8 +27,11 @@
 
       <label class="modal-form__field">
         <span class="modal-form__input-wrapper">
-          <input type="tel" class="modal-form__input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            name="user_phone" placeholder="Phone" />
+          <input type="tel" 
+          class="modal-form__input" 
+          required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          name="user_phone" 
+          placeholder="Phone" />
         </span>
       </label>
 

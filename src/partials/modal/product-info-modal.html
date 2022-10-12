@@ -1,6 +1,6 @@
 <!--is-hidden  показати вікно -->
-<div class="backdrop is-hidden " data-modal>
-    <div class="modal modal-Chololate">
+<div class="backdrop " data-modal>
+    <div class="modal .modal-chololate ">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-icon" width="11px" height="11px">
             <use href="./img/icons.svg#icon-close"></use>
@@ -9,11 +9,15 @@
 
         <h3 class="modal-title-h3">Chololate icecream</h3>
 
-        <div>
-
-            <!-- <img src="" alt=""> -->
+        <div class="modal__img ">
+          <picture class="modal__img-ice">
+            <source class="modal__img-ice" srcset=".\img\modal-product\modal-product.jpg 1x, .\img\modal-product\modal-product@2x.jpg 2x"/>
+              <img class="modal__img-ice" src=".\img\modal-product\modal-product.jpg" alt="ice " width="" />                    
+          </picture>
+        
+        <!-- <img class="modal__img-ice" src=".\img\modal-product\modal-product.jpg" alt="ice " width="" /> -->
         </div>
-
+<div  class="modal__list">
         <ul class="modal__list-call">
             <li class="modal__list-call--item">
                 <div class="modal__list-call--item-h">320</div>
@@ -35,41 +39,41 @@
                 <div class="modal__list-call--item-l">Carbs</div>
             </li>
         </ul>
-
+</div>
         <h4 class="modal-title-h4">Ingredients</h4>
-
+<div>
         <ul class="modal__list-ingredients">
             <li class="modal__list-ingredients--item">
-                <span class="blok">Milk</span>
-                <span class="blok">100ml</span>
+                <span class="modal__list-ingredients--blok">Milk</span>
+                <span class="modal__list-ingredients--blok">100ml</span>
             </li>
 
             <li class="modal__list-ingredients--item">
-                <span class="blok">Belgian chocolate</span>
-                <span class="blok">20g</span>
+                <span class="modal__list-ingredients--blok">Belgian chocolate</span>
+                <span class="modal__list-ingredients--blok">20g</span>
             </li>
 
             <li class="modal__list-ingredients--item">
-                <span class="blok">Cream</span>
-                <span class="blok">150 ml</span>
+                <span class="modal__list-ingredients--blok">Cream</span>
+                <span class="modal__list-ingredients--blok">150 ml</span>
             </li>
 
             <li class="modal__list-ingredients--item">
-                <span class="blok">Cocoa powder</span>
-                <span class="blok">30g</span>
+                <span class="modal__list-ingredients--blok">Cocoa powder</span>
+                <span class="modal__list-ingredients--blok">30g</span>
             </li>
 
             <li class="modal__list-ingredients--item">
-                <span class="blok">Sugar</span>
-                <span class="blok">40g</span>
+                <span class="modal__list-ingredients--blok">Sugar</span>
+                <span class="modal__list-ingredients--blok">40g</span>
             </li>
 
             <li class="modal__list-ingredients--item">
-                <span class="blok">Vanilla sugar</span>
-                <span class="blok"> 10g</span>
+                <span class="modal__list-ingredients--blok">Vanilla sugar</span>
+                <span class="modal__list-ingredients--blok"> 10g</span>
             </li>
         </ul>
-
+</div>
 
         <form class="modal-form">
 
