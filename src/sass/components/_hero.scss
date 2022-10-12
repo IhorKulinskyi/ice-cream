@@ -1,23 +1,69 @@
+
 .hero__button {
-  @extend %button-noFill-noBorder;
-  &:hover {
-    @extend %button-noFill-noBorder--hover;
-  }
-  &:focus {
-    @extend %button-noFill-noBorder--focus
-  }
-  white-space: nowrap;
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $btn-default-clr;
+  background-color: transparent;
+
+  @include textStyle($size: 14px, $height: 1.29);
+  
+  font-weight: 600;
+  font-family: inherit;
 }
 
+.hero__button:hover {
+  color: $btn-hover-clr;
+}
+
+.hero__button:focus,
+.hero__products:focus {
+  color: $txt-primary-clr;
+}
+.hero__button:focus {
+  border: none;
+  outline: none;
+}
+.hero__products:focus {
+  border: 2px solid $btn-hover-clr;
+  outline: none;
+}
+
+
 .hero__products {
-  @extend %button-noFill;
-  &:hover {
-    @extend %button-noFill--hover;
-  }
-  &:focus {
-    @extend %button-noFill--focus
-  }
+  display: inline-block;
+  margin: 0;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  color: $txt-secondary-clr;
+  background-color: transparent;
+  border: 2px solid $btn-default-clr;
+
+  @include textStyle($size: 14px, $height: 1.29);
   
+  font-weight: 600;
+  font-family: inherit;
+}
+.hero__products:hover {
+  border: 2px solid $btn-hover-clr;
+}
+
+.hero__products:focus {
+ 
+}
+
+
+.hero__button {
+  white-space: nowrap;
 }
 
 .hero__products {
@@ -55,10 +101,13 @@
   &:focus .hero__icon--arrow, &:focus .hero__icon--hov {
       display: none;
   }
+
   &:focus .hero__icon--foc {
      display: block;
   }
 }
+
+//  =========== Mobile ===========
 
 @media screen and (max-width: 767px) {
   .hero__container {
@@ -96,9 +145,6 @@
        
     }
 
-
-
-
   .hero__title-elemet{
     font-family: $secondary-font;
     font-style: normal;
@@ -126,17 +172,27 @@
     padding: 0;
     margin: 0;
     }
+    // ======= BUTTON =======
+    .hero__item {
+      margin-right: 8px;
+    }
     .hero__button {
     width: 83px;
     height: 24px;
+    
     }
-   
-
-
+    .hero__products {
+      width: 62px;
+      height: 24px;
+      }
+     
     .hero__button,
     .hero__products {
-     width: 83px;
-    height: 24px;
+      // margin-left: auto;
+      // margin-right: auto;
+      // display: inline-box;
+      // flex-direction: column;
+    padding: 0;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -155,6 +211,9 @@
       color:$txt-secondary-clr;
     }
 }
+
+
+
 
  //====== TABLET =======
 
@@ -207,11 +266,18 @@
     width: 366px;
    } 
 
-
+   .hero__button {
+    width: 83px;
+    height: 24px;
+    }
+    .hero__products {
+      width: 62px;
+      height: 24px;
+      }
+     
     .hero__button,
     .hero__products {
-     width: 83px;
-    height: 24px;
+      padding: 0;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -236,10 +302,7 @@
       padding: 0;
       margin: 0;
       }
-      .hero__button {
-      width: 83px;
-      height: 24px;
-      }
+      
   .hero__icon--arrow,
   .hero__icon--hov,
   .hero__icon--foc  {
@@ -312,30 +375,30 @@
 
 }
 
-
-
-@media screen and (min-width: 1200px) {
 // =====   Container
 
-.hero__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    // outline: 1px solid red;
-    background-image: url(/src/img/hero/dots-desk-min.png);
-    background-position: bottom;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    }
+@media screen and (min-width: 1200px) {
 
-// =====   Ice-cream horn
-.hero__horn {
-    position: absolute;
-    display: block;
-        z-index: 10;  
-        right: 10px;
-        bottom: -100px;
-    }
+
+  .hero__container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      // outline: 1px solid red;
+      background-image: url(/src/img/hero/dots-desk-min.png);
+      background-position: bottom;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      }
+
+  // =====   Ice-cream horn
+  .hero__horn {
+      position: absolute;
+      display: block;
+          z-index: 10;  
+          right: 10px;
+          bottom: -100px;
+      }
     
             
 
@@ -369,10 +432,21 @@
     fill: $txt-primary-clr;
     }
 
-.hero__button,
+
+
+
+
+    .hero__button {
+      width: 154px;
+      height: 42px;
+      }
+      .hero__products {
+        width: 134px;
+        height: 42px;
+        }
+        
+    .hero__button,
     .hero__products {
-     width: 134px;
-    height: 42px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
