@@ -1,0 +1,89 @@
+// ІНПУТИ Загальні стилі//
+
+.order-form__input {
+  width: 100%;
+  border: 1px solid $bg-basic-clr;
+  border-radius: 10px;
+  background-color: $mdl-form-input-bg-clr;
+
+  &::placeholder {
+    font-weight: 400;
+    line-height: 1.4;
+  }
+}
+
+.order-form__comment {
+  width: 100%;
+  border: 1px solid $bg-basic-clr;
+  border-radius: 10px;
+  background-color: $mdl-form-input-bg-clr;
+  outline: none;
+  resize: none;
+
+  &::placeholder {
+    font-weight: 400;
+    line-height: 1.4;
+  }
+}
+
+// MOBILE max-width: 767px//
+
+@media screen and (max-width: 767px) {
+  .order-form__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .order-form__input {
+    height: 32px;
+    padding: 8px 12px 7px 12px;
+
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+
+  .order-form__comment {
+    width: 100%;
+    height: 65px;
+    padding: 8px 12px;
+
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+}
+
+// TABLET та DESKTOP (однакові стилі) min-width:768px //
+
+@media screen and (min-width: 768px) {
+  .order-form__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 368px;
+    margin-bottom: 32px;
+  }
+
+  .order-form__input {
+    height: 42px;
+    padding: 11px 16px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  .order-form__comment {
+    width: 100%;
+    height: 84px;
+    padding: 11px 16px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}

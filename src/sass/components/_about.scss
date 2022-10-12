@@ -1,19 +1,47 @@
 //стилі від 0-767px
-
+// .about{
+//   outline: 2px solid violet;
+// }
 //геометрія для заголовків
+.about {
+  padding-top: 60px;
+}
 .about__titles {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 54px;
 }
 .about__subtitle {
   margin-top: 0;
   margin-bottom: 12px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+
+  color: $txt-primary-clr;
 }
 .about__title {
   @extend %title;
   margin-bottom: 0;
+
+  font-family: $secondary-font;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: $ltr-spc;
+  text-transform: uppercase;
+
+  color: $txt-primary-clr;
 }
 .about__cow-picture {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,
+    1px -22px 7px 9px $shdw-clr;
+  // box-shadow: 1px -22px 7px 9px $shdw-clr;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -32,20 +60,48 @@
 }
 .about__text-box {
   display: flex;
+  padding: 0 50px;
   flex-direction: column;
   gap: 4px;
 }
 .about__text {
   @extend %description;
 
+  font-family: $primary-font;
+  font-size: $font-size-descr-mob;
+  line-height: 1.75;
+  letter-spacing: $ltr-spc;
+
+  color: $txt-primary-clr;
   &:last-child {
     display: none;
   }
+}
+.about__button {
+  @extend %button;
+  &:hover{
+    @extend %button--hover;
+  }
+  &:focus{
+    @extend %button--focus;
+  }
+}
+
+.about__button-icon {
+  width: 12px;
+  height: 12px;
+  transform: translateY(30%);
 }
 // від 480px - 767px
 @media screen and (min-width: $tablet) {
   .about__titles {
     margin-bottom: 72px;
+  }
+  .about__subtitle {
+    font-size: 22px;
+  }
+  .about__title {
+    font-size: 34px;
   }
   .about__cow-picture {
     width: 330px;
@@ -62,10 +118,15 @@
     flex-direction: row;
     gap: 32px;
   }
-  .about__text:last-child {
-    display: block;
+  .about__text {
+    font-size: $font-size-descr-tab;
+    &:last-child {
+      display: block;
+    }
   }
+
   .about__text-box {
+    padding: 0;
     gap: 8px;
   }
   .about__box {
@@ -78,11 +139,20 @@
   .about__titles {
     margin-bottom: 82px;
   }
+  .about__subtitle {
+    font-size: 30px;
+  }
+  .about__title {
+    font-size: 36px;
+  }
   .about__cow-picture {
     width: 490px;
     height: 490px;
   }
   .about__box-content {
     gap: 100px;
+  }
+  .about__text {
+    font-size: $font-size-descr-desk;
   }
 }
