@@ -1,4 +1,7 @@
 
+// .hero {
+//   overflow: hidden;
+// }
 .hero__button {
   display: inline-block;
   margin: 0;
@@ -33,7 +36,9 @@
   border: 2px solid $btn-hover-clr;
   outline: none;
 }
-
+a {
+  text-decoration:none;
+}
 
 .hero__products {
   display: inline-block;
@@ -124,7 +129,7 @@
             display: none;
         }
         .hero__horn-ice {
-          height: 310px;
+          height: 370px;
           width: auto;
         } 
 
@@ -136,7 +141,7 @@
         z-index: 25;
         top:50%;
         left:50%;
-        transform: translate(-56%, -11%);
+        transform: translate(-50%, -23%);
        
     }
 
@@ -195,7 +200,6 @@
     line-height: 1.25;
     align-items: center;
     text-align: center;
-    line-height: 0;
     }
     .hero__button{
     text-decoration-line: underline;
@@ -249,17 +253,23 @@
 
     // =====   Ice-cream horn
     .hero__horn {
-    position: absolute;
-    display: block;
+        
+        position: absolute;
+        display: block;
         z-index: 22;  
-        right: 40px;
+        right: 25px;
         bottom: -56px;
     }
     
    .hero__horn-ice {
-    height: 435px;
-    width: 366px;
+    height: 450px;
+    width: auto;
    } 
+
+  //  ======= Button - Tablet =======
+   .hero__item {
+    margin-right: 8px;
+  }
 
    .hero__button {
     width: 83px;
@@ -280,7 +290,6 @@
     line-height: 1.25;
     align-items: center;
     text-align: center;
-    line-height: 0;
     }
     .hero__button{
     text-decoration-line: underline;
@@ -370,11 +379,11 @@
 
 }
 
-// =====   Container
+// =========== DEsctop ===========
 
 @media screen and (min-width: 1200px) {
 
-
+// =====   Container
   .hero__container {
       position: relative;
       display: flex;
@@ -390,7 +399,7 @@
   .hero__horn {
       position: absolute;
       display: block;
-          z-index: 10;  
+          z-index: 999;  
           right: 10px;
           bottom: -100px;
       }
@@ -415,6 +424,10 @@
     }
     
     // =====   Buttons
+
+    .hero__item {
+      margin-right: 12px;
+    }
     
     .hero__list {
     display: flex;
