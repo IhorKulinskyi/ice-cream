@@ -1,16 +1,45 @@
-// .testimonial-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   outline: 1px solid red;
-//   background-color: white;
-// }
 .testimonial {
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  overflow-x: hidden;
+  background-image: url(../img/background/mobile_reviwes.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: $min-tablet),
+    screen and (min-resolution: 192dpi) and (max-width: $min-tablet),
+    screen and (min-resolution: 2dppx) and (max-width: $min-tablet) {
+    background-image: url(../img/background/mobile_reviwes@2x.jpg);
+  }
+  @media screen and(min-width:$tablet) {
+    background-image: url(../img/background/tablet_reviews.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: $min-desktop),
+    screen and (min-resolution: 192dpi) and (max-width: $min-desktop),
+    screen and (min-resolution: 2dppx) and (max-width: $min-desktop) {
+    background-image: url(../img/background/tablet_reviews@2x.jpg);
+  }
+  @media screen and(min-width:$desktop) {
+    background-image: url(../img/background/desk_reviews.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+    screen and (min-resolution: 192dpi) and (min-width: $desktop),
+    screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: url(../img/background/desk_reviews@2x.jpg);
+  }
 }
+.testimonial-container {
+  padding-top: 186px;
+  padding-bottom: 394px;
+  overflow-x: hidden;
+  
+  @media screen and (min-width: $tablet) {
+    padding-top: 223px;
+    padding-bottom: 383px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 452px;
+    padding-bottom: 207px;
+  }
+}
+
 .testimonial__image {
   height: 85px;
   width: 85px;
@@ -25,9 +54,14 @@
   row-gap: 30px;
 }
 .testimonial__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 39px;
+  padding-right: 39px;
   width: 100%;
+  height: 256px;
   margin: 0;
-  padding: 34px 39px;
   text-align: center;
   background-color: $bg-basic-clr;
   font-family: $primary-font;
@@ -39,12 +73,39 @@
   font-weight: 400;
   color: $basic-white-clr;
   border-radius: 10px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 138px;
+    font-weight: 500;
+    @include textStyle(
+      $size: $font-size-descr-tab,
+      $height: 1.85,
+      $ltr-spc: 0.04em
+    );
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 74px;
+    padding-right: 74px;
+    width: 968px;
+    line-height: 1.87;
+  }
 }
 .testimonial__details {
   @include textStyle($size: 20px, $height: 1.86, $ltr-spc: 0.04em);
   font-weight: 500;
   color: #131313;
+  @media screen and (min-width: $tablet) {
+    font-size: $font-size-descr-desk;
+  }
 }
-.nav-btn {
-  cursor: pointer;
+.testimonial__btn {
+  display: none;
+}
+.swiper-pagination {
+  margin-top: 14px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 30px;
+  }
 }
