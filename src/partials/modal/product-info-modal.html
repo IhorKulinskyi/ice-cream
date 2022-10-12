@@ -7,22 +7,24 @@
             </svg>
         </button>
 
-        <h3 class="modal-chololate-title-h3">Chololate icecream</h3>
+    <h3 class="modal-chololate-title-h3">Chololate icecream</h3>
 
-        <div class="modal-chololate__img ">
-          <picture class="modal-chololate__img-ice">
-            <source class="modal-chololate__img-ice" srcset=".\img\modal-product\modal-product.jpg 1x, .\img\modal-product\modal-product@2x.jpg 2x"/>
-              <img class="modal-chololate__img-ice" src=".\img\modal-product\modal-product.jpg" alt="ice " width="" />                    
-          </picture>
-        
-        <!-- <img class="modal__img-ice" src=".\img\modal-product\modal-product.jpg" alt="ice " width="" /> -->
-        </div>
-<div  class="modal-chololate__list">
-        <ul class="modal-chololate__list-call">
-            <li class="modal-chololate__list-call--item">
-                <div class="modal-chololate__list-call--item-h">320</div>
-                <div class="modal-chololate__list-call--item-l">kcal</div>
-            </li>
+    <div class="modal-chololate__img">
+      <picture class="modal-chololate__img-ice">
+        <source
+          class="modal-chololate__img-ice"
+          srcset="
+            .\img\modal-product\modal-product.jpg    1x,
+            .\img\modal-product\modal-product@2x.jpg 2x
+          "
+        />
+        <img
+          class="modal-chololate__img-ice"
+          src=".\img\modal-product\modal-product.jpg"
+          alt="ice "
+          width=""
+        />
+      </picture>
 
             <li class="modal-chololate__list-call--item">
                 <div class="modal-chololate__list-call--item-h">4g</div>
@@ -108,6 +110,120 @@
 
         </form>
     </div>
-</div>
+    <div class="modal-chololate__list">
+      <ul class="modal-chololate__list-call">
+        <li class="modal-chololate__list-call--item">
+          <div class="modal-chololate__list-call--item-h">320</div>
+          <div class="modal-chololate__list-call--item-l">kcal</div>
+        </li>
 
-    
+        <li class="modal-chololate__list-call--item">
+          <div class="modal-chololate__list-call--item-h">4g</div>
+          <div
+            class="modal-chololate__list-call--item-l modal-chololate__list-call--item-lo"
+          >
+            Protein...
+          </div>
+        </li>
+
+        <li class="modal-chololate__list-call--item">
+          <div class="modal-chololate__list-call--item-h">8,2g</div>
+          <div class="modal-chololate__list-call--item-l">Fats</div>
+        </li>
+
+        <li class="modal__list-call--item">
+          <div class="modal-chololate__list-call--item-h">40,4g</div>
+          <div class="modal-chololate__list-call--item-l">Carbs</div>
+        </li>
+      </ul>
+    </div>
+    <h4 class="modal-chololate-title-h4">Ingredients</h4>
+
+    <ul class="modal-chololate__list-ingredients">
+      <li class="modal-chololate__list-ingredients--item">
+        <span class="modal-chololate__list-ingredients--blok">Milk</span>
+        <span class="modal-chololate__list-ingredients--blok">100ml</span>
+      </li>
+
+      <li class="modal-chololate__list-ingredients--item">
+        <span class="modal-chololate__list-ingredients--blok"
+          >Belgian chocolate</span
+        >
+        <span class="modal-chololate__list-ingredients--blok">20g</span>
+      </li>
+
+      <li class="modal-chololate__list-ingredients--item">
+        <span class="modal-chololate__list-ingredients--blok">Cream</span>
+        <span class="moda-chololatel__list-ingredients--blok">150 ml</span>
+      </li>
+
+      <li class="modal-chololate__list-ingredients--item">
+        <span class="modal-chololate__list-ingredients--blok"
+          >Cocoa powder</span
+        >
+        <span class="modal-chololate__list-ingredients--blok">30g</span>
+      </li>
+
+      <li class="modal-chololate__list-ingredients--item">
+        <span class="modal-chololate__list-ingredients--blok">Sugar</span>
+        <span class="modal-chololate__list-ingredients--blok">40g</span>
+      </li>
+
+      <li class="modal-chololate__list-ingredients--item">
+        <span class="modal-chololate__list-ingredients--blok"
+          >Vanilla sugar</span
+        >
+        <span class="modal-chololate__list-ingredients--blok"> 10g</span>
+      </li>
+    </ul>
+
+    <form class="modal-chololate-form">
+      <label class="modal-chololate-form__field">
+        <span class="modal-chololate-form__input-wrapper">
+          <input
+            type="text"
+            class="modal-form__input"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            name="user_name"
+            placeholder="Name"
+          />
+        </span>
+      </label>
+
+      <label class="modal-chololate-form__field">
+        <span class="modal-chololate-form__input-wrapper">
+          <input
+            type="tel"
+            class="modal-chololate-form__input"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            name="user_phone"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+
+      <label class="modal-chololate-form__field">
+        <span class="modal-chololate-form__input-wrapper">
+          <input
+            type="email"
+            class="modal-chololate-form__input"
+            name="user_email"
+            placeholder="Email"
+          />
+        </span>
+      </label>
+
+      <!-- <label class="modal-form__field"> -->
+      <textarea
+        name="user_message"
+        class="modal-chololate-form__message"
+        placeholder="Comment"
+      ></textarea>
+      <!-- </label> -->
+
+      <button type="submit" class="modal-chololate-form__submit">Submit</button>
+    </form>
+  </div>
+</div>
