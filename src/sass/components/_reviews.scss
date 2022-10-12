@@ -1,19 +1,45 @@
 .testimonial {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  background-image: url(../img/background/mobile_reviwes.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: $min-tablet),
+    screen and (min-resolution: 192dpi) and (max-width: $min-tablet),
+    screen and (min-resolution: 2dppx) and (max-width: $min-tablet) {
+    background-image: url(../img/background/mobile_reviwes@2x.jpg);
+  }
+  @media screen and(min-width:$tablet) {
+    background-image: url(../img/background/tablet_reviews.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: $min-desktop),
+    screen and (min-resolution: 192dpi) and (max-width: $min-desktop),
+    screen and (min-resolution: 2dppx) and (max-width: $min-desktop) {
+    background-image: url(../img/background/tablet_reviews@2x.jpg);
+  }
+  @media screen and(min-width:$desktop) {
+    background-image: url(../img/background/desk_reviews.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+    screen and (min-resolution: 192dpi) and (min-width: $desktop),
+    screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: url(../img/background/desk_reviews@2x.jpg);
+  }
+}
+.testimonial-container {
+  padding-top: 186px;
+  padding-bottom: 394px;
+  overflow-x: hidden;
+  
   @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 223px;
+    padding-bottom: 383px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 128px;
-    padding-bottom: 100px;
+    padding-top: 452px;
+    padding-bottom: 207px;
   }
 }
 
-.testimonial-container {
-  overflow-x: hidden;
-}
 .testimonial__image {
   height: 85px;
   width: 85px;
