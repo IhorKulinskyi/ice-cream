@@ -2252,6 +2252,7 @@ img {
        object-fit: cover;
   }
   .footer__tel-info {
+    font-size: 14px;
     margin-bottom: 24px;
   }
   .footer__copyrights {
@@ -2288,6 +2289,7 @@ img {
     margin-bottom: 40px;
   }
   .footer__tel-info {
+    font-size: 16px;
     margin-bottom: 6px;
   }
   .footer__copyrights {
