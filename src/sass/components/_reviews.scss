@@ -1,12 +1,12 @@
 .testimonial {
-  background-image: url(../img/background/mobile_reviwes.jpg);
+  background-image: url(../img/background/mobile_reviews.jpg);
   background-size: cover;
   background-repeat: repeat;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: $min-tablet),
     screen and (min-resolution: 192dpi) and (max-width: $min-tablet),
     screen and (min-resolution: 2dppx) and (max-width: $min-tablet) {
-    background-image: url(../img/background/mobile_reviwes@2x.jpg);
+    background-image: url(../img/background/mobile_reviews@2x.jpg);
   }
   @media screen and(min-width:$tablet) {
     background-image: url(../img/background/tablet_reviews.jpg);
@@ -29,7 +29,7 @@
   padding-top: 186px;
   padding-bottom: 394px;
   overflow-x: hidden;
-  
+
   @media screen and (min-width: $tablet) {
     padding-top: 223px;
     padding-bottom: 383px;
