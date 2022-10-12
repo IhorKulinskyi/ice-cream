@@ -1,0 +1,191 @@
+//ЧЕКБОКС КОНТЕЙНЕР//
+
+.order-form__check-list {
+  padding: 0 0 20px 0;
+  margin: 0 0 24px 0;
+  border: 0;
+}
+
+.check-list__item {
+  position: relative;
+  @include centeredFlex;
+  flex-direction: column;
+  min-width: 132px;
+  border: 2px solid #96af8c;
+  border-radius: 16px;
+  padding-top: 96px;
+  padding-bottom: 20px;
+  transition: background-color $transition-time $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: #96af8c;
+  }
+}
+
+.check-list__item--ice-coffee {
+  border-color: #efd478;
+
+  &:hover,
+  &:focus {
+    background-color: #efd478;
+  }
+}
+
+.check-list__item--milkshake {
+  border-color: #d6936d;
+
+  &:hover,
+  &:focus {
+    background-color: #d6936d;
+  }
+}
+
+/* КАРТИНКИ*/
+
+.check-list__img {
+  position: absolute;
+  top: -50%;
+  width: 132px;
+  height: 139px;
+  border-radius: 50%;
+  background-color: $bg-basic-clr;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-image: url(../img/buy-now-modal/buy-now-product1-mobile.jpg);
+    background-size: cover;
+  }
+}
+
+.check-list__img--ice-coffee {
+  background-color: #efd478;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
+  &::before {
+    background-image: url(../img/buy-now-modal/buy-now-product2-mob.jpg);
+  }
+}
+
+.check-list__img--milkshake {
+  background-color: #efd478;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+  &::before {
+    background-image: url(../img/buy-now-modal/buy-now-product3-mob.jpg);
+  }
+}
+
+.check-list__sub-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// MOBILE max-width: 767px//
+
+@media screen and (max-width: 767px) {
+  //Контейнер для чекбоксів//
+
+  .order-form__check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+  }
+}
+
+/* MOBILE 2x, max-width: 767px */
+
+//Картинки//
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .check-list__img--ice-cream::before {
+    background-image: url(../img/buy-now-modal/buy-now-product1-mobile@2x.jpg);
+  }
+
+  .check-list__img--ice-coffee::before {
+    background-image: url(../img/buy-now-modal/buy-now-product2-mob@2x.jpg);
+  }
+
+  .check-list__img--milkshake::before {
+    background-image: url(../img/buy-now-modal/buy-now-product3-mob@2x.jpg);
+  }
+}
+
+// For TABLET and DESKTOP (однакові стилі) min-width:768px //
+
+@media screen and (min-width: 768px) {
+  .order-form__check-list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .check-list__item {
+    padding-top: 95px;
+  }
+
+  //Картинки//
+
+  .check-list__img {
+    min-height: 138px;
+
+    &::before {
+      height: 131px;
+      background-size: cover;
+      background-image: url(../img/buy-now-modal/buy-now-product1-desk.jpg);
+    }
+  }
+
+  .check-list__img--ice-coffee::before {
+    background-image: url(../img/buy-now-modal/buy-now-product2-desk.jpg);
+  }
+
+  .check-list__img--milkshake::before {
+    background-image: url(../img/buy-now-modal/buy-now-product3-desk.jpg);
+  }
+}
+
+/* media 2x + min-width 768px */
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .check-list__img--ice-cream::before {
+    background-image: url(../img/buy-now-modal/buy-now-product1-desk@2x.jpg);
+  }
+
+  .check-list__img--ice-coffee::before {
+    background-image: url(../img/buy-now-modal/buy-now-product2-desk@2x.jpg);
+  }
+
+  .check-list__img--milkshake::before {
+    background-image: url(../img/buy-now-modal/buy-now-product3-desk@2x.jpg);
+  }
+}
