@@ -1,47 +1,63 @@
 <header class="site-header">
-    <div class="container site-header__container">
-        <picture>
-            <source
-                srcset="./img/logo/logo-desktop.png 1x, ./img/logo/logo-desktop@2x.png 2x"
-                media="(min-width: 1200px)">
-            <source
-                srcset="./img/logo/logo-tablet.png 1x, ./img/logo/logo-tablet@2x.png 2x"
-                media="(min-width: 768px)">
-            <source
-                srcset="./img/logo/logo-mobile.png 1x, ./img/logo/logo-mobile@2x.png 2x"
-                media="(max-width: 767px)">
-            <img class="logo" src="./img/logo/logo-mobile.png" alt="site logo">
-        </picture>        
-        <nav class="site-header__navigation">
-            <ul class="site-nav">
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">Home</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">How it’s made?</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">Our products</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <button type="button" class="open-menu-btn js-open-menu">
-            <svg aria-label="menu button icon" class="open-menu-btn__icon" width="32" height="32">
-                <use href="./img/icons.svg#icon-burger"></use>
-            </svg>
-        </button>
-        <button type="button" class="site-header__btn" data-modal-open>
-            <span>Buy now</span>
-            <svg aria-label="header button element" class="site-header__btn-icon" width="12" height="12">
-                <use href="./img/icons.svg#icon-check-button"></use>
-            </svg>
-        </button>
-    </div>
+  <div class="container site-header__container">
+    <picture>
+      <source
+        srcset="
+          ./img/logo/logo-desktop.png    1x,
+          ./img/logo/logo-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./img/logo/logo-tablet.png 1x, ./img/logo/logo-tablet@2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./img/logo/logo-mobile.png 1x, ./img/logo/logo-mobile@2x.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img class="logo" src="./img/logo/logo-mobile.png" alt="site logo" />
+    </picture>
+    <nav class="site-header__navigation">
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="open-menu-btn js-open-menu">
+      <svg
+        aria-label="menu button icon"
+        class="open-menu-btn__icon"
+        width="32"
+        height="32"
+      >
+        <use href="./img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="site-header__btn">
+      <span>Buy now</span>
+      <svg
+        aria-label="header button element"
+        class="site-header__btn-icon"
+        width="12"
+        height="12"
+      >
+        <use href="./img/icons.svg#icon-check-button"></use>
+      </svg>
+    </button>
+  </div>
 
-    <!-- tablet and mobile menu -->
+  <!-- tablet and mobile menu -->
 
     <div class="menu js-menu-container">
         <div class="container mobile-menu__container">
@@ -73,16 +89,17 @@
                     <a class="menu__site-nav-link" href="#">Contact</a>
                 </li>
             </ul>
+<<<<<<< HEAD
             <button type="button" class="menu__btn site-header__btn" data-modal-open>
+=======
+            <button type="button" class="menu__btn">
+>>>>>>> 717006e7f497077263a1b234f187c554f29f046e
                 <span>Buy now</span>
-                <svg aria-label="menu button element" class="site-header__btn-icon" width="12" height="12">
+                <svg aria-label="menu button element" class="menu__btn-icon" width="12" height="12">
                     <use href="./img/icons.svg#icon-check-button"></use>
                 </svg>
             </button>
         </div>
     </div>
+  </div>
 </header>
-<script defer src="./js/mobile-menu.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
