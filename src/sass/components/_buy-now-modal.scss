@@ -1,6 +1,5 @@
 //Модалка, кнопка закриття модалки//
 
-//СПІЛЬНІ СТИЛІ//
 .order-modal {
   background-color: $mdl-primary-bg-clr;
   border-radius: 10px;
@@ -12,6 +11,34 @@
 
 .modal-close-btn {
   position: absolute;
+}
+
+//Форма//
+.order-form {
+  @include centeredFlex;
+  flex-direction: column;
+  color: $txt-secondary-clr;
+}
+
+.order-form__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-align: center;
+}
+
+// КНОПКА //
+.order-form__btn {
+  @extend %button;
+  transition: background-color $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
+
+  &:hover {
+    @extend %button--hover;
+  }
+
+  &:focus {
+    @extend %button--focus;
+  }
 }
 
 //For MOBILE//
@@ -36,6 +63,26 @@
   }
 }
 
+.order-form__title {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 84px;
+}
+
+// КНОПКА //
+
+.order-form__btn {
+  @include textStyle($size: 12px, $height: 1.25);
+
+  &:hover {
+    @include textStyle($size: 12px, $height: 1.25);
+  }
+
+  &:focus {
+    @include textStyle($size: 12px, $height: 1.25);
+  }
+}
+
 // TABLET and DECKTOP (однакові стилі) //
 
 @media screen and (min-width: 768px) {
@@ -56,5 +103,11 @@
   .close-icon {
     width: 20px;
     height: 20px;
+  }
+
+  .order-form__title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 103px;
   }
 }
