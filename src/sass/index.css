@@ -80,6 +80,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -148,6 +149,7 @@ img {
   border: 0px;
   cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
+  outline: none;
   color: #fcfcfc;
   background-color: #0a8817;
   font-size: 14px;
@@ -220,6 +222,7 @@ img {
   border: 0px;
   cursor: url(../img/additionals/cursor-hover.png), pointer;
   text-align: center;
+  outline: none;
   color: #fcfcfc;
   background-color: transparent;
   border: 2px solid #0a8817;
@@ -342,6 +345,7 @@ img {
 .site-header__btn:focus {
   background-color: #0a8817;
   color: #fcfcfc;
+  outline: none;
 }
 @media screen and (max-width: 767px) {
   .site-header__btn {
@@ -508,6 +512,7 @@ img {
 .menu__btn:focus {
   background-color: #0a8817;
   color: #fcfcfc;
+  outline: none;
 }
 
 .menu__btn-icon {
@@ -2721,6 +2726,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-close-btn {
@@ -3033,7 +3041,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   justify-content: center;
-  /*за допомогою flex центруэмо svg   */
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-map-title-h3 {
@@ -3236,6 +3246,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-close-btn {
@@ -3456,6 +3469,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-close-btn {
@@ -3513,6 +3529,9 @@ a {
   width: 100%;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .order-modal__close-btn {

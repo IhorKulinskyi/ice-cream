@@ -1,3 +1,10 @@
 import './.../../js/testimonial';
 import './.../../js/gallery';
 import './.../../js/mobile-menu';
+import './.../../js/by-now-modal';
+import './.../../js/modal-franchise';
+import './.../../js/modal-location';
+import './.../../js/modal-more';
+import './.../../js/modal-product-info1';
+import './.../../js/modal-product-info2';
+import './.../../js/modal-product-info3';
