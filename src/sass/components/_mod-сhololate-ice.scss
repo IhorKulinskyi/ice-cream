@@ -1,20 +1,4 @@
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition-dur-and-func), ;
-
-    &.is-hidden {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-}
 
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 
@@ -100,7 +84,7 @@
 
 @media screen and (min-width: 768px) {
     .modal-chololate {
-        width: 568px;
+        // width: 568px;
         max-width: 568px;
     }
     .modal-close-btn {
@@ -171,6 +155,7 @@
 
 .modal-chololate {
     position: absolute;
+    flex-shrink: 0;
     top: 50%;
     left: 50%;
     padding: 28px;
@@ -178,6 +163,7 @@
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+    // height: auto;
 }
 
 
@@ -226,6 +212,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     // justify-content: center;
 }
 
@@ -427,9 +414,13 @@
     // }
 }
 
-.modal-chololate-form__submit:hover,
+.modal-chololate-form__submit:hover {
+    background: #0A8817;
+    // background-color: var(--button-color);
+}
 .modal-chololate-form__submit:focus {
     background: #0A8817;
+    color: #FCFCFC;
     // background-color: var(--button-color);
 }
 

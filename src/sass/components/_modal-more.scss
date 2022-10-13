@@ -1,20 +1,4 @@
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition-dur-and-func), ;
-
-    &.is-hidden {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-}
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 // 0px - 767px
@@ -79,6 +63,7 @@
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+    
 }
 // описуємо кнопку  закриття модального вікна (хрестик)
 .modal-close-btn {

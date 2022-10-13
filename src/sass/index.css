@@ -68,6 +68,24 @@ img {
   margin: -1px;
 }
 
+.backdrop {
+  z-index: 1000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .tel-info__link, .footer__social-link, .link, .menu__site-nav-link, .site-nav__link {
   display: inline-block;
   color: inherit;
@@ -222,7 +240,7 @@ img {
 .site-header {
   position: absolute;
   top: 0;
-  z-index: 10001;
+  z-index: 999;
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -995,13 +1013,14 @@ a {
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(../img/background/mobile_product1.jpg);
-  background-size: contain;
-  background-repeat: repeat;
+  background: url(../img/background/mobile_product1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .products {
     background-image: url(../img/background/mobile_product1@2x.jpg);
+    background-attachment: fixed;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2574,22 +2593,6 @@ a {
 /*===============END Модальна форма ================*/
 /* ======= ----- END Модальне вікно--------- =========== */
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-dur-and-func);
-}
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
@@ -2654,7 +2657,6 @@ a {
 }
 @media screen and (min-width: 768px) {
   .modal-chololate {
-    width: 568px;
     max-width: 568px;
   }
   .modal-close-btn {
@@ -2706,6 +2708,7 @@ a {
 }
 .modal-chololate {
   position: absolute;
+  flex-shrink: 0;
   top: 50%;
   left: 50%;
   padding: 28px;
@@ -2753,6 +2756,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .modal-chololate__list {
@@ -2939,9 +2943,13 @@ a {
   border: 0;
 }
 
-.modal-chololate-form__submit:hover,
+.modal-chololate-form__submit:hover {
+  background: #0A8817;
+}
+
 .modal-chololate-form__submit:focus {
   background: #0A8817;
+  color: #FCFCFC;
 }
 
 .modal-chololate__img {
@@ -2963,22 +2971,6 @@ a {
 }
 
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-dur-and-func);
-}
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
@@ -3074,23 +3066,35 @@ a {
   flex-direction: column;
 }
 
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-dur-and-func);
-}
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+.modal-map-form__submit {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  width: 114px;
+  height: 42px;
+  background: #F8D24E;
+  border-radius: 10px;
+  align-self: center;
+  padding: 10px 32px 10px 32px;
+  border: 0;
 }
 
+.modal-map-form__submit:hover {
+  background: #0A8817;
+}
+
+.modal-map-form__submit:focus {
+  background: #0A8817;
+  color: #FCFCFC;
+}
+
+/* ======= --------Відкривання закривання модального вікна --------- =========== */
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
@@ -3113,6 +3117,8 @@ a {
   }
   .modal-franchise-form__field {
     margin-bottom: 12px;
+    width: 100%;
+    max-width: 224px;
   }
   .modal-franchise-form__input {
     padding-left: 12px;
@@ -3153,7 +3159,7 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-franchise {
     width: 568px;
     max-width: 568px;
   }
@@ -3161,7 +3167,7 @@ a {
     top: 24px;
     right: 24px;
   }
-  .modal-title-h3 {
+  .modal-franchise-title-h3 {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 24px;
@@ -3377,28 +3383,16 @@ a {
   border: 0;
 }
 
-.modal-franchise-form__submit:hover,
-.modal-franchise-form__submit:focus {
+.modal-franchise-form__submit:hover {
   background: #0A8817;
 }
 
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-dur-and-func);
-}
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+.modal-franchise-form__submit:focus {
+  background: #0A8817;
+  color: #FCFCFC;
 }
 
+/* ======= --------Відкривання закривання модального вікна --------- =========== */
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
@@ -3500,25 +3494,6 @@ a {
   font-weight: 400;
   line-height: 1.4;
   color: #131313;
-}
-
-.order-modal__backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1100;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: auto;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  overflow: auto;
 }
 
 .order-modal {

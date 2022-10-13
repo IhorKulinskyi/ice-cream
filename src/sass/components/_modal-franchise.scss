@@ -1,54 +1,32 @@
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition-dur-and-func), ;
-
-    &.is-hidden {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-}
 
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 
 /*=============== Модальне вікно ================*/
 // 0px - 767px
 @media screen and (max-width: 768px) {
-
     .modal-franchise {
         width: calc(100% - 30px);
         max-width: 280px;
     }
-
     .modal-close-btn {
         top: 8px;
         right: 8px;
     }
-
     .modal-franchise-title-h3 {
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 20px;
     }
-
     .modal-franchise-paragraph {
         font-size: 14px;
         margin-bottom: 24px;
     }
-
     .modal-franchise-form__field {
         margin-bottom: 12px;
-        // width: 100%;
-        // max-width: 224px;
+        width: 100%;
+        max-width: 224px;
     }
-
     .modal-franchise-form__input {
         padding-left: 12px;
         width: 100%;
@@ -56,9 +34,7 @@
         height: 32px;
         // margin-bottom: 12px;
         // font-size: 12px;
-
     }
-
     .modal-franchise-form__message {
         width: 100%;
         max-width: 240px;
@@ -68,7 +44,6 @@
         padding-right: 12px;
         font-size: 12px;
     }
-
     .modal__list {
         width: 280px;
     }
@@ -83,16 +58,13 @@
         width: 43px;
         height: 43px;
     }
-
     .modal__list-call--item {
         width: 53px;
         height: 72px;
     }
-
     .modal-form__submit--map {
         width: 134px;
     }
-
     .modal-video-link {
         width: 224px;
         height: 199px;
@@ -102,7 +74,7 @@
 ///////
 
 @media screen and (min-width: 768px) {
-    .modal {
+    .modal-franchise {
         width: 568px;
         max-width: 568px;
     }
@@ -112,7 +84,7 @@
         right: 24px;
     }
 
-    .modal-title-h3 {
+    .modal-franchise-title-h3 {
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 24px;
@@ -122,14 +94,11 @@
         font-size: 16px;
         margin-bottom: 24px;
     }
-
-
     .modal-franchise-form__field {
         margin-bottom: 16px;
         // width: 100%;
         // max-width: 356px;       
     }
-
     .modal-franchise-form__input {
         padding-left: 16px;
         font-size: 14px;
@@ -137,7 +106,6 @@
         height: 42px;
         // margin-bottom: 16px;
     }
-
     .modal-franchise-form__message {
         width: 100%;
         max-width: 368px;
@@ -147,32 +115,26 @@
         padding-right: 16px;
         font-size: 14px;
     }
-
     .modal-map-link {
         width: 448px;
         height: 260px;
         margin-bottom: 32px;
     }
-
     .modal-video-link {
         width: 448px;
         height: 205px;
     }
-
     .modal__list {
         width: 568px;
     }
-
     .modal__list-call--item-h {
         width: 53px;
         height: 53px;
     }
-
     .modal__list-call--item {
         width: 65px;
         height: 90px;
     }
-
     .modal__list-call {
         gap: 20px;
         padding-right: 40px;
@@ -181,16 +143,12 @@
         // flex-direction: column;
         // justify-content: space-between;
     }
-
     .modal-form__submit--map {
         width: 145px;
     }
-
 }
 
 ///////
-
-
 .modal-franchise {
     position: absolute;
     top: 50%;
@@ -201,7 +159,6 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
 }
-
 // описуємо кнопку  закриття модального вікна (хрестик)
 .modal-close-btn {
     display: flex;
@@ -250,7 +207,6 @@
     // flex-direction: column;
    justify-content: space-between;
 }
-
 // .modal-close-icon {
 //     transition: fill var(--transition-dur-and-func);
 
@@ -262,10 +218,8 @@
 
 /* END ===============Модальна форма================*/
 
-
 /*=============== Модальна форма ================*/
 .modal-franchise-form {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,8 +302,14 @@
     //     background-color: var(--button-color);
     // }
 }
-.modal-franchise-form__submit:hover,
+
+.modal-franchise-form__submit:hover {
+    background: #0A8817;
+    // background-color: var(--button-color);
+}
+
 .modal-franchise-form__submit:focus {
     background: #0A8817;
+    color: #FCFCFC;
     // background-color: var(--button-color);
 }
