@@ -1,15 +1,30 @@
 // ІНПУТИ Загальні стилі//
 
+.order-form__input-container {
+	font-size: $font-size-descr-mob;
+ }
+
 .order-form__input {
   width: 100%;
   border: 1px solid $bg-basic-clr;
   border-radius: 10px;
   background-color: $mdl-form-input-bg-clr;
+  outline: none;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 
   &::placeholder {
     font-weight: 400;
     line-height: 1.4;
   }
+
+  &:hover,
+  &:focus {
+	border-color: $mdl-buy-now-scnd-item-border-clr;
+  }
+  
+  &:invalid {
+	border-color: #f44336;
+}
 }
 
 .order-form__comment {
@@ -19,10 +34,16 @@
   background-color: $mdl-form-input-bg-clr;
   outline: none;
   resize: none;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 
   &::placeholder {
     font-weight: 400;
     line-height: 1.4;
+  }
+
+  &:hover,
+  &:focus {
+	border-color: $mdl-buy-now-scnd-item-border-clr;
   }
 }
 

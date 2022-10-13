@@ -1,1 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+@media (prefers-reduced-motion: no-preference) { 
+  :root { 
+    scroll-behavior: smooth; 
+  } 
+}

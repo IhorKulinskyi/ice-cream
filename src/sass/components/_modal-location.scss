@@ -1,20 +1,5 @@
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop-aa {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition-dur-and-func), ;
 
-    &.is-hidden {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-}
 // .is-hidden {
 //     visibility: hidden;
 //     opacity: 0;
@@ -84,6 +69,10 @@
         background: #FCFCFC;
         border: 2px solid #F8D24E;
         justify-content: center;
+
+        max-height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden
     /*за допомогою flex центруэмо svg   */
 }
     .modal-map-title-h3 {

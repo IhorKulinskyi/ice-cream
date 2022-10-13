@@ -1,16 +1,33 @@
-//Модалка, кнопка закриття модалки//
+ //Модалка, кнопка закриття модалки//
+
 
 .order-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: $mdl-primary-bg-clr;
   border-radius: 10px;
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  max-height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden
 }
 
-.modal-close-btn {
+.order-modal__close-btn {
   position: absolute;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  transition: fill $transition-time $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    fill: $bg-secondary-clr;
+  }
 }
 
 //Форма//
@@ -26,7 +43,7 @@
   text-align: center;
 }
 
-// КНОПКА //
+// КНОПКА SUBMIT //
 .order-form__btn {
   @extend %button;
   transition: background-color $transition-time $cubic-bezier,
@@ -39,21 +56,31 @@
   &:focus {
     @extend %button--focus;
   }
+
+  &:disabled {
+    @extend %button--disabled;
+  }
 }
 
 //For MOBILE//
 
 @media screen and (max-width: 767px) {
   .order-modal {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
     width: 280px;
     padding: 28px;
   }
 
-  .modal-close-btn {
+  .order-modal__close-btn {
     top: 8px;
     right: 8px;
     padding: 0;
     border: 0;
+    width: 16px;
+    height: 16px;
     background-color: inherit;
   }
 
@@ -69,7 +96,7 @@
   margin-bottom: 84px;
 }
 
-// КНОПКА //
+// КНОПКА SUBMIT //
 
 .order-form__btn {
   @include textStyle($size: 12px, $height: 1.25);
@@ -92,11 +119,13 @@
     padding-bottom: 32px;
   }
 
-  .modal-close-btn {
+  .order-modal__close-btn {
     top: 20px;
     right: 20px;
     padding: 0;
     border: 0;
+    width: 20px;
+    height: 20px;
     background-color: inherit;
   }
 

@@ -1,5 +1,7 @@
 .site-header {
-  // position: absolute;
+  position: absolute;
+  top: 0;
+  z-index: 999;
 
   // outline: 2px solid orangered;
 
@@ -95,6 +97,7 @@
   transition: background-color $transition-time $cubic-bezier,
     color $transition-time $cubic-bezier;
   cursor: url(../img/additionals/cursor-hover.png), pointer;
+  
 
   &:hover {
     background-color: $btn-hover-clr;
@@ -103,6 +106,7 @@
   &:focus {
     background-color: $btn-focus-clr;
     color: $txt-primary-clr;
+    outline: none;
   }
 
   @media screen and (max-width: 767px) {
@@ -288,6 +292,7 @@
   &:focus {
     background-color: $btn-focus-clr;
     color: $txt-primary-clr;
+    outline: none;
   }
 }
 

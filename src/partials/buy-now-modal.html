@@ -1,89 +1,80 @@
-<div class="order-modal">
-  <!--
-		1)прибрала div .order-modal__container, на мою думку, він тут лишній;
-		2) додала до інпутів чекбокс клас visually-hidden, щоб їх приховати;
-		3) прибрала спан із класом .check-field__img-container;
-		4) додала спан на
-		 текст під картинкою, щоб його відцентрувати;
-		5) додала іконку закриття модалки;
-		6) Завантажила фото
-	-->
-  <!--CLOSE BUTTON-->
-  <button class="modal-close-btn" type="button">
-    <svg class="close-icon" aria-label="close icon">
-      <use href="./img/icons.svg#icon-close"></use>
-    </svg>
-  </button>
+<div class="backdrop is-hidden" data-modal-buy-now>
+  <div class="order-modal">
+    <!--CLOSE BUTTON-->
+    <button class="order-modal__close-btn" type="button" data-modal-close>
+      <svg class="close-icon" aria-label="close icon">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
 
-  <!--FORM-->
-  <form class="order-form">
-    <!--FORM-TITLE-->
-    <b class="order-form__title">Buy now</b>
+    <!--FORM-->
+    <form class="order-form">
+      <!--FORM-TITLE-->
+      <b class="order-form__title">Buy now</b>
 
-    <!--CHECKBOX-->
-    <fieldset class="order-form__check-list">
-      <label class="check-list__item check-list__item--ice-cream">
+      <!--CHECKBOX-->
+      <fieldset class="order-form__check-list">
+        <label class="check-list__item check-list__item--ice-cream">
+          <input
+            type="checkbox"
+            class="check-list__input visually-hidden"
+            name="selected-product"
+            value="ice-cream"
+          />
+          <span class="check-list__sub-title"> ice cream </span>
+          <span class="check-list__img check-list__img--ice-cream"></span>
+        </label>
+
+        <label class="check-list__item check-list__item--ice-coffee">
+          <input
+            type="checkbox"
+            class="check-list__input check-list__input--ice-coffee visually-hidden"
+            name="selected-product"
+            value="ice-coffee"
+          />
+          <span class="check-list__sub-title"> ice coffee </span>
+          <span class="check-list__img check-list__img--ice-coffee"></span>
+        </label>
+        <label class="check-list__item check-list__item--milkshake">
+          <input
+            type="checkbox"
+            class="check-list__input check-list__input--milkshake visually-hidden"
+            name="selected-product"
+            value="milkshake"
+          />
+          <span class="check-list__sub-title"> milkshake </span>
+          <span class="check-list__img check-list__img--milkshake"></span>
+        </label>
+      </fieldset>
+
+      <!--INPUTS-->
+      <div class="order-form__input-container">
         <input
-          type="checkbox"
-          class="check-list__input visually-hidden"
-          name="selected-product"
-          value="ice-cream"
+          type="text"
+          class="order-form__input"
+          name="user_name"
+          placeholder="Name"
+          pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
         />
-        <span class="check-list__img check-list__img--ice-cream"></span>
-        <span class="check-list__sub-title"> ice cream </span>
-      </label>
-
-      <label class="check-list__item check-list__item--ice-coffee">
         <input
-          type="checkbox"
-          class="check-list__input visually-hidden"
-          name="selected-product"
-          value="ice-coffee"
+          type="tel"
+          class="order-form__input"
+          name="user_phone"
+          placeholder="Phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
         />
-        <span class="check-list__img check-list__img--ice-coffee"></span>
-        <span class="check-list__sub-title"> ice coffee </span>
-      </label>
-      <label class="check-list__item check-list__item--milkshake">
-        <input
-          type="checkbox"
-          class="check-list__input visually-hidden"
-          name="selected-product"
-          value="milkshake"
-        />
-        <span class="check-list__img check-list__img--milkshake"></span>
-        <span class="check-list__sub-title"> milkshake </span>
-      </label>
-    </fieldset>
+        <textarea
+          class="order-form__comment"
+          name="user_comment"
+          placeholder="Comment"
+          cols="20"
+          rows="5"
+        ></textarea>
+      </div>
 
-    <!--INPUTS-->
-    <div class="order-form__input-container">
-      <input
-        type="text"
-        class="order-form__input"
-        name="user_name"
-        placeholder="Name"
-        pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
-        required
-      />
-      <input
-        type="tel"
-        class="order-form__input"
-        name="user_phone"
-        placeholder="Phone"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        title="xxx-xxx-xx-xx"
-        required
-      />
-      <textarea
-        class="order-form__comment"
-        name="user_comment"
-        placeholder="Comment"
-        cols="20"
-        rows="5"
-      ></textarea>
-    </div>
-
-    <!--SUBMIT-->
-    <button class="order-form__btn" type="submit">Submit</button>
-  </form>
+      <!--SUBMIT-->
+      <button class="order-form__btn" type="submit">Submit</button>
+    </form>
+  </div>
 </div>
