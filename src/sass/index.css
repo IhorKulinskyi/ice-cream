@@ -2585,6 +2585,7 @@ a {
   color: var(--white);
   background-color: var(--accent-color);
   transition: background-color var(--transition-dur-and-func);
+  cursor: url(../img/additionals/cursor-default.png);
 }
 .modal-form-submit:hover, .modal-form-submit:focus {
   background-color: var(--button-color);
@@ -2684,6 +2685,7 @@ a {
   .modal-chololate-form__input {
     padding-left: 16px;
     font-size: 14px;
+    width: 100%;
     width: 368px;
     height: 42px;
   }
@@ -2717,6 +2719,9 @@ a {
   }
 }
 .modal-chololate {
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: absolute;
   flex-shrink: 0;
   top: 50%;
@@ -2732,6 +2737,7 @@ a {
 }
 
 .modal-close-btn {
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
   display: flex;
   /*за допомогою flex центруэмо svg   */
   align-items: center;
@@ -2954,6 +2960,7 @@ a {
   align-self: center;
   padding: 10px 32px 10px 32px;
   border: 0;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .modal-chololate-form__submit:hover {
@@ -3098,6 +3105,7 @@ a {
   align-self: center;
   padding: 10px 32px 10px 32px;
   border: 0;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .modal-map-form__submit:hover {
@@ -3138,7 +3146,6 @@ a {
   .modal-franchise-form__input {
     padding-left: 12px;
     width: 100%;
-    max-width: 224px;
     height: 32px;
   }
   .modal-franchise-form__message {
@@ -3193,11 +3200,13 @@ a {
   }
   .modal-franchise-form__field {
     margin-bottom: 16px;
+    width: 100%;
+    max-width: 356px;
   }
   .modal-franchise-form__input {
     padding-left: 16px;
     font-size: 14px;
-    width: 368px;
+    width: 100%;
     height: 42px;
   }
   .modal-franchise-form__message {
@@ -3252,6 +3261,7 @@ a {
 }
 
 .modal-close-btn {
+  cursor: url(../img/additionals/cursor-hover.png);
   display: flex;
   /*за допомогою flex центруэмо svg   */
   align-items: center;
@@ -3282,12 +3292,6 @@ a {
   color: #131313;
 }
 
-.modal__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .modal__list-call {
   color: #131313;
   display: flex;
@@ -3299,16 +3303,12 @@ a {
 .modal-franchise-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .modal-franchise-form__field {
   display: block;
-}
-
-.modal-franchise-form__input-wrapper {
-  color: #131313;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ::-moz-placeholder {
@@ -3346,6 +3346,7 @@ a {
 }
 
 .modal-franchise-form__message {
+  width: 100%;
   resize: none;
   margin-bottom: 24px;
   color: #131313;
@@ -3399,6 +3400,7 @@ a {
   align-self: center;
   padding: 10px 32px 10px 32px;
   border: 0;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .modal-franchise-form__submit:hover {
@@ -3486,6 +3488,7 @@ a {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .modal-video-title-h3 {
