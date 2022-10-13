@@ -1,5 +1,5 @@
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop {
+.backdrop-aa {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,6 +15,11 @@
         pointer-events: none;
     }
 }
+// .is-hidden {
+//     visibility: hidden;
+//     opacity: 0;
+//     pointer-events: none;
+// }
 
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 
@@ -114,4 +119,35 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+}
+
+.modal-map-form__submit {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #131313;
+    width: 114px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    align-self: center;
+    padding: 10px 32px 10px 32px;
+    border: 0;
+}
+
+.modal-map-form__submit:hover {
+    background: #0A8817;
+    // background-color: var(--button-color);
+}
+
+.modal-map-form__submit:focus {
+    background: #0A8817;
+    color: #FCFCFC;
+    // background-color: var(--button-color);
 }
