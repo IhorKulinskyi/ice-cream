@@ -30,7 +30,7 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
 
-  transition: transform 0.5s ease;
+  transition: transform 0.7s ease-in-out;
   will-change: transform;
 
   border-radius: 24px;
@@ -46,7 +46,9 @@
   overflow: hidden;
   will-change: transform;
 }
-
+.slider__img {
+  min-width: 100%;
+}
 /* кнопки Prev и Next */
 .itcss__btn {
   position: absolute;
@@ -71,7 +73,7 @@
 
 .itcss__btn:hover,
 .itcss__btn:focus {
-  color: #fff;
+  color: rgb(16, 252, 232);
   text-decoration: none;
   border: none;
   opacity: 0.7;
@@ -136,7 +138,4 @@
 /* класс для отключения transition */
 .transition-none {
   transition: none;
-}
-.slider__img {
-  min-width: 100%;
 }
