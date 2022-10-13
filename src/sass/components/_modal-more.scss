@@ -1,20 +1,4 @@
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
-.backdrop-aaa {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 200;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition-dur-and-func), ;
-
-    &.is-hidden-video {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-}
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 // 0px - 767px
