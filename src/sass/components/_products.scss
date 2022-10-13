@@ -3,14 +3,15 @@
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(../img/background/mobile_product1.jpg);
-  background-size: contain;
-  background-repeat: repeat;
+  background: url(../img/background/mobile_product1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: $min-tablet),
     screen and (min-resolution: 192dpi) and (max-width: $min-tablet),
     screen and (min-resolution: 2dppx) and (max-width: $min-tablet) {
     background-image: url(../img/background/mobile_product1@2x.jpg);
+    background-attachment: fixed;
   }
   @media screen and(min-width:$tablet) {
     background-image: url(../img/background/tablet_products.jpg);
@@ -80,7 +81,7 @@
 }
 
 .products__item-title {
-  padding-top: 123px;
+  padding-top: 120px;
   margin-top: 0;
   margin-bottom: 40px;
 
@@ -108,7 +109,7 @@
 .wrapper__item--milkshakes {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
 
   display: block;
   height: 211px;
@@ -476,7 +477,7 @@
   }
 
   .products__item-title {
-    padding-top: 165px;
+    padding-top: 167px;
     margin-bottom: 65px;
 
     font-size: 30px;
