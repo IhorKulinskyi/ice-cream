@@ -175,7 +175,8 @@ position: absolute;
     color: var(--white);
     background-color: var(--accent-color);
     transition: background-color var(--transition-dur-and-func);
-
+    cursor: url(../img/additionals/cursor-default.png);
+    
     &:hover,
     &:focus {
         background-color: var(--button-color);

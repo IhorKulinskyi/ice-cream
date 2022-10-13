@@ -46,7 +46,7 @@
     .modal-franchise-form__input {
         padding-left: 12px;
         width: 100%;
-        max-width: 224px;
+        // max-width: 224px;
         height: 32px;
         // margin-bottom: 12px;
         // font-size: 12px;
@@ -112,12 +112,13 @@
     }
     .modal-franchise-form__field {
         margin-bottom: 16px;
-        // width: 100%;
-        // max-width: 356px;       
+        width: 100%;
+        max-width: 356px;       
     }
     .modal-franchise-form__input {
         padding-left: 16px;
         font-size: 14px;
+        width: 100%;
         width: 368px;
         height: 42px;
         // margin-bottom: 16px;
@@ -177,6 +178,7 @@
 }
 // описуємо кнопку  закриття модального вікна (хрестик)
 .modal-close-btn {
+    cursor: url(../img/additionals/cursor-hover.png);
     display: flex;
     /*за допомогою flex центруэмо svg   */
     align-items: center;
@@ -306,6 +308,10 @@
     align-self: center;
     padding: 10px 32px 10px 32px;
     border: 0;
+        cursor: url(../img/additionals/cursor-hover.png),
+                pointer;
+    // cursor: url(../img/additionals/cursor-default.png);
+    
     // font-family: $primary-font;
     // font-weight: 700;
     // font-size: 16px;
@@ -321,11 +327,13 @@
 
 .modal-franchise-form__submit:hover {
     background: #0A8817;
+    // cursor: url(../img/additionals/cursor-hover.png);
     // background-color: var(--button-color);
 }
 
 .modal-franchise-form__submit:focus {
     background: #0A8817;
     color: #FCFCFC;
+    // cursor: url(../img/additionals/cursor-hover.png);
     // background-color: var(--button-color);
 }
