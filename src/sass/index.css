@@ -2721,6 +2721,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-close-btn {
@@ -3033,7 +3036,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   justify-content: center;
-  /*за допомогою flex центруэмо svg   */
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-map-title-h3 {
@@ -3236,6 +3241,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-close-btn {
@@ -3456,6 +3464,9 @@ a {
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-close-btn {
@@ -3513,6 +3524,9 @@ a {
   width: 100%;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .order-modal__close-btn {

@@ -64,6 +64,9 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
     
+    max-height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden
 }
 // описуємо кнопку  закриття модального вікна (хрестик)
 .modal-close-btn {

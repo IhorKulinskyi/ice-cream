@@ -69,6 +69,10 @@
         background: #FCFCFC;
         border: 2px solid #F8D24E;
         justify-content: center;
+
+        max-height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden
     /*за допомогою flex центруэмо svg   */
 }
     .modal-map-title-h3 {

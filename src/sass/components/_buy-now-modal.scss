@@ -13,6 +13,10 @@
   width: 100%;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+
+  max-height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden
 }
 
 .order-modal__close-btn {
