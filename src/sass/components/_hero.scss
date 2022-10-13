@@ -133,7 +133,7 @@ a {
             display: none;
         }
         .hero__horn-ice {
-          height: 370px;
+          height: 320px;
           width: auto;
         } 
   }
@@ -144,7 +144,7 @@ a {
         z-index:13;
         top:50%;
         left:50%;
-        transform: translate(-50%, -23%);
+        transform: translate(-48%, -10%);
        
     }
 
@@ -439,6 +439,7 @@ a {
     .hero__list {
     display: flex;
     list-style: none;
+    padding-left: 0;
     }
    
     .hero__icon--arrow,
