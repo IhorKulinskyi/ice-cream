@@ -1,319 +1,305 @@
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
-
-/* END ======= --------Відкривання закривання модального вікна --------- =========== */
-
-/*=============== Модальне вікно ================*/
-// 0px - 767px
 @media screen and (max-width: 768px) {
-    .modal-franchise {
-        width: calc(100% - 30px);
-        max-width: 280px;
-    }
-    .modal-close-btn {
-        top: 8px;
-        right: 8px;
-    }
-    .modal-franchise-title-h3 {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }
-    .modal-franchise-paragraph {
-        font-size: 14px;
-        margin-bottom: 24px;
-    }
-    .modal-franchise-form__field {
-        margin-bottom: 12px;
-        width: 100%;
-        max-width: 224px;
-    }
-    .modal-franchise-form__input {
-        padding-left: 12px;
-        width: 100%;
-        max-width: 224px;
-        height: 32px;
-        // margin-bottom: 12px;
-        // font-size: 12px;
-    }
-    .modal-franchise-form__message {
-        width: 100%;
-        max-width: 240px;
-        height: 84px;
-        padding-top: 8px;
-        padding-left: 12px;
-        padding-right: 12px;
-        font-size: 12px;
-    }
-    .modal__list {
-        width: 280px;
-    }
-    .modal__list-call {
-        //   width: 220px;
-        //   gap: 20px;
-        // flex-direction: column;
-        gap: 10px;
-        justify-content: space-between;
-    }
-    .modal__list-call--item-h {
-        width: 43px;
-        height: 43px;
-    }
-    .modal__list-call--item {
-        width: 53px;
-        height: 72px;
-    }
-    .modal-form__submit--map {
-        width: 134px;
-    }
-    .modal-video-link {
-        width: 224px;
-        height: 199px;
-    }
-}
+  .modal-franchise {
+    width: calc(100% - 30px);
+    max-width: 280px;
+  }
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+  }
+  .modal-franchise-title-h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .modal-franchise-paragraph {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .modal-franchise-form__field {
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 224px;
+  }
+  .modal-franchise-form__input {
+    padding-left: 12px;
+    width: 100%;
 
-///////
+    height: 32px;
+
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-color: $mdl-buy-now-scnd-item-border-clr;
+    }
+  }
+  .modal-franchise-form__message {
+    width: 100%;
+    max-width: 240px;
+    height: 84px;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-color: $mdl-buy-now-scnd-item-border-clr;
+    }
+  }
+  .modal__list {
+    width: 280px;
+  }
+  .modal__list-call {
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .modal__list-call--item-h {
+    width: 43px;
+    height: 43px;
+  }
+  .modal__list-call--item {
+    width: 53px;
+    height: 72px;
+  }
+  .modal-form__submit--map {
+    width: 134px;
+  }
+  .modal-video-link {
+    width: 224px;
+    height: 199px;
+  }
+}
 
 @media screen and (min-width: 768px) {
-    .modal-franchise {
-        width: 568px;
-        max-width: 568px;
-    }
+  .modal-franchise {
+    width: 568px;
+    max-width: 568px;
+  }
 
-    .modal-close-btn {
-        top: 24px;
-        right: 24px;
-    }
+  .modal-close-btn {
+    top: 24px;
+    right: 24px;
+  }
 
-    .modal-franchise-title-h3 {
-        font-size: 20px;
-        line-height: 1.4;
-        margin-bottom: 24px;
-    }
-
-    .modal-franchise-paragraph {
-        font-size: 16px;
-        margin-bottom: 24px;
-    }
-    .modal-franchise-form__field {
-        margin-bottom: 16px;
-        // width: 100%;
-        // max-width: 356px;       
-    }
-    .modal-franchise-form__input {
-        padding-left: 16px;
-        font-size: 14px;
-        width: 368px;
-        height: 42px;
-        // margin-bottom: 16px;
-    }
-    .modal-franchise-form__message {
-        width: 100%;
-        max-width: 368px;
-        height: 64px;
-        padding-top: 12px;
-        padding-left: 16px;
-        padding-right: 16px;
-        font-size: 14px;
-    }
-    .modal-map-link {
-        width: 448px;
-        height: 260px;
-        margin-bottom: 32px;
-    }
-    .modal-video-link {
-        width: 448px;
-        height: 205px;
-    }
-    .modal__list {
-        width: 568px;
-    }
-    .modal__list-call--item-h {
-        width: 53px;
-        height: 53px;
-    }
-    .modal__list-call--item {
-        width: 65px;
-        height: 90px;
-    }
-    .modal__list-call {
-        gap: 20px;
-        padding-right: 40px;
-        //   width: 220px;
-        //   gap: 20px;
-        // flex-direction: column;
-        // justify-content: space-between;
-    }
-    .modal-form__submit--map {
-        width: 145px;
-    }
-}
-
-///////
-.modal-franchise {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 28px;
-    transform: translate(-50%, -50%);
-    background: #FCFCFC;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
-
-    max-height: 95%;
-    overflow-y: auto;
-    overflow-x: hidden
-}
-// описуємо кнопку  закриття модального вікна (хрестик)
-.modal-close-btn {
-    display: flex;
-    /*за допомогою flex центруэмо svg   */
-    align-items: center;
-    /*за допомогою flex центруэмо svg   */
-    justify-content: center;
-    /*за допомогою flex центруэмо svg   */
-    position: absolute;
-    /*за допомогою absolute розміщаємо кнопку в кут   */
-    padding: 0;
-    background-color: transparent;
-    border: none;
-}
-// END описуємо кнопку  закриття модального вікна (хрестик)
-// Описуємо заголовки для модальніх форм
-.modal-franchise-title-h3 {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    // display: flex;
-    align-items: center;
-    text-align: center;
-    color: #131313;
-}
-// Описуємо параграф для модальніх форм
-.modal-franchise-paragraph {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+  .modal-franchise-title-h3 {
+    font-size: 20px;
     line-height: 1.4;
-    color: #131313;
-}
-.modal__list {
-    // width: 568px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.modal__list-call {
-    color: #131313;
-    display: flex;
-    // align-items: space-between;
-    // width: 220px;
-    // gap: 20px;
-    // flex-direction: column;
-   justify-content: space-between;
-}
-// .modal-close-icon {
-//     transition: fill var(--transition-dur-and-func);
+    margin-bottom: 24px;
+  }
 
-//     &:hover,
-//     &:focus {
-//         fill: var(--accent-color);
-//     }
-// }
+  .modal-franchise-paragraph {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .modal-franchise-form__field {
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 356px;
+  }
+  .modal-franchise-form__input {
+    padding-left: 16px;
+    font-size: 14px;
+    width: 100%;
+
+    height: 42px;
+    outline: none;
+  }
+  .modal-franchise-form__message {
+    width: 100%;
+    max-width: 368px;
+    height: 64px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    outline: none;
+  }
+  .modal-map-link {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+  .modal-video-link {
+    width: 448px;
+    height: 205px;
+  }
+  .modal__list {
+    width: 568px;
+  }
+  .modal__list-call--item-h {
+    width: 53px;
+    height: 53px;
+  }
+  .modal__list-call--item {
+    width: 65px;
+    height: 90px;
+  }
+  .modal__list-call {
+    gap: 20px;
+    padding-right: 40px;
+  }
+  .modal-form__submit--map {
+    width: 145px;
+  }
+}
+
+.modal-franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+  transform: translate(-50%, -50%);
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal-close-btn {
+  position: absolute;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  transition: fill $transition-time $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    fill: $bg-secondary-clr;
+  }
+
+  cursor: url(../img/additionals/cursor-hover.png);
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: absolute;
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-franchise-title-h3 {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
+
+.modal-franchise-paragraph {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #131313;
+}
+
+.modal__list-call {
+  color: #131313;
+  display: flex;
+
+  justify-content: space-between;
+}
 
 /* END ===============Модальна форма================*/
 
 /*=============== Модальна форма ================*/
 .modal-franchise-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .modal-franchise-form__field {
-    display: block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.modal-franchise-form__input-wrapper {
-    color: #131313;
-}
+
 ::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #131313;
+}
+.modal-franchise-form__input {
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  color: #131313;
+
+  &::placeholder {
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $mdl-buy-now-scnd-item-border-clr;
+  }
+}
+
+.modal-franchise-form__message {
+  width: 100%;
+  resize: none;
+  margin-bottom: 24px;
+  color: #131313;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  transition: border-color var(--transition-dur-and-func);
+
+  &::placeholder {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
     color: #131313;
-}
-.modal-franchise-form__input {
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    color: #131313;
-    // &:focus {
-    //     outline: none;
-    //     border-color: var(--accent-color);
-    // }
-}
-.modal-franchise-form__message {
-    // width: 100%;
-    // max-width: 368px;
-    resize: none;
-    margin-bottom: 24px;
-    color: #131313;
-    background: rgba(248, 210, 78, 0.1);
-    // border: 1px solid #84A178;
-    border-radius: 10px;
-    transition: border-color var(--transition-dur-and-func);
+  }
+  &::placeholder {
+    font-weight: 400;
+    line-height: 1.4;
+  }
 
-    &::placeholder {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.4;
-        color: #131313;
-    }
-    &:focus {
-        outline: none;
-        border-color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    border-color: $mdl-buy-now-scnd-item-border-clr;
+  }
 }
 .modal-franchise-form__submit {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #131313;
-    width: 114px;
-    height: 42px;
-    background: #F8D24E;
-    border-radius: 10px;
-    align-self: center;
-    padding: 10px 32px 10px 32px;
-    border: 0;
-    // font-family: $primary-font;
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.88;
-    // letter-spacing: 0.06em;
-    // color: var(--white);
-    // transition: background-color var(--transition-dur-and-func);
-    // &:hover,
-    // &:focus {
-    //     background-color: var(--button-color);
-    // }
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  width: 114px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  align-self: center;
+  padding: 10px 32px 10px 32px;
+  border: 0;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .modal-franchise-form__submit:hover {
-    background: #0A8817;
-    // background-color: var(--button-color);
+  background: #0a8817;
 }
 
 .modal-franchise-form__submit:focus {
-    background: #0A8817;
-    color: #FCFCFC;
-    // background-color: var(--button-color);
+  background: #0a8817;
+  color: #fcfcfc;
 }
