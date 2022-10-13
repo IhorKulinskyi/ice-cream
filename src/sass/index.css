@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
 body {
   cursor: url(../img/additionals/cursor-default.png), default;
   padding-top: 83px;
