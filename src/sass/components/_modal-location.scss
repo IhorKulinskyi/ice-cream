@@ -1,144 +1,130 @@
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
-
-// .is-hidden {
-//     visibility: hidden;
-//     opacity: 0;
-//     pointer-events: none;
-// }
-
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 
 /*=============== Модальне вікно ================*/
-// 0px - 767px
 @media screen and (max-width: 768px) {
-    .modal-map {
-        width: calc(100% - 30px);
-        max-width: 280px;
-    }
-    .modal-close-btn {
-        top: 8px;
-        right: 8px;
-    }
-    .modal-map-title-h3 {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }   
-    .modal-map-link {
-        width: 224px;
-        height: 199px;
-        margin-bottom: 24px;
-    }
-    .modal-form__submit--map {
-        width: 134px;
-    }
+  .modal-map {
+    width: calc(100% - 30px);
+    max-width: 280px;
+  }
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+  }
+  .modal-map-title-h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .modal-map-link {
+    width: 224px;
+    height: 199px;
+    margin-bottom: 24px;
+  }
+  .modal-form__submit--map {
+    width: 134px;
+  }
 }
-///////
 
 @media screen and (min-width: 768px) {
-    .modal-map {
-        width: 568px;
-        max-width: 568px;
-    }
-    .modal-close-btn {
-        top: 24px;
-        right: 24px;
-    }
-    .modal-map-title-h3 {
-        font-size: 20px;
-        line-height: 1.4;
-        margin-bottom: 24px;
-    }
-   
-    .modal-map-link {
-        width: 448px;
-        height: 260px;
-        margin-bottom: 32px;
-    }
-    .modal-form__submit--map {
-        width: 145px;
-    }
-}
-///////
-.modal-map {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        padding: 28px;
-        transform: translate(-50%, -50%);
-        background: #FCFCFC;
-        border: 2px solid #F8D24E;
-        justify-content: center;
+  .modal-map {
+    width: 568px;
+    max-width: 568px;
+  }
+  .modal-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .modal-map-title-h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
 
-        max-height: 95%;
-    overflow-y: auto;
-    overflow-x: hidden
-    /*за допомогою flex центруэмо svg   */
+  .modal-map-link {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+  .modal-form__submit--map {
+    width: 145px;
+  }
 }
-    .modal-map-title-h3 {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    // display: flex;
-    align-items: center;
-    text-align: center;
-    color: #131313;
+
+.modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+  transform: translate(-50%, -50%);
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  justify-content: center;
+
+  max-height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal-map-title-h3 {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+
+  align-items: center;
+  text-align: center;
+  color: #131313;
 }
 .modal-map-form__submit--map {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #131313;
-    width: 114px;
-    height: 42px;
-    background: #F8D24E;
-    border-radius: 10px;
-    align-self: center;
-    padding: 10px 32px 10px 32px;
-    border: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  width: 114px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  align-self: center;
+  padding: 10px 32px 10px 32px;
+  border: 0;
 }
 
 .modal-mape {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .modal-map-form__submit {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-    color: #131313;
-    width: 114px;
-    height: 42px;
-    background: #F8D24E;
-    border-radius: 10px;
-    align-self: center;
-    padding: 10px 32px 10px 32px;
-    border: 0;
-        cursor: url(../img/additionals/cursor-hover.png),
-                pointer;
+  color: #131313;
+  width: 114px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  align-self: center;
+  padding: 10px 32px 10px 32px;
+  border: 0;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
 }
 
 .modal-map-form__submit:hover {
-    background: #0A8817;
-    // background-color: var(--button-color);
+  background: #0a8817;
 }
 
 .modal-map-form__submit:focus {
-    background: #0A8817;
-    color: #FCFCFC;
-    // background-color: var(--button-color);
+  background: #0a8817;
+  color: #fcfcfc;
 }

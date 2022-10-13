@@ -679,7 +679,7 @@ a {
     display: none;
   }
   .hero__container .hero__horn-ice {
-    height: 370px;
+    height: 320px;
     width: auto;
   }
   .hero__horn {
@@ -688,7 +688,7 @@ a {
     z-index: 13;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -23%);
+    transform: translate(-48%, -10%);
   }
   .hero__title-elemet {
     font-family: "Seymour One", sans-serif;
@@ -931,6 +931,7 @@ a {
   .hero__list {
     display: flex;
     list-style: none;
+    padding-left: 0;
   }
   .hero__icon--arrow,
 .hero__icon--hov,
@@ -2411,201 +2412,6 @@ a {
     display: none;
   }
 }
-/*=============== Модальна форма ================*/
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  /* margin-bottom: 40px;
-  padding-bottom: 40px; */
-}
-
-.modal-title {
-  position: absolute;
-  width: 221px;
-  height: 72px;
-  left: 29px;
-  top: 28px;
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 24px;
-  /* or 150% */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #131313;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 12px;
-}
-
-.modal-form-input {
-  font-size: 12px;
-  width: 100%;
-  height: 40px;
-  padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: border-color var(--transition-dur-and-func);
-}
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.modal-form-field {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.modal-form-field-desc {
-  display: block;
-  margin-bottom: 4px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.modal-form-input-wrapper {
-  position: relative;
-  display: block;
-}
-
-.modal-form-input-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 13px;
-  display: block;
-  transition: fill var(--transition-dur-and-func);
-}
-.modal-form-input:focus + .modal-form-input-icon {
-  fill: var(--accent-color);
-}
-
-.modal-form-message {
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  font-size: 12px;
-  color: #000;
-  padding-top: 12px;
-  padding-left: 16px;
-  padding-right: 16px;
-  resize: none;
-  transition: border-color var(--transition-dur-and-func);
-}
-.modal-form-message::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-}
-.modal-form-message:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-}
-.modal-form-message::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-}
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.modal-form-own-checkbox {
-  border: 2px solid #212121;
-  border-radius: 2px;
-  cursor: pointer;
-  /* border-color: #757575; */
-  /* background-color: #757575; */
-  margin-right: 7px;
-  margin-left: 12px;
-}
-.modal-form-check:checked + .modal-form-own-checkbox {
-  background-color: var(--accent-color);
-}
-.modal-form-check:focus + .modal-form-own-checkbox {
-  box-shadow: 0 0 0 1px var(--accent-color);
-  border-radius: 2px;
-  border-color: var(--accent-color);
-}
-
-.modal-form-own-checkbox-icon {
-  margin-right: 37px;
-  /* display: none;      Приховуємо галочку svg */
-  /* fill: var(--white); */
-}
-
-.modal-form-check {
-  position: absolute;
-  /*Виймаємо з потоку */
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  /*скидуємо всі властивості в 0 */
-}
-
-.modal-form-check-field {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.modal-form-field-checkbox {
-  display: block;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.modal-form-submit {
-  height: 50px;
-  width: 200px;
-  align-self: center;
-  border-radius: 4px;
-  padding: 10px 32px 10px 32px;
-  border: 0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--white);
-  background-color: var(--accent-color);
-  transition: background-color var(--transition-dur-and-func);
-  cursor: url(../img/additionals/cursor-default.png);
-}
-.modal-form-submit:hover, .modal-form-submit:focus {
-  background-color: var(--button-color);
-}
-
-.modal-form-field-checkbox-link {
-  color: var(--accent-color);
-  transition: -webkit-text-decoration var(--transition-dur-and-func);
-  transition: text-decoration var(--transition-dur-and-func);
-  transition: text-decoration var(--transition-dur-and-func), -webkit-text-decoration var(--transition-dur-and-func);
-}
-.modal-form-field-checkbox-link:hover, .modal-form-field-checkbox-link:focus {
-  text-decoration: none;
-}
-
-/*===============END Модальна форма ================*/
-/* ======= ----- END Модальне вікно--------- =========== */
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
-/* END ======= --------Відкривання закривання модального вікна --------- =========== */
-/*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
   .modal-chololate {
     width: calc(100% - 30px);
@@ -2728,8 +2534,8 @@ a {
   left: 50%;
   padding: 28px;
   transform: translate(-50%, -50%);
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
   max-height: 95%;
   overflow-y: auto;
@@ -2739,13 +2545,9 @@ a {
 .modal-close-btn {
   cursor: url(../img/additionals/cursor-hover.png), pointer;
   display: flex;
-  /*за допомогою flex центруэмо svg   */
   align-items: center;
-  /*за допомогою flex центруэмо svg   */
   justify-content: center;
-  /*за допомогою flex центруэмо svg   */
   position: absolute;
-  /*за допомогою absolute розміщаємо кнопку в кут   */
   padding: 0;
   background-color: transparent;
   border: none;
@@ -2795,7 +2597,7 @@ a {
 .modal-chololate__list-call--item {
   display: block;
   margin-right: auto;
-  border: 2px solid #9CBE8F;
+  border: 2px solid #9cbe8f;
   border-radius: 40px;
 }
 
@@ -2806,14 +2608,13 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 2.33;
-  /* identical to box height, or 233% */
   display: flex;
   justify-content: center;
   align-items: center;
   color: #131313;
   overflow: hidden;
-  background: #9CBE8F;
-  border: 2px solid #9CBE8F;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
 
@@ -2855,7 +2656,6 @@ a {
   display: block;
 }
 
-/* END ===============Модальна форма================*/
 /*=============== Модальна форма ================*/
 .modal-chololate-form {
   display: flex;
@@ -2901,9 +2701,25 @@ a {
 
 .modal-chololate-form__input {
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
   color: #131313;
+  outline: none;
+}
+.modal-chololate-form__input::-moz-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-chololate-form__input:-ms-input-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-chololate-form__input::placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-chololate-form__input:hover, .modal-chololate-form__input:focus {
+  border-color: #efd478;
 }
 
 .modal-chololate-form__message {
@@ -2911,7 +2727,9 @@ a {
   margin-bottom: 24px;
   color: #131313;
   background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
   border-radius: 10px;
+  outline: none;
   transition: border-color var(--transition-dur-and-func);
 }
 .modal-chololate-form__message::-moz-placeholder {
@@ -2938,9 +2756,20 @@ a {
   line-height: 1.4;
   color: #131313;
 }
-.modal-chololate-form__message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+.modal-chololate-form__message::-moz-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-chololate-form__message:-ms-input-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-chololate-form__message::placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-chololate-form__message:hover, .modal-chololate-form__message:focus {
+  border-color: #efd478;
 }
 
 .modal-chololate-form__submit {
@@ -2955,7 +2784,7 @@ a {
   color: #131313;
   width: 114px;
   height: 42px;
-  background: #F8D24E;
+  background: #f8d24e;
   border-radius: 10px;
   align-self: center;
   padding: 10px 32px 10px 32px;
@@ -2964,12 +2793,12 @@ a {
 }
 
 .modal-chololate-form__submit:hover {
-  background: #0A8817;
+  background: #0a8817;
 }
 
 .modal-chololate-form__submit:focus {
-  background: #0A8817;
-  color: #FCFCFC;
+  background: #0a8817;
+  color: #fcfcfc;
 }
 
 .modal-chololate__img {
@@ -2985,12 +2814,11 @@ a {
   height: 130.6px;
   left: 74px;
   top: 113.4px;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25), 0px 7px 0px 0px rgba(10, 136, 23, 0.25);
   border-radius: 50%;
 }
 
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
 /* END ======= --------Відкривання закривання модального вікна --------- =========== */
 /*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
@@ -3045,8 +2873,8 @@ a {
   left: 50%;
   padding: 28px;
   transform: translate(-50%, -50%);
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
   justify-content: center;
   max-height: 95%;
   overflow-y: auto;
@@ -3074,7 +2902,7 @@ a {
   color: #131313;
   width: 114px;
   height: 42px;
-  background: #F8D24E;
+  background: #f8d24e;
   border-radius: 10px;
   align-self: center;
   padding: 10px 32px 10px 32px;
@@ -3100,7 +2928,7 @@ a {
   color: #131313;
   width: 114px;
   height: 42px;
-  background: #F8D24E;
+  background: #f8d24e;
   border-radius: 10px;
   align-self: center;
   padding: 10px 32px 10px 32px;
@@ -3109,17 +2937,14 @@ a {
 }
 
 .modal-map-form__submit:hover {
-  background: #0A8817;
+  background: #0a8817;
 }
 
 .modal-map-form__submit:focus {
-  background: #0A8817;
-  color: #FCFCFC;
+  background: #0a8817;
+  color: #fcfcfc;
 }
 
-/* ======= --------Відкривання закривання модального вікна --------- =========== */
-/* END ======= --------Відкривання закривання модального вікна --------- =========== */
-/*=============== Модальне вікно ================*/
 @media screen and (max-width: 768px) {
   .modal-franchise {
     width: calc(100% - 30px);
@@ -3147,6 +2972,10 @@ a {
     padding-left: 12px;
     width: 100%;
     height: 32px;
+    outline: none;
+  }
+  .modal-franchise-form__input:hover, .modal-franchise-form__input:focus {
+    border-color: #efd478;
   }
   .modal-franchise-form__message {
     width: 100%;
@@ -3156,6 +2985,10 @@ a {
     padding-left: 12px;
     padding-right: 12px;
     font-size: 12px;
+    outline: none;
+  }
+  .modal-franchise-form__message:hover, .modal-franchise-form__message:focus {
+    border-color: #efd478;
   }
   .modal__list {
     width: 280px;
@@ -3208,6 +3041,7 @@ a {
     font-size: 14px;
     width: 100%;
     height: 42px;
+    outline: none;
   }
   .modal-franchise-form__message {
     width: 100%;
@@ -3217,6 +3051,7 @@ a {
     padding-left: 16px;
     padding-right: 16px;
     font-size: 14px;
+    outline: none;
   }
   .modal-map-link {
     width: 448px;
@@ -3252,8 +3087,8 @@ a {
   left: 50%;
   padding: 28px;
   transform: translate(-50%, -50%);
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
   max-height: 95%;
   overflow-y: auto;
@@ -3261,18 +3096,20 @@ a {
 }
 
 .modal-close-btn {
+  position: absolute;
+  cursor: url(../img/additionals/cursor-hover.png), pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../img/additionals/cursor-hover.png);
   display: flex;
-  /*за допомогою flex центруэмо svg   */
   align-items: center;
-  /*за допомогою flex центруэмо svg   */
   justify-content: center;
-  /*за допомогою flex центруэмо svg   */
   position: absolute;
-  /*за допомогою absolute розміщаємо кнопку в кут   */
   padding: 0;
   background-color: transparent;
   border: none;
+}
+.modal-close-btn:hover, .modal-close-btn:focus {
+  fill: #efd478;
 }
 
 .modal-franchise-title-h3 {
@@ -3340,9 +3177,24 @@ a {
 
 .modal-franchise-form__input {
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
   color: #131313;
+}
+.modal-franchise-form__input::-moz-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-franchise-form__input:-ms-input-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-franchise-form__input::placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-franchise-form__input:hover, .modal-franchise-form__input:focus {
+  border-color: #efd478;
 }
 
 .modal-franchise-form__message {
@@ -3351,6 +3203,7 @@ a {
   margin-bottom: 24px;
   color: #131313;
   background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
   border-radius: 10px;
   transition: border-color var(--transition-dur-and-func);
 }
@@ -3378,9 +3231,20 @@ a {
   line-height: 1.4;
   color: #131313;
 }
-.modal-franchise-form__message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+.modal-franchise-form__message::-moz-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-franchise-form__message:-ms-input-placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-franchise-form__message::placeholder {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.modal-franchise-form__message:hover, .modal-franchise-form__message:focus {
+  border-color: #efd478;
 }
 
 .modal-franchise-form__submit {
@@ -3395,7 +3259,7 @@ a {
   color: #131313;
   width: 114px;
   height: 42px;
-  background: #F8D24E;
+  background: #f8d24e;
   border-radius: 10px;
   align-self: center;
   padding: 10px 32px 10px 32px;
@@ -3404,12 +3268,12 @@ a {
 }
 
 .modal-franchise-form__submit:hover {
-  background: #0A8817;
+  background: #0a8817;
 }
 
 .modal-franchise-form__submit:focus {
-  background: #0A8817;
-  color: #FCFCFC;
+  background: #0a8817;
+  color: #fcfcfc;
 }
 
 /* ======= --------Відкривання закривання модального вікна --------- =========== */
@@ -3468,8 +3332,8 @@ a {
   left: 50%;
   padding: 28px;
   transform: translate(-50%, -50%);
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
   max-height: 95%;
   overflow-y: auto;
@@ -3478,13 +3342,9 @@ a {
 
 .modal-close-btn {
   display: flex;
-  /*за допомогою flex центруэмо svg   */
   align-items: center;
-  /*за допомогою flex центруэмо svg   */
   justify-content: center;
-  /*за допомогою flex центруэмо svg   */
   position: absolute;
-  /*за допомогою absolute розміщаємо кнопку в кут   */
   padding: 0;
   background-color: transparent;
   border: none;
@@ -3506,9 +3366,7 @@ a {
   background: #000000;
   border-radius: 10px;
   display: flex;
-  /*за допомогою flex центруэмо svg   */
   align-items: center;
-  /*за допомогою flex центруэмо svg   */
   justify-content: center;
 }
 
