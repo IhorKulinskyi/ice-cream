@@ -1,3 +1,3 @@
 import './.../../js/testimonial';
 import './.../../js/gallery';
-import './.../../js//mobile-menu';
+import './.../../js/mobile-menu';
