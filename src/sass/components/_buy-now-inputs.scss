@@ -19,7 +19,7 @@
 
   &:hover,
   &:focus {
-	border-color: #efd478;
+	border-color: $mdl-buy-now-scnd-item-border-clr;
   }
   
   &:invalid {
@@ -43,7 +43,7 @@
 
   &:hover,
   &:focus {
-	border-color: #efd478;
+	border-color: $mdl-buy-now-scnd-item-border-clr;
   }
 }
 
