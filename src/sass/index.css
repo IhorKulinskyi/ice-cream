@@ -1693,7 +1693,7 @@ a {
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  transition: transform 0.5s ease;
+  transition: transform 0.7s ease-in-out;
   will-change: transform;
   border-radius: 24px;
 }
@@ -1708,6 +1708,10 @@ a {
           backface-visibility: hidden;
   overflow: hidden;
   will-change: transform;
+}
+
+.slider__img {
+  min-width: 100%;
 }
 
 /* кнопки Prev и Next */
@@ -1739,7 +1743,7 @@ a {
 
 .itcss__btn:hover,
 .itcss__btn:focus {
-  color: #fff;
+  color: rgb(16, 252, 232);
   text-decoration: none;
   border: none;
   opacity: 0.7;
@@ -1807,10 +1811,6 @@ a {
 /* класс для отключения transition */
 .transition-none {
   transition: none;
-}
-
-.slider__img {
-  min-width: 100%;
 }
 
 .testimonial {
@@ -2876,6 +2876,7 @@ a {
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   justify-content: center;
+  border-radius: 10px;
   max-height: 95%;
   overflow-y: auto;
   overflow-x: hidden;
