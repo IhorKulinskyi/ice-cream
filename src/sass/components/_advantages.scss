@@ -115,12 +115,42 @@
 
 .advantages-list__title--icon-cow::before{
     background-image: url(../img/advantages/cow.png);
+   
+            
 }
+
+@media screen and (min-width: $desktop), screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: $desktop) and (min-resolution: 192dpi),
+screen and (min-width: $desktop) and (min-resolution: 2dppx)
+{.advantages-list__title--icon-cow::before
+     {background-image: url(../img/advantages/cow@2.png);}}
+
+
+
 .advantages-list__title--icon-weight::before{
-    background-image: url(../img/advantages/weight.png);
+    background-image: url(../img/advantages/weight.png);  
+}
+
+@media screen and (min-width: $desktop), screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: $desktop) and (min-resolution: 192dpi),
+screen and (min-width: $desktop) and (min-resolution: 2dppx) {
+    .advantages-list__title--icon-weight::before {
+        background-image: url(../img/advantages/weight@2.png);
+    }
 }
 .advantages-list__title--icon-ice-cream::before{
     background-image: url(../img/advantages/ice-crema.png);
+   
+}
+@media screen and (min-width: $desktop), screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: $desktop) and (min-resolution: 192dpi),
+screen and (min-width: $desktop) and (min-resolution: 2dppx) {
+    .advantages-list__title--ice-cream::before {
+        background-image: url(../img/advantages/ice-crema@2.png);
+    }
 }
 
 .advantages-list__text {
