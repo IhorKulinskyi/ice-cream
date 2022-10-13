@@ -166,6 +166,16 @@
 }
 // описуємо кнопку  закриття модального вікна (хрестик)
 .modal-close-btn {
+        position: absolute;
+        cursor: url(../img/additionals/cursor-hover.png), pointer;
+        transition: fill $transition-time $cubic-bezier;
+
+        &:hover,
+        &:focus {
+            fill: $bg-secondary-clr;
+        }
+    
+
     cursor: url(../img/additionals/cursor-hover.png);
     display: flex;
     /*за допомогою flex центруэмо svg   */
@@ -253,11 +263,21 @@
     border: 1px solid #84A178;
     border-radius: 10px;
     color: #131313;
-    // &:focus {
+
+    &::placeholder {
+            font-weight: 400;
+            line-height: 1.4;
+        }
+    
+        &:hover,
+        &:focus {
+            border-color: $mdl-buy-now-scnd-item-border-clr;
+        }
+}    // &:focus {
     //     outline: none;
     //     border-color: var(--accent-color);
     // }
-}
+
 .modal-franchise-form__message {
     width: 100%;
     // max-width: 368px;
@@ -277,10 +297,15 @@
         line-height: 1.4;
         color: #131313;
     }
-    &:focus {
-        outline: none;
-        border-color: var(--accent-color);
-    }
+                &::placeholder {
+                    font-weight: 400;
+                    line-height: 1.4;
+                }
+        
+                &:hover,
+                &:focus {
+                    border-color: $mdl-buy-now-scnd-item-border-clr;
+                }
 }
 .modal-franchise-form__submit {
     font-family: 'Montserrat';
