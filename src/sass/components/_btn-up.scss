@@ -1,10 +1,9 @@
 .btn-up {
     position: fixed;
-    background-color: #10f1df;
+    background-color: $bg-accent-clr;
     right: 20px;
     bottom: 50px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-radius: 10px;
 cursor: url(../img/additionals/cursor-hover.png), pointer;  
   display: flex;
     align-items: center;
@@ -34,6 +33,6 @@ cursor: url(../img/additionals/cursor-hover.png), pointer;
 
 @media (hover: hover) and (pointer: fine) {
     .btn-up:hover {
-        background-color: #512da8;
+        background-color: $btn-hover-clr;
     }
 }
