@@ -18,27 +18,48 @@
   cursor: url(../img/additionals/cursor-hover.png), pointer;
   transition: background-color $transition-time $cubic-bezier;
 
-  &:hover,
-  &:focus {
+  &:hover {
+    color: $mdl-buy-now-scnd-item-border-clr;
+  }
+
+  .check-list__input:focus + & {
+    color: $mdl-buy-now-scnd-item-border-clr;
+  }
+
+  .check-list__input:checked + & {
     background-color: $mdl-buy-now-first-item-border-clr;
+  }
+
+  .check-list__input--ice-coffee:checked + & {
+    background-color: $mdl-buy-now-scnd-item-border-clr;
+  }
+
+  .check-list__input--milkshake:checked + & {
+    background-color: $mdl-buy-now-thrd-item-border-clr;
   }
 }
 
 .check-list__item--ice-coffee {
   border-color: $mdl-buy-now-scnd-item-border-clr;
 
-  &:hover,
-  &:focus {
-    background-color: $mdl-buy-now-scnd-item-border-clr;
+  &:hover {
+    color: $mdl-buy-now-thrd-item-border-clr;
+  }
+
+  .check-list__input--ice-coffee:focus + & {
+    color: $mdl-buy-now-thrd-item-border-clr;
   }
 }
 
 .check-list__item--milkshake {
   border-color: $mdl-buy-now-thrd-item-border-clr;
 
-  &:hover,
-  &:focus {
-    background-color: $mdl-buy-now-thrd-item-border-clr;
+  &:hover {
+    color: $mdl-buy-now-first-item-border-clr;
+  }
+
+  .check-list__input--milkshake:focus + & {
+    color: $mdl-buy-now-first-item-border-clr;
   }
 }
 
@@ -106,18 +127,6 @@
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
-
-  .check-list__input:checked + & {
-	 color: $mdl-buy-now-scnd-item-border-clr;
-  }
-
-  .check-list__input--ice-coffee:checked + & {
-	color: $mdl-buy-now-thrd-item-border-clr;
-  }
-
-  .check-list__input--milkshake:checked + & {
-	color: $mdl-buy-now-first-item-border-clr;
-  }
 }
 
 // MOBILE max-width: 767px//
