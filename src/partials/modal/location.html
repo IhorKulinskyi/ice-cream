@@ -9,7 +9,7 @@
     <h3 class="modal-map-title-h3">Our Locations</h3>
 
     <div class="modal-map-link">
-      <picture>
+      <!-- <picture>
         <source
           srcset="
             .\img\modal-locations\location-desk.jpg    1x,
@@ -17,7 +17,6 @@
           "
           media="(min-width: 768px)"
         />
-
         <source
           srcset="
             .\img\modal-locations\location-mob.jpg    1x,
@@ -25,19 +24,16 @@
           "
           media="(max-width: 767px)"
         />
-
         <img
           src=".\img\modal-locations\location-mob.jpg"
           alt="Технокряк "
           width=""
         />
-      </picture>
+      </picture> -->
+      <iframe class="modal-map__iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-87.26545572280884%2C41.602154032147624%2C-87.25837469100954%2C41.60569196143005&amp;layer=mapnik&amp;marker=41.603923021037104%2C-87.26191520690918"></iframe>
+      <button type="submit" class="modal-map-form__submit modal-form__submit--map">
+        Open map
+      </button>
     </div>
-    <button
-      type="submit"
-      class="modal-map-form__submit modal-form__submit--map"
-    >
-      Open map
-    </button>
   </div>
-</div>
