@@ -12,6 +12,7 @@ cursor: url(../img/additionals/cursor-hover.png), pointer;
     width: 60px;
     height: 50px;
     opacity: 1;
+    z-index: 270;
 }
 
 .btn-up::before {
