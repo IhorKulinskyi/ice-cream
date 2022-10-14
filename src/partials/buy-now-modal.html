@@ -14,37 +14,56 @@
 
       <!--CHECKBOX-->
       <fieldset class="order-form__check-list">
-        <label class="check-list__item check-list__item--ice-cream">
+        <div class="check-list__container">
           <input
             type="checkbox"
             class="check-list__input visually-hidden"
             name="selected-product"
             value="ice-cream"
+            id="ice_cream"
           />
-          <span class="check-list__sub-title"> ice cream </span>
-          <span class="check-list__img check-list__img--ice-cream"></span>
-        </label>
+          <label
+            for="ice_cream"
+            class="check-list__item check-list__item--ice-cream"
+          >
+            <span class="check-list__sub-title"> ice cream </span>
+            <span class="check-list__img check-list__img--ice-cream"></span>
+          </label>
+        </div>
 
-        <label class="check-list__item check-list__item--ice-coffee">
+        <div class="check-list__container check-list__container--ice-coffee">
           <input
             type="checkbox"
             class="check-list__input check-list__input--ice-coffee visually-hidden"
             name="selected-product"
             value="ice-coffee"
+            id="ice_coffee"
           />
-          <span class="check-list__sub-title"> ice coffee </span>
-          <span class="check-list__img check-list__img--ice-coffee"></span>
-        </label>
-        <label class="check-list__item check-list__item--milkshake">
+          <label
+            for="ice_coffee"
+            class="check-list__item check-list__item--ice-coffee"
+          >
+            <span class="check-list__sub-title"> ice coffee </span>
+            <span class="check-list__img check-list__img--ice-coffee"></span>
+          </label>
+        </div>
+
+        <div class="check-list__container check-list__container--milkshake">
           <input
             type="checkbox"
             class="check-list__input check-list__input--milkshake visually-hidden"
             name="selected-product"
             value="milkshake"
+            id="milkshake"
           />
-          <span class="check-list__sub-title"> milkshake </span>
-          <span class="check-list__img check-list__img--milkshake"></span>
-        </label>
+          <label
+            for="milkshake"
+            class="check-list__item check-list__item--milkshake"
+          >
+            <span class="check-list__sub-title"> milkshake </span>
+            <span class="check-list__img check-list__img--milkshake"></span>
+          </label>
+        </div>
       </fieldset>
 
       <!--INPUTS-->
